@@ -96,7 +96,7 @@ function validateUser(email) {
   return email.includes('@');
 }
 ```
-*With SCNS-UCCS:*
+***With SCNS-UCCS:***
 The function now has a permanent, spatial address.
 It is anchored in the logical architecture of the project, completely independent of its file location.
 
