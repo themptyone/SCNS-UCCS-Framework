@@ -1,6 +1,6 @@
 # SCNS V4 Complete Definitions & Documentation
 
-## Core Conceptual Foundation (N0010)
+## Core Conceptual Foundation
 
 **SCNS ID:** `$SCNSV4-DEF:CORE:CONCEPT:FOUNDATION:N0010$`
 
