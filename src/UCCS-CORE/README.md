@@ -90,4 +90,4 @@ Contributions are welcome! To propose changes:
 
 ---
 
-*For detailed specifications, see [UCCS-CORE0021.md](./UCCS-CORE0021.md)*
+*For detailed specifications, see [UCCS-CORE0000.md](./UCCS-CORE0000.md)*
