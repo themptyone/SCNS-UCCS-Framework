@@ -1,9 +1,11 @@
 # SCNS-UCCS: The Universal Coordinate Classification System 🚀
 
-Welcome to the **SCNS-UCCS framework**, a revolutionary system for organizing, navigating, and validating the entire information landscape.  
-By merging the **Spatial Code Navigation System (SCNS)** with the **Universal Code Coordinate System (UCCS)**, we provide a stable, universal GPS for your data, code, and documents.
+->  Welcome to the **SCNS-UCCS framework**, a revolutionary system for organizing, navigating, and validating the entire information           landscape. 
 
-Say goodbye to fragile file paths and broken links. Say hello to **Universal Addressability**.
+
+->  By merging the **Spatial Code Navigation System (SCNS)** with the **Universal Code Coordinate System (UCCS)**, we provide a stable,        universal GPS for your data, code, and documents.
+
+->  Say goodbye to fragile file paths and broken links. Say hello to **Universal Addressability**.
 
 ---
 
