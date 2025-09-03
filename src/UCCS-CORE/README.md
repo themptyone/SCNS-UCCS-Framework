@@ -2,6 +2,8 @@
 
 ## 1. Overview
 
+This directory contains the segmented and addressable content blocks of the original `testfile.md` document. The deconstruction was performed using the **UCCS-BB (Byte-Sized Breakdown)** protocol to transform the monolithic source file into manageable, traceable, and modular markdown files.
+
 Each file represents a logical "byte-sized" block of the original document, complete with a unique **SCNS V4 coordinate** for easy navigation, reference, and integration with other UCCS protocols.
 
 ---
@@ -14,46 +16,46 @@ The following index is organized into logical categories to help you navigate th
 
 | SCNS ID | Description |
 | :--- | :--- |
-| `$UCCS-BB:DOC:UCCS-CORE:UIP-FLOW:N0010$` | Introduces the UCCS and the Universal Interaction Protocol (UIP) Flow. |
-| `$UCCS-BB:DOC:UCCS-CORE:ARCH-PRINCIPLES:N0020$` | Details the core design principles, including Universal Addressability. |
-| `$UCCS-BB:DOC:UCCS-CORE:UIP-FOUNDATION:N0030$` | Reinforces the foundational principles and block-by-block control of the UIP. |
+| `UCCS-CORE:UIP-FLOW:N0010` | Introduces the UCCS and the Universal Interaction Protocol (UIP) Flow. |
+| `UCCS-CORE:ARCH-PRINCIPLES:N0020` | Details the core design principles, including Universal Addressability. |
+| `UCCS-CORE:UIP-FOUNDATION:N0030` | Reinforces the foundational principles and block-by-block control of the UIP. |
 
 ### Implementation & System Definitions
 
 | SCNS ID | Description |
 | :--- | :--- |
-| `$UCCS-BB:DOC:UCCS-CORE:IMPL-SCNS:N0040$` | Describes the SCNS Coordinate Engine and the V4 format. |
-| `$UCCS-BB:DOC:UCCS-CORE:RTAGS:N0050$` | Defines the Cross-Reference System (RTAGs) like `REF`, `DEPENDS`, and `CALLS`. |
+| `UCCS-CORE:IMPL-SCNS:N0040` | Describes the SCNS Coordinate Engine and the V4 format. |
+| `UCCS-CORE:RTAGS:N0050` | Defines the Cross-Reference System (RTAGs) like `REF`, `DEPENDS`, and `CALLS`. |
 
 ### Core Algorithms
 
 | SCNS ID | Description |
 | :--- | :--- |
-| `$UCCS-BB:DOC:UCCS-CORE:ALGO-INSERTION:N0060$` | Outlines the Dynamic Insertion Algorithm for managing coordinates. |
-| `$UCCS-BB:DOC:UCCS-CORE:ALGO-RESOLUTION:N0070$` | Explains the algorithm for resolving cross-references and analyzing impact. |
-| `$UCCS-BB:DOC:UCCS-CORE:ALGO-PATTERN:N0080$` | Details the algorithm for detecting architectural and workflow patterns. |
-| `$UCCS-BB:DOC:UCCS-CORE:ALGO-ERROR:N0090$` | Covers algorithms for validating SCNS addresses and ensuring consistency. |
-| `$UCCS-BB:DOC:UCCS-CORE:ALGO-PERFORMANCE:N0100$` | Describes the address resolution caching algorithm for performance. |
-| `$UCCS-BB:DOC:UCCS-CORE:ALGO-COLLISION:N0110$` | Details the algorithm for detecting and resolving address conflicts. |
+| `UCCS-CORE:ALGO-INSERTION:N0060` | Outlines the Dynamic Insertion Algorithm for managing coordinates. |
+| `UCCS-CORE:ALGO-RESOLUTION:N0070` | Explains the algorithm for resolving cross-references and analyzing impact. |
+| `UCCS-CORE:ALGO-PATTERN:N0080` | Details the algorithm for detecting architectural and workflow patterns. |
+| `UCCS-CORE:ALGO-ERROR:N0090` | Covers algorithms for validating SCNS addresses and ensuring consistency. |
+| `UCCS-CORE:ALGO-PERFORMANCE:N0100` | Describes the address resolution caching algorithm for performance. |
+| `UCCS-CORE:ALGO-COLLISION:N0110` | Details the algorithm for detecting and resolving address conflicts. |
 
 ### Protocols & Integrations
 
 | SCNS ID | Description |
 | :--- | :--- |
-| `$UCCS-BB:DOC:UCCS-CORE:PROTO-ARCH-ORG:N0120$` | Specifies the UCCS-ORG protocol for file discovery and organization. |
-| `$UCCS-BB:DOC:UCCS-CORE:INTEG-PERPLEXITY:N0140$` | Protocol specification for integrating with the Perplexity AI model. |
-| `$UCCS-BB:DOC:UCCS-CORE:INTEG-CLAUDE:N0150$` | Protocol specification for structured collaboration with the Claude AI model. |
-| `$UCCS-BB:DOC:UCCS-CORE:INTEG-GROK:N0160$` | Protocol specification for real-time analysis using the Grok AI model. |
-| `$UCCS-BB:DOC:UCCS-CORE:INTEG-GPT:N0180$` | Protocol specification for collaboration with GPT models. |
-| `$UCCS-BB:DOC:UCCS-CORE:PROTO-DESC:N0190$` | Provides high-level descriptions of core system protocols (INF, NAV, etc.). |
+| `UCCS-CORE:PROTO-ARCH-ORG:N0120` | Specifies the UCCS-ORG protocol for file discovery and organization. |
+| `UCCS-CORE:INTEG-PERPLEXITY:N0140` | Protocol specification for integrating with the Perplexity AI model. |
+| `UCCS-CORE:INTEG-CLAUDE:N0150` | Protocol specification for structured collaboration with the Claude AI model. |
+| `UCCS-CORE:INTEG-GROK:N0160` | Protocol specification for real-time analysis using the Grok AI model. |
+| `UCCS-CORE:INTEG-GPT:N0180` | Protocol specification for collaboration with GPT models. |
+| `UCCS-CORE:PROTO-DESC:N0190` | Provides high-level descriptions of core system protocols (INF, NAV, etc.). |
 
 ### Outputs, Metrics & Verification
 
 | SCNS ID | Description |
 | :--- | :--- |
-| `$UCCS-BB:DOC:UCCS-CORE:OUTPUT-TEMPLATES:N0130$` | Provides core output definitions and implementation templates. |
-| `$UCCS-BB:DOC:UCCS-CORE:METRICS:N0170$` | Defines success metrics and output deliverables for the UCCS. |
-| `$UCCS-BB:DOC:UCCS-CORE:FINAL-VERIFY:N0200$` | Details the final verification system and the Context Meter specification. |
+| `UCCS-CORE:OUTPUT-TEMPLATES:N0130` | Provides core output definitions and implementation templates. |
+| `UCCS-CORE:METRICS:N0170` | Defines success metrics and output deliverables for the UCCS. |
+| `UCCS-CORE:FINAL-VERIFY:N0200` | Details the final verification system and the Context Meter specification. |
 
 ---
 
