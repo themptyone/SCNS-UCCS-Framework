@@ -108,3 +108,7 @@ SCNS is governed by **8 universal principles**:
 | Universal across tools  | ❌         | ❌         | ✅    | ✅      |
 
 ---
+## 📜 License
+
+**MIT License** – Open for research, experimentation, and implementation.
+
