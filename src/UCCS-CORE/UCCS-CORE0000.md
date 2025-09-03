@@ -20,7 +20,8 @@ The Universal Interaction Protocol (UIP) is the foundational mechanism for ensur
 * *SUMMARIZE:*The AI provides a concise, 1-3 line summary of what was just accomplished.
 * *PREVIEW:* The complete result is shown to the user for review.
 * *CONFIRM:*The AI must pause and explicitly ask for user validation with the mandatory prompt: "Proceed? (Y/N/Modify)".
-* *ITERATE:*Based on the user's response, the AI continues (Y), stops (N), or applies requested changes and repeats the loop       (Modify).
+* *ITERATE:*Based on the user's response, the AI continues (Y), stops (N), or applies requested changes and repeats the loop
+* (Modify).
 
 ### *This protocol is enforced through "UIP Gates", which are mandatory checkpoints for user validation before any critical action can be completed.*
 
@@ -61,7 +62,7 @@ Additional core principles for implementation include State Transparency, Protoc
 * *Protocol Layer (Core)*: Contains foundational infrastructure services.
 * *Application Layer (Workbench)*: Consists of domain-specific tools and lifecycle protocols.
 * *Governance Layer*: A cross-cutting concern managed by `UCCS-ORG` to ensure registry integrity, validation, and conflict resolution across all layers.
-* *Universal Addressability*: The cornerstone of UCCS. Every component, data block, process, or asset is assigned a unique and parsable **SCNS coordinate** in the format `$DOMAIN:AREA:COMPONENT:ELEMENT:TAG:SEQUENCE$`. This enables precise referencing, dependency tracking, and spatial navigation.
+* *Universal Addressability*: The cornerstone of UCCS. Every component, data block, process, or asset is assigned a unique and parsable **SCNS ID** in the format `$DOMAIN:AREA:COMPONENT:ELEMENT:TAG:SEQUENCE$`. This enables precise referencing, dependency tracking, and spatial navigation.
 
 ## Universal Interaction Protocol (UIP) - Foundation Principle
 
@@ -114,7 +115,11 @@ The SCNS-V4 is the spatial addressing system within the UCCS framework. To suppo
 * TAG: A classification based on the block's functional.
 * SEQUENCE: A hierarchical numeric identifier, often incremented by 10 for spacing.
 
-The addition of optional dimensional tags at the end of the coordinate to track an information block's lifecycle (...:[SEQUENCE][:VERSION][:STATE]). These include a *:VERSION* tag for tracking revisions and a *:STATE* tag to denote its lifecycle status (e.g., :DRAFT, :ACTIVE, :PASS). For practical project implementation, a simplified format like ***PROJECT:MODULE:FUNCTION:VERSION:STATE*** is often used.
+The addition of optional dimensional tags at the end of the coordinate to track an information block's lifecycle (...:[SEQUENCE][:VERSION][:STATE]). 
+
+These include a *:VERSION* tag for tracking revisions and a *:STATE* tag to denote its lifecycle status (e.g., :DRAFT, :ACTIVE, :PASS). For practical project implementation, a simplified format like
+
+***PROJECT:MODULE:FUNCTION:VERSION:STATE**
 
 This class is the foundation of universal addressability. It parses, validates, and manages SCNS coordinates.
 
@@ -283,6 +288,7 @@ function calculateRiskLevel(node) {
 ### Workflow Pattern Recognition
 
 **Algorithm:** Identify common development patterns for AI optimization.
+
 ```javascript
 function detectPatterns(codeHistory) {
     const patterns = {
@@ -320,6 +326,7 @@ function detectCRUDPattern(history) {
 ```
 
 ### Architecture Compliance Check
+
 **Algorithm:** Validate code organization against established patterns.
 
 
@@ -375,6 +382,7 @@ const LAYERED_ARCHITECTURE_RULE = {
 ### Malformed Address Detection
 
 **Algorithm:** Validate SCNS address format and detect common errors.
+
 ```javascript
 function validateAddress(address) {
     const errors = [];
@@ -464,6 +472,7 @@ function checkConsistency(projectFiles) {
 ### Address Resolution Caching
 
 **Algorithm:** Optimize lookup performance for large codebases.
+
 ```javascript
 class SCNSCache {
     constructor() {
@@ -619,6 +628,7 @@ BLOCK:
   confirmation: "Proceed with file registration? (Y / N / Modify)"
 ```
 ### PHASE 2: UCCS-ORG-STRUCTURE → Cross-Reference Matrix Creation
+
 **UIP Block:** Relationship Mapping
 
 ```yaml
@@ -651,14 +661,11 @@ BLOCK:
     - RECONCILE: Resolve conflicts and broken references
     - REPORT: Provide organization health status
   confirmation: "Apply organization updates? (Y / N / Modify)"
-````
----
+```
 
 ## Core Output: File-SCNS Cross-Reference Table
 
 **SCNS ID:** `$UCCS-CORE:OUTPUT:FILE:SCNS:CROSS-REFERENCE:N0230$`
-
----
 
 ## UIP Integration Framework
 
@@ -667,7 +674,6 @@ BLOCK:
 ### Block-by-Block Organization Process
 
 GENERATE → VALIDATE → ITERATE → GENERATE → VALIDATE...
-
 
 **Every organizational action follows UIP:**
 
@@ -727,11 +733,11 @@ The AI must always:
 
 **SCNS ID:** `$USSC-INF-PERPLEXITY:SPEC:PROTOCOL:CORE:N0270$`
 
-**Purpose:** This document specifies the integration and communication protocol for the Perplexity AI model within the USSC AI project, optimized for real-time research coordination with source verification.
-**Version:** 1.0
-**Last Updated:** 2025-08-23
-**Author:** USSC Protocol Development Team
-**Coordinate:** `$USSC-INF-PERPLEXITY:SPEC:CORE:N0270$`
+Purpose: This document specifies the integration and communication protocol for the Perplexity AI model within the USSC AI project, optimized for real-time research coordination with source verification.
+Version: 1.0
+Last Updated:** 2025-08-23
+Author:** USSC Protocol Development Team
+Coordinate:`$USSC-INF-PERPLEXITY:SPEC:CORE:N0270$`
 
 ## 1. Core Concepts 🔍
 
@@ -771,13 +777,14 @@ A research query sent to Perplexity should be a JSON object with the following s
   }
 }
 ```
-**research_coordinate:** Unique USSC identifier for investigation traceability.
+- **research_coordinate:** Unique USSC identifier for investigation traceability.
 
-**query.research_question:** The core research topic. Precision is key.
+- **query.research_question:** The core research topic. Precision is key.
 
-**search_parameters:** Fine-tuning controls for source selection and verification.
+- **search_parameters:** Fine-tuning controls for source selection and verification.
 
 ### 2.2. Response Structure
+
 The response from Perplexity will be a JSON object with the following schema:
 
 ```json
@@ -815,11 +822,11 @@ The response from Perplexity will be a JSON object with the following schema:
 }
 ```
 
-**status:** Indicates research outcome and source quality.
+- **status:** Indicates research outcome and source quality.
 
-**findings.evidence:** Research results with mandatory source attribution.
+- **findings.evidence:** Research results with mandatory source attribution.
 
-**citation_index:** Comprehensive credibility assessment and source metrics.
+- **citation_index:** Comprehensive credibility assessment and source metrics.
 
 ## 3. Research Phases 🎯
 
@@ -2138,6 +2145,7 @@ Batched Confirmations: The AI may group several related actions into a single UI
 Technical Language: Assumes the user understands technical jargon and complex concepts without elaboration.
 
 Remember: User control is paramount. No significant changes occur without explicit UIP validation. The AI serves you, not the other way around.
+
 
 
 
