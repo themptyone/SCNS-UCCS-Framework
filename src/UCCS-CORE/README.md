@@ -2,7 +2,7 @@
 
 The **Universal Code Coordinate System (UCCS)** is a comprehensive framework for organizing, navigating, and validating information. It merges architectural design, implementation details, and advanced execution protocols into a unified structure.
 
-This repository contains the core specification (`UCCS-CORE0021.md`) defining how UCCS ensures Universal Addressability, User Sovereignty, and protocol-driven collaboration across AI-human systems.
+This repository contains the core specification (`UCCS-CORE0000.md`) defining how UCCS ensures Universal Addressability, User Sovereignty, and protocol-driven collaboration across AI-human systems.
 
 ## 📖 What is UCCS?
 
@@ -42,25 +42,6 @@ Defines relationships like `REF`, `DEPENDS`, `CALLS`, and `RANGE`.
 
 ### Protocol Architecture
 Layers for governance, navigation, AI collaboration, deployment, and maintenance.
-
-## 📂 Repository Structure
-
-```
-├── UCCS-CORE0021.md          # Main specification document
-├── Protocols/                # Definitions for integrating AI systems
-│   ├── GPT/
-│   ├── Claude/
-│   ├── Perplexity/
-│   └── Grok/
-├── Algorithms/               # Reference implementations
-│   ├── coordinate-handling/
-│   ├── validation/
-│   └── optimization/
-└── Deliverables/            # Guidelines for registries, dashboards, and automation
-    ├── registries/
-    ├── dashboards/
-    └── scripts/
-```
 
 ## 🚀 Use Cases
 
