@@ -5,7 +5,7 @@
 
 ->  By merging the **Spatial Code Navigation System (SCNS)** with the **Universal Code Coordinate System (UCCS)**, we provide a stable,        universal GPS for your data, code, and documents.
 
-->  Say goodbye to fragile file paths and broken links. Say hello to **Universal Addressability**.
+->  **Universal Addressability**.
 
 ---
 
