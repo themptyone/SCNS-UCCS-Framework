@@ -101,10 +101,11 @@ The function now has a permanent, spatial address.
 It is anchored in the logical architecture of the project, completely independent of its file location.
 
 // SCNS: $WEBAPP:AUTH:VALIDATION:EMAIL:N0010$
+```javascript
 function validateUser(email) {
   return email.includes('@');
 }
-
+```
 
 If you move this function from src/utils.js to lib/auth/core.ts, its coordinate—and every reference pointing to it—remains 100% stable.
 
