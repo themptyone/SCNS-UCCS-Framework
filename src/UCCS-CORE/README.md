@@ -1,6 +1,6 @@
-# UCCS Core Concept Framework
+# UCCS Core Framework
 
-The **Universal Coordinate Classification System (UCCS)** is a comprehensive framework for organizing, navigating, and validating information. It merges architectural design, implementation details, and advanced execution protocols into a unified structure.
+The **Universal Code Coordinate System (UCCS)** is a comprehensive framework for organizing, navigating, and validating information. It merges architectural design, implementation details, and advanced execution protocols into a unified structure.
 
 This repository contains the core specification (`UCCS-CORE0021.md`) defining how UCCS ensures Universal Addressability, User Sovereignty, and protocol-driven collaboration across AI-human systems.
 
