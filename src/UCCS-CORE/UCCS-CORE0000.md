@@ -146,13 +146,6 @@ RANGE     – marks span (Replace N0100–N0200)
 
 **SCNS ID:** `$UCCS-CORE:ALGO:SCNS:ALGORITHMS:CORE:N0120$`
 
-## Table of Contents
-1.  [Dynamic Insertion Algorithm](#dynamic-insertion-algorithm)
-2.  [Cross-Reference Resolution](#cross-reference-resolution)
-3.  [Integration Pattern Detection](#integration-pattern-detection)
-4.  [Error Handling and Validation](#error-handling-and-validation)
-5.  [Performance Optimization](#performance-optimization)
-6.  [Collision Detection and Resolution](#collision-detection-and-resolution)
 ---
 
 ## Dynamic Insertion Algorithm
@@ -258,6 +251,7 @@ Dependents(j) = Σ M[i][j] for all i
 ### Impact Analysis
 
 **Algorithm:** Determine cascade effects of modifying specific addresses.
+
 ```javascript
 function analyzeImpact(targetAddress, dependencyGraph) {
     const visited = new Set();
@@ -295,12 +289,6 @@ function calculateRiskLevel(node) {
 ```
 ---
 
-### **Block 9: Integration Pattern Detection Algorithm**
-*Copy the content below into a file (e.g., `09_algo_pattern_detection.md`).*
-
-
----
-
 ## Integration Pattern Detection
 
 **SCNS ID:** `$UCCS-CORE:ALGO:INTEGRATION:PATTERN:DETECTION:N0150$`
@@ -330,7 +318,6 @@ function detectPatterns(codeHistory) {
     });
     return detectedPatterns;
 }
-```
 function detectCRUDPattern(history) {
     // Look for CREATE → READ → UPDATE → DELETE sequence
     const crudTags = ['DATA', 'API', 'VALID', 'ERR'];
@@ -345,11 +332,11 @@ function detectCRUDPattern(history) {
 }
 ```
 
-Architecture Compliance Checking
-Algorithm: Validate code organization against established patterns.
+### Architecture Compliance Check
+**Algorithm:** Validate code organization against established patterns.
 
-JavaScript
-```
+
+```javaScript
 function validateArchitecture(projectStructure, rules) {
     const violations = [];
     rules.forEach(rule => {
@@ -392,6 +379,7 @@ const LAYERED_ARCHITECTURE_RULE = {
     },
     suggestion: 'Use API layer as intermediary between UI and DB'
 };
+```
 ---
 
 ## Error Handling and Validation
@@ -439,11 +427,11 @@ function validateAddress(address) {
     };
 }
 ```
-Consistency Checking
-Algorithm: Ensure address consistency across project files.
+### Consistency Checking
 
-JavaScript
-```
+**Algorithm:** Ensure address consistency across project files.
+
+```javaScript
 function checkConsistency(projectFiles) {
     const issues = [];
     const addressRegistry = new Map();
@@ -577,6 +565,7 @@ class SCNSCache {
 ### Address Conflict Resolution
 
 **Algorithm:** Handle cases where multiple developers create conflicting addresses.
+
 ```javascript
 function resolveCollisions(conflictingAddresses) {
     const resolutions = [];
@@ -630,7 +619,7 @@ function extendHierarchically(addresses) {
 
 **UIP Block: File Discovery**
 
-yaml
+```yaml
 
 BLOCK:
   scns_id: "UCCS-ORG:org:CATALOG:N0200"
@@ -642,10 +631,11 @@ BLOCK:
     - REGISTER: Assign preliminary SCNS IDs based on content analysis
     - VALIDATE: Present catalog for user confirmation
   confirmation: "Proceed with file registration? (Y / N / Modify)"
-PHASE 2: UCCS-ORG-STRUCTURE → Cross-Reference Matrix Creation
-UIP Block: Relationship Mapping
+```
+### PHASE 2: UCCS-ORG-STRUCTURE → Cross-Reference Matrix Creation
+**UIP Block:** Relationship Mapping
 
-YAML
+```yaml
 
 BLOCK:
   scns_id: "UCCS-ORG:org:MATRIX:N0210"
@@ -657,10 +647,13 @@ BLOCK:
     - VISUALIZE: Generate navigable cross-reference table
     - VALIDATE: Confirm relationship accuracy
   confirmation: "Accept relationship mapping? (Y / N / Modify)"
-PHASE 3: UCCS-ORG-MAINTAIN → Dynamic Organization Management
-UIP Block: Continuous Organization
+```
 
-YAML
+### PHASE 3: UCCS-ORG-MAINTAIN → Dynamic Organization Management
+
+**UIP Block:** Continuous Organization
+
+```yaml
 
 BLOCK:
   scns_id: "UCCS-ORG:org:MAINTAIN:N0220"
@@ -672,19 +665,14 @@ BLOCK:
     - RECONCILE: Resolve conflicts and broken references
     - REPORT: Provide organization health status
   confirmation: "Apply organization updates? (Y / N / Modify)"
-
----
-
-### **Block 14: Core Output, UIP Framework, and Templates**
-*Copy the content below into a file (e.g., `14_core_output_and_templates.md`).*
-
+````
 ---
 
 ## Core Output: File-SCNS Cross-Reference Table
 
 **SCNS ID:** `$UCCS-CORE:OUTPUT:FILE:SCNS:CROSS-REFERENCE:N0230$`
 
------
+---
 
 ## UIP Integration Framework
 
@@ -807,16 +795,17 @@ A research query sent to Perplexity should be a JSON object with the following s
     "time_range": "1y|6m|1m|1w"
   }
 }
-research_coordinate: Unique USSC identifier for investigation traceability.
+```
+**research_coordinate:** Unique USSC identifier for investigation traceability.
 
-query.research_question: The core research topic. Precision is key.
+**query.research_question:** The core research topic. Precision is key.
 
-search_parameters: Fine-tuning controls for source selection and verification.
+**search_parameters:** Fine-tuning controls for source selection and verification.
 
-2.2. Response Structure
+### 2.2. Response Structure
 The response from Perplexity will be a JSON object with the following schema:
 
-JSON
+```json
 
 {
   "status": "success|partial|error",
@@ -849,16 +838,18 @@ JSON
     }
   }
 }
-status: Indicates research outcome and source quality.
+```
 
-findings.evidence: Research results with mandatory source attribution.
+**status:** Indicates research outcome and source quality.
 
-citation_index: Comprehensive credibility assessment and source metrics.
+**findings.evidence:** Research results with mandatory source attribution.
 
-3. Research Phases 🎯
-SCNS ID: $USSC-INF-PERPLEXITY:PHASE:RESEARCH:PHASES:N0300$
+**citation_index:** Comprehensive credibility assessment and source metrics.
 
-Phase 1: INIT - Research Initialization
+## 3. Research Phases 🎯
+**SCNS ID:** `$USSC-INF-PERPLEXITY:PHASE:RESEARCH:PHASES:N0300$`
+
+### Phase 1: INIT - Research Initialization
 Parse research query into structured investigation plan
 
 Configure search parameters and source filtering criteria
@@ -867,7 +858,7 @@ Generate research coordinate and methodology outline
 
 User confirmation: "Proceed with research? (Y/N/Modify)"
 
-Phase 2: RESEARCH - Investigation Execution
+### Phase 2: RESEARCH - Investigation Execution
 Execute real-time web searches using appropriate Sonar model
 
 Apply source filtering and automatic credibility assessment
@@ -876,8 +867,8 @@ Compile evidence with numbered citation tracking
 
 Generate structured findings with verification status
 
-Phase 3: SYNTHESIS - Knowledge Integration
-Synthesize multi-source evidence into coherent findings
+### Phase 3: SYNTHESIS - Knowledge Integration
+22Synthesize multi-source evidence into coherent findings
 
 Apply fact-checking and consistency verification
 
@@ -885,21 +876,21 @@ Generate comprehensive research report with citation index
 
 Provide research coordinate for future reference
 
-4. Source Credibility Framework ✅
-SCNS ID: $USSC-INF-PERPLEXITY:FRAMEWORK:SOURCE:CREDIBILITY:N0310$
+## 4. Source Credibility Framework ✅
+**SCNS ID:** `$USSC-INF-PERPLEXITY:FRAMEWORK:SOURCE:CREDIBILITY:N0310$`
 
-Credibility Levels:
-VERIFIED (90-100%): Academic papers, government sources, established institutions
+### Credibility Levels:
+**VERIFIED (90-100%):** Academic papers, government sources, established institutions
 
-RELIABLE (70-89%): Established media, industry reports, verified experts
+**RELIABLE (70-89%):** Established media, industry reports, verified experts
 
-MODERATE (50-69%): General news sources, blogs with verification
+**MODERATE (50-69%):** General news sources, blogs with verification
 
-CAUTION (30-49%): Unverified sources, social media, opinion pieces
+**CAUTION (30-49%):** Unverified sources, social media, opinion pieces
 
-UNRELIABLE (<30%): Flagged for potential misinformation
+**UNRELIABLE (<30%):** Flagged for potential misinformation
 
-Verification Process:
+### Verification Process:
 Domain authority assessment based on publisher reputation
 
 Cross-reference validation with multiple independent sources
@@ -909,48 +900,48 @@ Temporal accuracy verification for information recency
 Bias detection and perspective limitation identification
 
 5. Research Models 🔬
-SCNS ID: $USSC-INF-PERPLEXITY:MODEL:RESEARCH:MODELS:N0320$
+**SCNS ID:** `$USSC-INF-PERPLEXITY:MODEL:RESEARCH:MODELS:N0320$`
 
-Sonar (Standard Research)
+**Sonar (Standard Research)**
 Quick fact-checking and basic information gathering
 
 3-5 sources per finding with basic credibility assessment
 
 Optimal for: Simple queries, rapid verification, daily research
 
-Sonar Pro (Deep Research)
+**Sonar Pro (Deep Research)**
 Complex investigations with extensive sourcing
 
 8-15 sources per finding with cross-verification
 
 Optimal for: Academic research, business intelligence, analysis
 
-Deep Research (Expert Investigation)
+**Deep Research (Expert Investigation)**
 Autonomous research projects with comprehensive reporting
 
 50+ sources with automated synthesis and fact-checking
 
 Optimal for: White papers, market analysis, investigative work
 
-6. Best Practices for Integration 🚀
-SCNS ID: $USSC-INF-PERPLEXITY:PRACTICE:BEST:PRACTICES:N0330$
+## 6. Best Practices for Integration 🚀
+ **SCNS ID:** `$USSC-INF-PERPLEXITY:PRACTICE:BEST:PRACTICES:N0330$`
 
-Prioritize Source Quality: Always verify credibility scores before accepting findings as factual.
+**Prioritize Source Quality:** Always verify credibility scores before accepting findings as factual.
 
-Multi-Source Confirmation: Require multiple independent sources for critical claims.
+**Multi-Source Confirmation:** Require multiple independent sources for critical claims.
 
-Citation Transparency: Include complete citation metadata in all research outputs.
+**Citation Transparency:** Include complete citation metadata in all research outputs.
 
-Research Coordinates: Use USSC addressing for traceability and reference management.
+**Research Coordinates:** Use USSC addressing for traceability and reference management.
 
-Bias Awareness: Acknowledge source limitations and perspective constraints.
+**Bias Awareness:** Acknowledge source limitations and perspective constraints.
 
-Continuous Verification: Monitor for source updates and information changes.
+**Continuous Verification:** Monitor for source updates and information changes.
 
-7. Security Considerations 🔒
-SCNS ID: $USSC-INF-PERPLEXITY:SECURITY:CONSIDERATIONS:SECURITY:N0340$
+## 7. Security Considerations 🔒
+**SCNS ID:** `$USSC-INF-PERPLEXITY:SECURITY:CONSIDERATIONS:SECURITY:N0340$`
 
-Research Data Protection:
+**Research Data Protection:**
 Query privacy with minimal data retention
 
 Source access audit trails for compliance
@@ -959,7 +950,7 @@ Research coordinate isolation between user groups
 
 Encrypted transmission of sensitive research topics
 
-Misinformation Prevention:
+**Misinformation Prevention:**
 Multi-layer source credibility assessment
 
 Contradiction detection across information sources
@@ -968,31 +959,31 @@ Bias disclosure and source limitation transparency
 
 Update monitoring for retracted or changed information
 
-8. Integration Examples 💡
-SCNS ID: $USSC-INF-PERPLEXITY:EXAMPLE:INTEGRATION:EXAMPLES:N0350$
+## 8. Integration Examples 💡
+**SCNS ID:** `$USSC-INF-PERPLEXITY:EXAMPLE:INTEGRATION:EXAMPLES:N0350$`
 
-Basic Research Query:
+**Basic Research Query: **
 USSC-RESEARCH:CLIMATE:SONAR-PRO:N0001
 "What are the primary causes of climate change according to scientific consensus?"
-Academic Research Query:
+**Academic Research Query:**
 USSC-RESEARCH:CRYPTO:DEEP:N0002
 "Comprehensive analysis of post-quantum cryptography implementation challenges"
-Business Intelligence Query:
+**Business Intelligence Query:**
 USSC-RESEARCH:MARKET:SONAR-PRO:N0003
 "Current trends in enterprise AI adoption and ROI metrics"
-9. Error Handling 🚨
-SCNS ID: $USSC-INF-PERPLEXITY:HANDLING:ERROR:HANDLING:N0360$
+## 9. Error Handling 🚨
+**SCNS ID:** `$USSC-INF-PERPLEXITY:HANDLING:ERROR:HANDLING:N0360$`
 
-Common Error Types:
-insufficient_sources: Not enough credible sources found for query
+**Common Error Types:**
+*insufficient_sources:* Not enough credible sources found for query
 
-low_credibility: Average source credibility below threshold
+*low_credibility:* Average source credibility below threshold
 
-contradictory_evidence: Conflicting information across sources
+*contradictory_evidence:* Conflicting information across sources
 
-rate_limit_exceeded: Too many research requests in time window
+*rate_limit_exceeded:* Too many research requests in time window
 
-Recovery Strategies:
+**Recovery Strategies:**
 Broaden search parameters for insufficient sources
 
 Lower credibility threshold with explicit warnings
@@ -1001,26 +992,26 @@ Present contradictory findings with source attribution
 
 Implement request queuing for rate limit management
 
-10. Success Metrics 📊
-SCNS ID: $USSC-INF-PERPLEXITY:METRIC:SUCCESS:METRICS:N0370$
+## 10. Success Metrics 📊
+**SCNS ID:** `$USSC-INF-PERPLEXITY:METRIC:SUCCESS:METRICS:N0370$`
 
-Quantitative Measures:
-Research Accuracy: Verification rate of provided information
+**Quantitative Measures:**
+*Research Accuracy:* Verification rate of provided information
 
-Source Quality Index: Average credibility score across all citations
+*Source Quality Index:* Average credibility score across all citations
 
-Coverage Completeness: Percentage of research scope addressed
+*Coverage Completeness:* Percentage of research scope addressed
 
-Response Time: Speed from query to verified findings
+*Response Time:* Speed from query to verified findings
 
-Qualitative Indicators:
-Research Depth: Comprehensiveness of investigation coverage
+**Qualitative Indicators:**
+*Research Depth:* Comprehensiveness of investigation coverage
 
-Citation Transparency: Clarity of source attribution and credibility
+*Citation Transparency:* Clarity of source attribution and credibility
 
-Bias Balance: Diversity of perspectives and source types
+*Bias Balance:* Diversity of perspectives and source types
 
-User Satisfaction: Research utility and trustworthiness ratings  
+*User Satisfaction:* Research utility and trustworthiness ratings  
 
 ---
 
@@ -2317,6 +2308,7 @@ Batched Confirmations: The AI may group several related actions into a single UI
 Technical Language: Assumes the user understands technical jargon and complex concepts without elaboration.
 
 Remember: User control is paramount. No significant changes occur without explicit UIP validation. The AI serves you, not the other way around.
+
 
 
 
