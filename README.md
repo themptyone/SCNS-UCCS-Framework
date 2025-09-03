@@ -1,370 +1,136 @@
-# SCNS-UCCS (Spatial Code Navigation System - Universal Code Coordinate System)
+# SCNS-UCCS: Spatial Code Navigation System & Universal Code Coordinate System
 
-**SCNS ID:** `$UCCS-CORE:REPO:README:MAIN:DOC:N0010$`
+**SCNS ID:** `$GITHUB:SCNS-UCCS:README:MAIN:DOC:N0010$`
 
-## Overview
+This repository contains the core framework, specifications, and protocols for the **Spatial Code Navigation System (SCNS)** and the **Universal Code Coordinate System (UCCS)**. UCCS is a domain-agnostic spatial addressing system designed to create stable, hierarchical, and contextually-aware coordinates for any discrete unit of information, transforming chaotic data into a machine-navigable structure.
 
-The Universal Coordinate Classification System (UCCS) is a comprehensive framework for organizing, navigating, and managing complex information systems through spatial addressing and controlled AI-human collaboration. Built on the principle of **Universal Addressability**, UCCS provides stable, hierarchical coordinates for any discrete unit of information, enabling precise navigation, dependency tracking, and automated optimization.
+## Table of Contents
 
-### Core Philosophy: Process Over Product
+- [Core Philosophy: Universal Addressability](#core-philosophy-universal-addressability)
+- [The SCNS-V4 Coordinate Format](#the-scns-v4-coordinate-format)
+- [The Universal Interaction Protocol (UIP)](#the-universal-interaction-protocol-uip)
+- [System Architecture & Core Protocols](#system-architecture--core-protocols)
+- [Key Use Cases](#key-use-cases)
+- [Getting Started](#getting-started)
 
-UCCS prioritizes **repeatable process patterns** over specific outcomes. The framework ensures consistent methodology while adapting to any task complexity, maintaining spatial organization, user validation, traceable progress, and adaptive structure.
+## Core Philosophy: Universal Addressability
 
-## Architecture
+**SCNS ID:** `$GITHUB:SCNS-UCCS:README:PHILOSOPHY:CORE:N0100$`
 
-### Foundational Principles
+The foundational principle of UCCS is **Universal Addressability**. This principle establishes that any discrete block of information—a function, a paragraph, a requirement—can be assigned a stable and unique coordinate that persists through refactoring and system evolution. By treating information spatially, UCCS establishes a framework where component relationships are explicit, traceable, and resilient.
 
-**SCNS ID:** `$UCCS-CORE:ARCH:PRINCIPLES:FOUNDATION:N0020$`
+## The SCNS-V4 Coordinate Format
 
-- **Conservation of Context**: No information exists without spatial context
-- **Persistence Through Change**: Core coordinates survive refactoring and evolution
-- **Relational Integrity**: All relationships between information blocks are explicit and trackable
-- **Purpose Primacy**: Functional intent determines classification, not implementation detail
-- **Hierarchical Harmony**: Coordinate structures reflect logical architecture
-- **Universal Accessibility**: Any system, language, or paradigm can adopt UCCS
-- **User Sovereignty**: No significant change occurs without explicit user validation through UIP
+**SCNS ID:** `$GITHUB:SCNS-UCCS:README:FORMAT:SPEC:N0200$`
 
-### SCNS-V4 Coordinate Format
+The SCNS-V4 coordinate is a six-part hierarchical address for information blocks.
 
-**SCNS ID:** `$UCCS-CORE:SPEC:SCNS-V4:FORMAT:N0030$`
-
-```
-$DOMAIN:AREA:COMPONENT:ELEMENT:TAG:SEQUENCE[:VERSION][:STATE]$
-```
-
-**Components:**
-
-- **DOMAIN**: Highest-level project or system domain (e.g., `FINAPP`, `COGNITION`)
-- **AREA**: Major functional area or context within the domain
-- **COMPONENT**: Specific module, service, or subject
-- **ELEMENT**: Discrete, self-contained block of information
-- **TAG**: Classification based on functional purpose (`AUTH`, `API`, `LOGIC`, `UI`, `CTRL`)
-- **SEQUENCE**: Hierarchical numeric identifier (N0010, N0020, N0030…)
-
-**Optional Dimensional Tags:**
-
-- **VERSION**: Revision tracking (`:V1`, `:V2`)
-- **STATE**: Lifecycle status (`:DRAFT`, `:ACTIVE`, `:DEPRECATED`)
-
-### Cross-Reference System (RTAGs)
-
-**SCNS ID:** `$UCCS-CORE:CONCEPT:RTAGS:SYSTEM:N0040$`
-
-RTAGs provide explicit relationship mapping between coordinates:
-
-- **REF**: Neutral reference (See X)
-- **DEPENDS**: Requires X before Y
-- **CALLS**: Invokes or uses X
-- **RANGE**: Marks span (Replace N0100–N0200)
-
-## Universal Interaction Protocol (UIP)
-
-**SCNS ID:** `$UCCS-CORE:PROTOCOL:UIP:FRAMEWORK:N0050$`
-
-The UIP is the mandatory interaction pattern ensuring user control through a five-step process:
+### Format Structure
 
 ```
-GENERATE → SUMMARIZE → PREVIEW → CONFIRM → ITERATE
+$DOMAIN:AREA:COMPONENT:ELEMENT:TAG:SEQUENCE$
 ```
 
-### UIP Implementation
+### Component Definitions
 
-1. **GENERATE**: AI creates content for discrete work unit
-1. **SUMMARIZE**: Concise 1-3 line summary of accomplishment
-1. **PREVIEW**: Complete result shown for user review
-1. **CONFIRM**: Mandatory validation gate: “Proceed? (Y/N/Modify)”
-1. **ITERATE**: Continue (Y), stop (N), or apply changes and repeat (Modify)
+- **`DOMAIN`**: The highest-level project or system (e.g., `FINAPP`)
+- **`AREA`**: A major functional area within the domain (e.g., `API`, `ARCH`)
+- **`COMPONENT`**: A specific module, service, or subject (e.g., `AUTH`)
+- **`ELEMENT`**: The discrete, self-contained block of information
+- **`TAG`**: A functional classification of the block’s purpose (e.g., `SPEC`, `IMPL`)
+- **`SEQUENCE`**: A hierarchical numeric identifier, incremented by 10 to allow insertions (e.g., `N0010`)
 
-## Core Algorithms
+Optional dimensional tags for `:VERSION` and `:STATE` can be appended for lifecycle tracking.
 
-### Dynamic Insertion Algorithm
+## The Universal Interaction Protocol (UIP)
 
-**SCNS ID:** `$UCCS-CORE:ALGO:DYNAMIC:INSERTION:N0060$`
+**SCNS ID:** `$GITHUB:SCNS-UCCS:README:UIP:PROTOCOL:N0300$`
 
-Inserts new logical units between existing coordinates while maintaining hierarchical relationships:
+The **Universal Interaction Protocol (UIP)** is the mandatory, non-negotiable pattern for all significant AI-driven actions, ensuring **User Sovereignty** by requiring explicit user validation for any change.
 
-```javascript
-// Mathematical Formula
-Given: Coordinate A and Coordinate B where A < B
-Gap = B - A
+### Five-Step Control Flow
 
-IF Gap > 1 THEN
-    New_Coordinate = ⌊(A + B) / 2⌋
-ELSE
-    New_Coordinate = Extend_Hierarchy(A)
-END IF
-```
+1. **GENERATE**: The AI agent creates the content for a discrete work unit
+1. **SUMMARIZE**: The AI provides a concise, 1-3 line summary of the work
+1. **PREVIEW**: The complete result is shown to the user for review
+1. **CONFIRM**: The AI pauses at a **UIP Gate** and asks for validation with the mandatory prompt: “**Proceed? (Y/N/Modify)**”
+1. **ITERATE**: The AI continues, stops, or re-works based on user input
 
-### Cross-Reference Resolution
+The protocol’s intensity is adjustable via the **User Proficiency Level (UPL)**.
 
-**SCNS ID:** `$UCCS-CORE:ALGO:CROSS-REFERENCE:N0070$`
+## System Architecture & Core Protocols
 
-Constructs dependency graphs for impact analysis:
+**SCNS ID:** `$GITHUB:SCNS-UCCS:README:ARCHITECTURE:PROTOCOLS:N0400$`
 
-```javascript
-Graph G = {Vertices, Edges}
-Vertex V = {Coordinate_ID, Metadata, Classification}
-Edge E = {Source_Vertex, Target_Vertex, Relationship_Type}
-```
+UCCS is organized into hierarchical layers. The **Protocol Layer** contains the foundational infrastructure for AI-human collaboration and governance.
 
-### Performance Optimization
+### Core Protocol Components
 
-**SCNS ID:** `$UCCS-CORE:ALGO:PERFORMANCE:OPTIMIZATION:N0080$`
+- **`UCCS-INF`**: The master protocol for AI-human collaboration, governing all interactions via the UIP loop. It is the parent to model-specific implementations like `UCCS-INF-GPT`
+- **`UCCS-NAV`**: Provides spatial intelligence for dependency graph traversal, impact analysis, and circular reference detection
+- **`UCCS-CODE`**: Manages the code lifecycle, including analysis, compliant generation, and validation
+- **`UCCS-QA`**: Spatially links test artifacts (plans, cases, bug reports) directly to source code coordinates for full traceability
+- **`UCCS-Context-Meter`**: A utility providing transparency into AI token usage and costs to support User Sovereignty
 
-Implements multi-layer caching for large-scale coordinate resolution:
+## The main Usecases7
+ 
+**SCNS ID:** `$GITHUB:SCNS-UCCS:README:USECASES:KEY:N0500$`
 
-```javascript
-class SCNSCache {
-    constructor() {
-        this.addressMap = new Map();
-        this.dependencyGraph = null;
-        this.tagIndex = new Map();
-    }
-    
-    buildIndex(projectFiles) {
-        // Optimized lookup structures
-        // Tag indexing for fast filtering
-        // Performance metrics tracking
-    }
-}
-```
+### Business & Enterprise
 
-## Protocol Ecosystem
+#### AI-Driven Software Development
 
-### UCCS-INF (AI-Human Collaboration)
+Structure the entire software lifecycle from requirements to QA, enabling automated impact analysis across dependencies.
 
-**SCNS ID:** `$UCCS-CORE:PROTO:INF:SPEC:N0090$`
+#### Advanced Knowledge Management
 
-Master protocol for structured AI-human collaboration implementing the UIP loop across all AI interactions.
+Convert enterprise documentation into a navigable knowledge graph using relational tags (`RTAGs`) like `REF` and `DEPENDS`.
 
-### UCCS-NAV (Spatial Navigation)
+#### Audit and Compliance
 
-**SCNS ID:** `$UCCS-CORE:PROTO:NAV:SPEC:N0100$`
+Generate an immutable audit trail where every decision is logged via UIP and every artifact is tied to a permanent SCNS coordinate.
 
-Enables spatial navigation and dependency graph traversal with impact analysis capabilities.
+### Day-to-Day Productivity
 
-### UCCS-CODE (Code Lifecycle Management)
+#### Structured Project Management
 
-**SCNS ID:** `$UCCS-CORE:PROTO:CODE:SPEC:N0110$`
+Break down projects into SCNS-addressed tasks for absolute clarity on status and dependencies (e.g., `$PROJ-X:PHASE1:DESIGN:UI-MOCKUP:TODO:N0010:DRAFT$`).
 
-Dual-engine system for code quality with `CodeFixEngine` and `CodeVerificationEngine` for SCNS compliance validation.
+#### Personal Knowledge Graphs
 
-### UCCS-QA (Quality Assurance)
+Apply UCCS to note-taking to create a resilient personal knowledge base where links do not break when files are moved or renamed.
 
-**SCNS ID:** `$UCCS-CORE:PROTO:QA:SPEC:N0120$`
+#### Collaborative Document Editing
 
-Spatial test mapping linking test artifacts directly to source code coordinates for comprehensive quality management.
+Assign persistent coordinates to paragraphs, allowing comments and edits to remain anchored to the correct content block during revisions.
 
-### UCCS-Context-Meter
+## Getting Started
 
-**SCNS ID:** `$UCCS-CORE:PROTO:CONTEXT:METER:N0130$`
+**SCNS ID:** `$GITHUB:SCNS-UCCS:README:GETTING-STARTED:GUIDE:N0600$`
 
-AI token usage tracking and cost transparency reporting with optimization suggestions.
+Implementation begins with conceptual alignment.
 
-```yaml
-context_meter:
-  total_tokens: 4250
-  token_limit: 8192
-  utilization_percentage: "51.88%"
-  estimated_cost: "$0.002125"
-  components:
-    - name: "User Prompt (Current)"
-      tokens: 150
-      percentage: "3.5%"
-    - name: "Retrieved Documents (RAG)"
-      tokens: 2500
-      percentage: "58.8%"
-  optimization_notes:
-    - "Suggestion: Start fresh chat to reduce history token usage"
-```
+### Quick Start Steps
 
-## AI Integration Protocols
-
-### UCCS-INF-CLAUDE
-
-**SCNS ID:** `$UCCS-CORE:INTEGRATION:CLAUDE:N0140$`
-
-Structured process framework for Claude AI with repeatable interaction patterns and spatial addressing.
-
-### UCCS-INF-PERPLEXITY
-
-**SCNS ID:** `$UCCS-CORE:INTEGRATION:PERPLEXITY:N0150$`
-
-Real-time research coordination with source verification and evidence compilation.
-
-### UCCS-INF-GROK
-
-**SCNS ID:** `$UCCS-CORE:INTEGRATION:GROK:N0160$`
-
-Dynamic tool orchestration for real-time data analysis and multimedia processing.
-
-### UCCS-INF-GPT
-
-**SCNS ID:** `$UCCS-CORE:INTEGRATION:GPT:N0170$`
-
-Universal addressability and UIP compliance for GPT model interactions.
-
-## Implementation
-
-### Core System Classes
-
-```javascript
-// SCNS Coordinate Engine
-class SCNSCoordinate {
-    constructor(addressString) {
-        this.parse(addressString);
-        this.validate();
-    }
-    
-    parse(address) {
-        // Parse SCNS-V4 format
-        const parts = address.split(':');
-        this.domain = parts[0];
-        this.area = parts[1];
-        // ... additional components
-    }
-}
-
-// Protocol Manager
-class UCCSProtocolManager {
-    execute(protocol, parameters) {
-        return this.protocols[protocol].run(parameters);
-    }
-}
-```
-
-### Validation System
-
-**SCNS ID:** `$UCCS-CORE:VALIDATION:SYSTEM:N0180$`
-
-Multi-layer validation process:
-
-- **Layer 1**: Structural integrity (format, sequence, taxonomy)
-- **Layer 2**: Cross-reference integrity (RTAG validation, dependency resolution)
-- **Layer 3**: Semantic consistency (tag-function alignment, documentation completeness)
-
-### Compliance Scoring
-
-```
-PERFECT_COMPLIANCE: 100% (All checks pass)
-HIGH_COMPLIANCE: 85-99%
-MEDIUM_COMPLIANCE: 70-84%
-LOW_COMPLIANCE: 50-69%
-NON_COMPLIANT: <50%
-```
-
-## Usage Examples
-
-### Basic SCNS Implementation
-
-```javascript
-// Initialize coordinate system
-const coord = new SCNSCoordinate('$MYAPP:AUTH:LOGIN:VALIDATE:LOGIC:N0010$');
-
-// Navigate relationships
-const dependencies = coord.getDependencies();
-const impact = coord.analyzeImpact();
-
-// Apply UIP pattern
-const result = await UCCSProtocol.execute('INF', {
-    action: 'GENERATE',
-    target: coord,
-    requireConfirmation: true
-});
-```
-
-### Protocol Cascading
-
-```javascript
-// Trigger cascading execution
-const session = new UCCSSession();
-session.addProtocol('INF');
-session.addProtocol('NAV');
-session.addProtocol('CODE');
-
-const result = await session.execute({
-    input: "Add social login feature",
-    confirmationMode: 'INTERACTIVE'
-});
-```
-
-## Success Metrics
-
-**SCNS ID:** `$UCCS-CORE:METRICS:SUCCESS:N0190$`
-
-### Quantitative Measures
-
-- **File Coverage**: % of workspace files with SCNS IDs
-- **Reference Accuracy**: % of cross-references that resolve correctly
-- **UIP Compliance Rate**: % of gated actions following protocol
-- **Token Efficiency**: Optimization through Context-Meter
-
-### Qualitative Indicators
-
-- **Navigation Ease**: Quick file location via SCNS ID
-- **User Control**: Explicit approval for all significant changes
-- **Traceability**: Complete audit trail of decisions
-- **Adaptability**: Process handles unexpected changes gracefully
-
-## Installation & Setup
-
-```bash
-# Clone repository
-git clone https://github.com/yourusername/uccs-core.git
-
-# Install dependencies
-npm install
-
-# Initialize UCCS workspace
-npm run uccs:init
-
-# Start development server with UIP validation
-npm run dev:uccs
-```
-
-## Configuration
-
-```yaml
-# uccs.config.yml
-uccs:
-  version: "V4"
-  protocols:
-    - INF
-    - NAV
-    - CODE
-    - QA
-  validation:
-    strict_mode: true
-    auto_fix: false
-  context_meter:
-    enabled: true
-    cost_tracking: true
-```
-
-## Contributing
-
-All contributions must follow UCCS protocols:
-
-1. **SCNS Addressing**: All code blocks must have valid coordinates
-1. **UIP Compliance**: Changes require explicit validation gates
-1. **Cross-Reference Integrity**: Maintain RTAG relationships
-1. **Documentation**: Include purpose-driven comments
-
-## License
-
-MIT License with UCCS Protocol Attribution
-
-## Support
-
-- **Documentation**: Full specification in `uccs-core0000.md`
-- **Examples**: Reference implementations in `/examples`
-- **Issues**: GitHub Issues with SCNS coordinate tagging
-- **Discussions**: Protocol evolution and optimization
+1. **Define Your Space**: Establish the `DOMAIN` and primary `AREA`s for any new project to create its foundational structure
+1. **Interact Spatially**: Structure requests to a UCCS-compliant AI with a clear `TASK_GOAL` and set your `USER_PROFICIENCY_LEVEL`
+1. **Use a Starter Prompt**: Initiate a project with a structured command:
+   
+   ```
+   Execute UCCS-ORG-INITIALIZE for workspace: [path/description].
+   Please discover all files, assign preliminary SCNS IDs, and present the master registry table for confirmation.
+   ```
 
 -----
 
-**UCCS Status**: Production Ready - Iterative Refinement Active
+## Contributing
 
-**Last Updated**: 2025-09-03  
-**Version**: Core V1.0  
-**SCNS Registry**: All coordinates validated and cross-referenced
+We welcome contributions to the SCNS-UCCS project. Please ensure all contributions follow the UCCS coordinate system and adhere to the Universal Interaction Protocol.
+
+## License
+
+This project is licensed under the terms specified in the LICENSE file.
+
+## Support
+
+For questions, issues, or feature requests, please open an issue in this repository.
