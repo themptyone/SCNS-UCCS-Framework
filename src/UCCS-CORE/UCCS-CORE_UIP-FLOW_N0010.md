@@ -1,6 +1,6 @@
 # SCNS ID: $UCCS-BB:DOC:UCCS-CORE:UIP-FLOW:N0010$
 
-# UCCS Core Concept Framework
+# UCCS Core Framework
 
 **SCNS ID:** `$UCCS-MERGE:CONCEPT:CORE:FRAMEWORK:COMPREHENSIVE:N0010$`
 
@@ -21,5 +21,6 @@ The Universal Interaction Protocol (UIP) is the foundational mechanism for ensur
 * PREVIEW: The complete result is shown to the user for review.
 * CONFIRM: The AI must pause and explicitly ask for user validation with the mandatory prompt: "Proceed? (Y/N/Modify)".
 * ITERATE: Based on the user's response, the AI continues (Y), stops (N), or applies requested changes and repeats the loop (Modify).
+
 
 This protocol is enforced through "UIP Gates," which are mandatory checkpoints for user validation before any critical action can be completed.
