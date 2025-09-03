@@ -1,6 +1,6 @@
 # UCCS Core Concept Framework
 
-**SCNS ID:** `$UCCS-MERGE:CONCEPT:CORE:FRAMEWORK:COMPREHENSIVE:N0010$`
+**SCNS ID:** `$UCCS-CORE:FRAMEWORK$`
 
 This document provides a comprehensive overview of the Universal Coordinate Classification System (UCCS), merging architectural design, implementation details, and advanced execution examples into a single, unified framework.
 ---
@@ -2317,3 +2317,4 @@ Batched Confirmations: The AI may group several related actions into a single UI
 Technical Language: Assumes the user understands technical jargon and complex concepts without elaboration.
 
 Remember: User control is paramount. No significant changes occur without explicit UIP validation. The AI serves you, not the other way around.
+
