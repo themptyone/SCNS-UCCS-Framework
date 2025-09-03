@@ -356,7 +356,7 @@ MIT License with UCCS Protocol Attribution
 
 ## Support
 
-- **Documentation**: Full specification in `uccs-core0021.txt`
+- **Documentation**: Full specification in `uccs-core0000.md`
 - **Examples**: Reference implementations in `/examples`
 - **Issues**: GitHub Issues with SCNS coordinate tagging
 - **Discussions**: Protocol evolution and optimization
