@@ -80,3 +80,31 @@ function validateUser(email) {
   return email.includes('@');
 }
 ```
+If this function is moved from src/auth/login.js to lib/security/auth.ts,
+its SCNS coordinate remains the same, ensuring all references stay intact.
+
+# 🏛 Core Architectural Principles
+
+SCNS is governed by **8 universal principles**:
+
+1. **Conservation of Context** – Every element has coordinates.  
+2. **Persistence Through Change** – Coordinates survive refactoring and evolution.  
+3. **Relational Integrity** – Relationships between blocks are explicit and trackable.  
+4. **Purpose Primacy** – Classification based on functional intent, not implementation.  
+5. **Hierarchical Harmony** – Coordinates reflect logical architecture.  
+6. **Universal Accessibility** – Works with any system, language, or paradigm.  
+7. **User Sovereignty** – Major changes require explicit user validation.  
+8. **Universal Addressability** – Any discrete unit of information can be assigned a coordinate.  
+
+---
+
+# 📊 Comparison With Traditional Systems
+
+| Feature                | File Paths | Git Hashes | UUIDs | SCNS V4 |
+|-------------------------|------------|------------|-------|---------|
+| Survives refactors      | ❌         | ✅         | ✅    | ✅      |
+| Human-readable          | ✅         | ❌         | ❌    | ✅      |
+| Expresses hierarchy     | ✅         | ❌         | ❌    | ✅      |
+| Universal across tools  | ❌         | ❌         | ✅    | ✅      |
+
+---
