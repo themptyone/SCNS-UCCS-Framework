@@ -100,8 +100,8 @@ function validateUser(email) {
 The function now has a permanent, spatial address.
 It is anchored in the logical architecture of the project, completely independent of its file location.
 
-// SCNS: $WEBAPP:AUTH:VALIDATION:EMAIL:N0010$
 ```javascript
+// SCNS: $WEBAPP:AUTH:VALIDATION:EMAIL:N0010$
 function validateUser(email) {
   return email.includes('@');
 }
