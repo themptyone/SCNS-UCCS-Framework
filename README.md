@@ -1,4 +1,4 @@
-# SCNS-UCCS: The Universal Coordinate Classification System 🚀
+# SCNS-UCCS 🚀
 
 ->  Welcome to the **SCNS-UCCS framework**, a revolutionary system for organizing, navigating, and validating the entire information           landscape. 
 
