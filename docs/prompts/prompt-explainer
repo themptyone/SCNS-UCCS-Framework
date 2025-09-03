@@ -1,0 +1,32 @@
+# --- UCCS TASK HEADER ---
+# This section sets the overall context for the AI.
+# SCNS_ID: $UCCS-USER:TASK:HEADER:METADATA:N0010$
+
+- PROJECT: "Enter a short, unique name for your project. This helps organize all work under one identifier. For example: 'E-commerce_Checkout_API'."
+- TASK_GOAL: "Describe the final, complete outcome you want in a single sentence. Be specific. For example: 'Create a full API specification document for the user authentication endpoint'."
+- USER_PROFICIENCY_LEVEL: 3 # Set your experience level: 1 for Expert (less explanation from AI), 2 for Proficient, 3 for Novice (more guidance from AI).
+- MODE: "Collaborative" # Choose your interaction style. "Collaborative" means the AI will work in small steps and ask for confirmation often. "Autonomous" means the AI will propose a full plan upfront for you to approve. Novices should use "Collaborative".
+
+# --- CONTEXT & CONSTRAINTS ---
+# This section gives the AI the raw materials and rules it needs to work correctly.
+# SCNS_ID: $UCCS-USER:TASK:CONTEXT:CONSTRAINTS:N0020$
+
+- SOURCES:
+  - "List or paste any information the AI needs. This can be file paths, document text, or links. For example: 'Use the user stories from project_brief.md'."
+- CONSTRAINTS:
+  - "List any restrictions or rules the AI must follow. For example: 'All code examples must be in Python 3.9+' or 'Do not use any external APIs'."
+- KEY_DEFINITIONS:
+  - "Explain any special terms or jargon specific to your project. For example: 'A 'Cart ID' is a UUID that represents a user's active shopping cart'."
+
+# --- INSTRUCTION ---
+# This is your direct command to the AI for the very first step.
+# SCNS_ID: $UCCS-USER:TASK:INSTRUCTION:ACTION:N0030$
+
+- "Write your starting instruction here. For a new project, a good first step is to ask the AI to create a plan. For example: 'Based on my Task Goal, generate a high-level project plan with SCNS IDs for each phase.'"
+
+# --- PROTOCOL COMPLIANCE ---
+# This section is a mandatory command to ensure the AI follows the rules of UCCS.
+# SCNS_ID: $UCCS-USER:TASK:PROTOCOL:COMPLIANCE:N0040$
+
+- "This text should not be changed. It locks the AI into the safe, step-by-step UIP interaction model, giving you full control over the process."
+- "Adhere strictly to the UCCS-INF protocol. Every action you take must follow the full five-step Universal Interaction Protocol (UIP) loop: GENERATE → SUMMARIZE → PREVIEW → CONFIRM → ITERATE. Do not proceed from one block to the next without my explicit confirmation using the 'Proceed? (Y/N/Modify)' gate."
