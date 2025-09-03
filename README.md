@@ -69,3 +69,10 @@ Examples, project templates, and protocol files are included for quick adoption.
 ## Vision
 The SCNS–UCCS framework is designed to create **order within complexity**.  
 It is more than a filing method: it is a living coordination system that grows with your projects, keeping them transparent, accountable, and scalable.  
+
+---
+
+## 📜 License
+
+**MIT License** – Open for research, experimentation, and implementation.
+
