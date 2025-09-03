@@ -4,15 +4,6 @@
 
 This repository contains the core framework, specifications, and protocols for the **Spatial Code Navigation System (SCNS)** and the **Universal Code Coordinate System (UCCS)**. UCCS is a domain-agnostic spatial addressing system designed to create stable, hierarchical, and contextually-aware coordinates for any discrete unit of information, transforming chaotic data into a machine-navigable structure.
 
-## Table of Contents
-
-- [Core Philosophy: Universal Addressability](#core-philosophy-universal-addressability)
-- [The SCNS-V4 Coordinate Format](#the-scns-v4-coordinate-format)
-- [The Universal Interaction Protocol (UIP)](#the-universal-interaction-protocol-uip)
-- [System Architecture & Core Protocols](#system-architecture--core-protocols)
-- [Key Use Cases](#key-use-cases)
-- [Getting Started](#getting-started)
-
 ## Core Philosophy: Universal Addressability
 
 **SCNS ID:** `$GITHUB:SCNS-UCCS:README:PHILOSOPHY:CORE:N0100$`
