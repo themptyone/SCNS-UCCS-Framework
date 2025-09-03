@@ -1,4 +1,4 @@
-# UCCS (Universal Coordinate Classification System)
+# SCNS-UCCS (Spatial Code Navigation System - Universal Code Coordinate System)
 
 **SCNS ID:** `$UCCS-CORE:REPO:README:MAIN:DOC:N0010$`
 
