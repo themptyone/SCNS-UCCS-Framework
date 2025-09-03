@@ -1,66 +1,93 @@
-# UCCS Core Framework - Segmented Document
+# UCCS Core Concept Framework
 
-## 1. Overview
+The **Universal Coordinate Classification System (UCCS)** is a comprehensive framework for organizing, navigating, and validating information. It merges architectural design, implementation details, and advanced execution protocols into a unified structure.
 
-Each file represents a logical "byte-sized" block of the original document, complete with a unique **SCNS V4 coordinate** for easy navigation, reference, and integration with other UCCS protocols.
+This repository contains the core specification (`UCCS-CORE0021.md`) defining how UCCS ensures Universal Addressability, User Sovereignty, and protocol-driven collaboration across AI-human systems.
+
+## 📖 What is UCCS?
+
+UCCS provides a coordinate-based approach to managing information. Instead of fragile file paths or line numbers, UCCS assigns stable SCNS coordinates to every block of data, making it traceable, extensible, and resilient to change.
+
+### Core Principles
+
+- **Conservation of Context** – every element has coordinates
+- **Persistence Through Change** – coordinates survive refactoring
+- **Relational Integrity** – all relationships are explicit and trackable
+- **Purpose Primacy** – classification is based on intent, not syntax
+- **Universal Addressability** – any unit of information can be precisely located
+- **User Sovereignty** – no major change without explicit confirmation (via UIP)
+
+## 🔑 Key Features
+
+### Universal Interaction Protocol (UIP)
+A strict 5-step control loop:
+```
+GENERATE → SUMMARIZE → PREVIEW → CONFIRM → ITERATE
+```
+
+### SCNS-V4 Coordinate System
+Domain-agnostic format:
+```
+[DOMAIN]:[AREA]:[COMPONENT]:[ELEMENT]:[TAG]:[SEQUENCE][:VERSION][:STATE]
+```
+
+### Cross-Reference System (RTAGs)
+Defines relationships like `REF`, `DEPENDS`, `CALLS`, and `RANGE`.
+
+### Algorithms for Stability
+- Dynamic insertion for safe coordinate extension
+- Cross-reference resolution with dependency graphs
+- Collision detection & resolution
+- Performance optimizations with caching
+
+### Protocol Architecture
+Layers for governance, navigation, AI collaboration, deployment, and maintenance.
+
+## 📂 Repository Structure
+
+```
+├── UCCS-CORE0021.md          # Main specification document
+├── Protocols/                # Definitions for integrating AI systems
+│   ├── GPT/
+│   ├── Claude/
+│   ├── Perplexity/
+│   └── Grok/
+├── Algorithms/               # Reference implementations
+│   ├── coordinate-handling/
+│   ├── validation/
+│   └── optimization/
+└── Deliverables/            # Guidelines for registries, dashboards, and automation
+    ├── registries/
+    ├── dashboards/
+    └── scripts/
+```
+
+## 🚀 Use Cases
+
+- **AI-Human Collaboration** – Ensure sovereignty and traceability in AI outputs
+- **Software Development** – Manage evolving codebases with stable references
+- **Knowledge Systems** – Build navigable, cross-referenced information spaces
+- **Governance** – Enforce validation, audit trails, and compliance
+
+## 📊 Success Metrics
+
+- **File Coverage** – % of files with SCNS IDs
+- **Reference Accuracy** – % of valid cross-references
+- **User Confirmation Rate** – Y/N/Modify patterns at UIP gates
+- **Navigation Ease & Clarity** – Qualitative indicators from users
+
+## 🤝 Contributing
+
+Contributions are welcome! To propose changes:
+
+1. Follow the UIP flow (`Generate → Summarize → Preview → Confirm → Iterate`)
+2. Ensure all changes are SCNS-tagged and validated
+3. Open a pull request with a summary of modifications
+
+## 📜 License
+
+**MIT License** – Open for research, experimentation, and implementation.
 
 ---
 
-## 2. File Index
-
-The following index is organized into logical categories to help you navigate the framework's components.
-
-### Core Concepts & Architecture
-
-| SCNS ID | Description |
-| :--- | :--- |
-| `UCCS-CORE:UIP-FLOW:N0010` | Introduces the UCCS and the Universal Interaction Protocol (UIP) Flow. |
-| `UCCS-CORE:ARCH-PRINCIPLES:N0020` | Details the core design principles, including Universal Addressability. |
-| `UCCS-CORE:UIP-FOUNDATION:N0030` | Reinforces the foundational principles and block-by-block control of the UIP. |
-
-### Implementation & System Definitions
-
-| SCNS ID | Description |
-| :--- | :--- |
-| `UCCS-CORE:IMPL-SCNS:N0040` | Describes the SCNS Coordinate Engine and the V4 format. |
-| `UCCS-CORE:RTAGS:N0050` | Defines the Cross-Reference System (RTAGs) like `REF`, `DEPENDS`, and `CALLS`. |
-
-### Core Algorithms
-
-| SCNS ID | Description |
-| :--- | :--- |
-| `UCCS-CORE:ALGO-INSERTION:N0060` | Outlines the Dynamic Insertion Algorithm for managing coordinates. |
-| `UCCS-CORE:ALGO-RESOLUTION:N0070` | Explains the algorithm for resolving cross-references and analyzing impact. |
-| `UCCS-CORE:ALGO-PATTERN:N0080` | Details the algorithm for detecting architectural and workflow patterns. |
-| `UCCS-CORE:ALGO-ERROR:N0090` | Covers algorithms for validating SCNS addresses and ensuring consistency. |
-| `UCCS-CORE:ALGO-PERFORMANCE:N0100` | Describes the address resolution caching algorithm for performance. |
-| `UCCS-CORE:ALGO-COLLISION:N0110` | Details the algorithm for detecting and resolving address conflicts. |
-
-### Protocols & Integrations
-
-| SCNS ID | Description |
-| :--- | :--- |
-| `UCCS-CORE:PROTO-ARCH-ORG:N0120` | Specifies the UCCS-ORG protocol for file discovery and organization. |
-| `UCCS-CORE:INTEG-PERPLEXITY:N0140` | Protocol specification for integrating with the Perplexity AI model. |
-| `UCCS-CORE:INTEG-CLAUDE:N0150` | Protocol specification for structured collaboration with the Claude AI model. |
-| `UCCS-CORE:INTEG-GROK:N0160` | Protocol specification for real-time analysis using the Grok AI model. |
-| `UCCS-CORE:INTEG-GPT:N0180` | Protocol specification for collaboration with GPT models. |
-| `UCCS-CORE:PROTO-DESC:N0190` | Provides high-level descriptions of core system protocols (INF, NAV, etc.). |
-
-### Outputs, Metrics & Verification
-
-| SCNS ID | Description |
-| :--- | :--- |
-| `UCCS-CORE:OUTPUT-TEMPLATES:N0130` | Provides core output definitions and implementation templates. |
-| `UCCS-CORE:METRICS:N0170` | Defines success metrics and output deliverables for the UCCS. |
-| `UCCS-CORE:FINAL-VERIFY:N0200` | Details the final verification system and the Context Meter specification. |
-
----
-
-## 3. How to Use These Files
-
-1.  **Navigate by Topic**: Use the filenames and descriptions in the index above to find the specific section you need.
-2.  **Trace Dependencies**: Refer to the SCNS IDs within each file to understand the relationships between different blocks of information.
-3.  **Reconstruct**: The files are numbered sequentially, allowing you to read them in order to reconstruct the flow of the original document.
-
-This modular structure is designed to make the information easier to process, update, and integrate into automated workflows.
+*For detailed specifications, see [UCCS-CORE0021.md](./UCCS-CORE0021.md)*
