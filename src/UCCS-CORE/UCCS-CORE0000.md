@@ -750,20 +750,20 @@ The AI must always:
 
 **SCNS ID:** `$UCCS-CORE:INTEGRATION:PROTOCOLS:EXISTING:INTEGRATION:N0260$`
 
-# USSC-INF-PERPLEXITY Protocol v1.0
+# UCCS-INF-PERPLEXITY Protocol v1.0
 
-**SCNS ID:** `$USSC-INF-PERPLEXITY:SPEC:PROTOCOL:CORE:N0270$`
+**SCNS ID:** `$UCCS-INF-PERPLEXITY:SPEC:PROTOCOL:CORE:N0270$`
 
 Version: 1.0
 Last Updated:** 2025-08-23
-Author:** USSC Protocol Development Team
-Coordinate:`$USSC-INF-PERPLEXITY:SPEC:CORE:N0270$`
+Author:** UCCS Protocol Development Team
+Coordinate:`$UCCS-INF-PERPLEXITY:SPEC:CORE:N0270$`
 
-**Purpose:** This document specifies the integration and communication protocol for the Perplexity AI model within the USSC AI project, optimized for real-time research coordination with source verification.
+**Purpose:** This document specifies the integration and communication protocol for the Perplexity AI model within the USSC AI project, optimized for real-time research coordination with WA
 
 ## 1. Core Concepts 🔍
 
-**SCNS ID:** `$USSC-INF-PERPLEXITY:CONCEPT:CORE:CONCEPTS:N0280$`
+**SCNS ID:** `$UCCS-INF-PERPLEXITY:CONCEPT:CORE:CONCEPTS:N0280$`
 
   - **Research Query:** A structured research request with specific investigation scope and source requirements.
   - **Source Verification:** Automatic credibility assessment and citation management for all retrieved information.
@@ -772,7 +772,7 @@ Coordinate:`$USSC-INF-PERPLEXITY:SPEC:CORE:N0270$`
 
 ## 2. Research Protocol 📚
 
-**SCNS ID:** `$USSC-INF-PERPLEXITY:PROTOCOL:RESEARCH:PROTOCOL:N0290$`
+**SCNS ID:** `$UCCS-INF-PERPLEXITY:PROTOCOL:RESEARCH:PROTOCOL:N0290$`
 
 All research follows a three-phase investigation model with mandatory source verification.
 
@@ -782,7 +782,7 @@ A research query sent to Perplexity should be a JSON object with the following s
 
 ```json
 {
-  "protocol_version": "USSC-INF-PERPLEXITY-1.0",
+  "protocol_version": "UCCS-INF-PERPLEXITY-1.0",
   "research_coordinate": "USSC-RESEARCH:{TOPIC}:{METHOD}:N{####}",
   "timestamp_utc": "2025-08-23T20:49:00Z",
   "query": {
@@ -800,7 +800,7 @@ A research query sent to Perplexity should be a JSON object with the following s
   }
 }
 ```
-- **research_coordinate:** Unique USSC identifier for investigation traceability.
+- **research_coordinate:** Unique UCCS identifier for investigation traceability.
 
 - **query.research_question:** The core research topic. Precision is key.
 
@@ -814,7 +814,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 {
   "status": "success|partial|error",
-  "research_coordinate": "USSC-RESEARCH:{TOPIC}:{METHOD}:N{####}",
+  "research_coordinate": "UCCS-RESEARCH:{TOPIC}:{METHOD}:N{####}",
   "methodology": "Research approach and model selection",
   "findings": {
     "summary": "Executive summary of key findings",
@@ -853,7 +853,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 ## 3. Research Phases 🎯
 
-**SCNS ID:** `$USSC-INF-PERPLEXITY:PHASE:RESEARCH:PHASES:N0300$`
+**SCNS ID:** `$UCCS-INF-PERPLEXITY:PHASE:RESEARCH:PHASES:N0300$`
 
 ### Phase 1: INIT - Research Initialization
 
@@ -887,7 +887,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 ## 4. Source Credibility Framework ✅
 
-**SCNS ID:** `$USSC-INF-PERPLEXITY:FRAMEWORK:SOURCE:CREDIBILITY:N0310$`
+**SCNS ID:** `$UCCS-INF-PERPLEXITY:FRAMEWORK:SOURCE:CREDIBILITY:N0310$`
 
 ### Credibility Levels:
 
@@ -913,7 +913,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 ## 5. Research Models 🔬
    
-**SCNS ID:** `$USSC-INF-PERPLEXITY:MODEL:RESEARCH:MODELS:N0320$`
+**SCNS ID:** `$Uccs-INF-PERPLEXITY:MODEL:RESEARCH:MODELS:N0320$`
 
 **Sonar (Standard Research)**
 
@@ -941,7 +941,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 ## 6. Best Practices for Integration 🚀
 
-**SCNS ID:** `$USSC-INF-PERPLEXITY:PRACTICE:BEST:PRACTICES:N0330$`
+**SCNS ID:** `$UCCS-INF-PERPLEXITY:PRACTICE:BEST:PRACTICES:N0330$`
 
 - *Prioritize Source Quality:* Always verify credibility scores before accepting findings as factual.
 
@@ -949,7 +949,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 - *Citation Transparency:* Include complete citation metadata in all research outputs.
 
-- *Research Coordinates:* Use USSC addressing for traceability and reference management.
+- *Research Coordinates:* Use UCCS addressing for traceability and reference management.
 
 - *Bias Awareness:* Acknowledge source limitations and perspective constraints.
 
@@ -957,7 +957,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 ## 7. Security Considerations 🔒
 
-**SCNS ID:** `$USSC-INF-PERPLEXITY:SECURITY:CONSIDERATIONS:SECURITY:N0340$`
+**SCNS ID:** `$UCCS-INF-PERPLEXITY:SECURITY:CONSIDERATIONS:SECURITY:N0340$`
 
 **Research Data Protection:**
 
@@ -981,7 +981,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 ## 8. Integration Examples 💡
 
-**SCNS ID:** `$USSC-INF-PERPLEXITY:EXAMPLE:INTEGRATION:EXAMPLES:N0350$`
+**SCNS ID:** `$UCCS-INF-PERPLEXITY:EXAMPLE:INTEGRATION:EXAMPLES:N0350$`
 
 **Basic Research Query:**
 
@@ -991,13 +991,13 @@ The response from Perplexity will be a JSON object with the following schema:
 
 **Academic Research Query:**
 
-*USSC-RESEARCH:CRYPTO:DEEP:N0002*
+*UCCS-RESEARCH:CRYPTO:DEEP:N0002*
 
 -"Comprehensive analysis of post-quantum cryptography implementation challenges"
 
 **Business Intelligence Query:**
 
-*USSC-RESEARCH:MARKET:SONAR-PRO:N0003*
+*UCCS-RESEARCH:MARKET:SONAR-PRO:N0003*
 
 -"Current trends in enterprise AI adoption and ROI metrics"
 
@@ -1027,7 +1027,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 ## 10. Success Metrics 📊
 
-**SCNS ID:** `$USSC-INF-PERPLEXITY:METRIC:SUCCESS:METRICS:N0370$`
+**SCNS ID:** `$UCCS-INF-PERPLEXITY:METRIC:SUCCESS:METRICS:N0370$`
 
 **Quantitative Measures:**
 
