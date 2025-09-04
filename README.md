@@ -56,14 +56,14 @@ The protocol’s intensity is adjustable via the **User Proficiency Level (UPL)*
 UCCS is organized into hierarchical layers. The **Protocol Layer** contains the foundational infrastructure for AI-human collaboration and governance.
 
 ### Core Protocol Components
-
+***below are place holders, some are WIP, some still need to be started***
 - **`UCCS-INF`**: The master protocol for AI-human collaboration, governing all interactions via the UIP loop. It is the parent to model-specific implementations like `UCCS-INF-GPT`
 - **`UCCS-NAV`**: Provides spatial intelligence for dependency graph traversal, impact analysis, and circular reference detection
 - **`UCCS-CODE`**: Manages the code lifecycle, including analysis, compliant generation, and validation
 - **`UCCS-QA`**: Spatially links test artifacts (plans, cases, bug reports) directly to source code coordinates for full traceability
 - **`UCCS-Context-Meter`**: A utility providing transparency into AI token usage and costs to support User Sovereignty
 
-## The main Usecases7
+## The main Usecases
  
 **SCNS ID:** `$GITHUB:SCNS-UCCS:README:USECASES:KEY:N0500$`
 
