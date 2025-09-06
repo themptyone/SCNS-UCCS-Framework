@@ -652,12 +652,17 @@ BLOCK:
 
 INITIALIZE-[`$UCCS-ORG:SCNSV4:CATALOG:N0010$`] for workspace: [SCNSV4:ID]]
 
--Discover all files. 
--Assign preliminary SCNSV4-IDs.
--[`$UCCS-ORG:SCNSV4:MATRIX:N0020$`]  
--[`$UCCS-ORG:SCNSV4:MAINTAIN:N0030$`]
--If necessary-[`$UCCS-ORG:SCNSV4:MATRIX:N0020$`]
--Present the master registry table for confirmation. 
+- Discover all files. 
+
+- Assign preliminary SCNSV4-IDs.
+
+- [`$UCCS-ORG:SCNSV4:MATRIX:N0020$`]  
+
+- [`$UCCS-ORG:SCNSV4:MAINTAIN:N0030$`]
+
+- If necessary-[`$UCCS-ORG:SCNSV4:MATRIX:N0020$`]
+
+- Present the master registry table for confirmation. 
 
 Follow UIP:  
 
@@ -667,17 +672,21 @@ Follow UIP:
 
 STRUCTURE-[`$UCCS-ORG:SCNSV4:MATRIX:N0020$`]  
 
--Analysis of current file registry. 
--Map all RTAG relationships and update the cross-reference matrix. 
--Show relationship changes and request validation via UIP.
+- Analysis of current file registry. 
+
+- Map all RTAG relationships and update the cross-reference matrix. 
+
+- Show relationship changes and request validation via UIP.
 
 **Maintenance Check**
 
 MAINTAIN-[`$UCCS-ORG:SCNSV4:MAINTAIN:N0030$`]
 
--Sync file registry with current workspace state. 
--Identify any broken references, missing files, or SCNS ID conflicts. 
--Present maintenance report and recommended actions for UIP confirmation.
+- Sync file registry with current workspace state. 
+
+- Identify any broken references, missing files, or SCNS ID conflicts. 
+
+- Present maintenance report and recommended actions for UIP confirmation.
 
 ### AI System Behavior-[`$UCCS-CORE:SCNSV4:ORG-AIB:SCNSV4-ID$`]
 
@@ -770,7 +779,7 @@ SCNSV4-ID:`$UCCS-INF-PERPLEXITY:SPEC:CORE:N0270$`
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:PROTOCOL:RESEARCH:PROTOCOL:N0290$`
 
-***All research follows a three-phase investigation model with mandatory source verification.***
+***All research follows multi phased investigation model with mandatory source verification.***
 
 ### Request Structure-[`$UCCS-CORE:INF-PERPLEXITY:RPROTO-REQ:SCNSV4-ID$`]
 
@@ -852,7 +861,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 - Configure search parameters and source filtering criteria.
 
-- Generate research coordinate and methodology outline.
+- Generate research coordinate and methodology outline. #Ref
 
 - Granular Control Points-[`$UCCS-CORE:SCNSV4:ORG-CG:SCNSV4-ID$`]+ 
 
@@ -864,7 +873,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 - Apply source filtering and automatic credibility assessment [`$UCCS-CORE:INF-PERPLEXITY:SCF:SCNSV4-ID$`].
 
-- Compile evidence with numbered citation tracking.
+  - Compile evidence with numbered citation tracking.
 
 - Generate structured findings with verification status.
 
@@ -946,9 +955,9 @@ When initializing-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]:
 
 - *Research Coordinates:* Use UCCS addressing for traceability and reference management.
 
--*Bias Awareness:* Acknowledge source limitations and perspective constraints.
+- *Bias Awareness:* Acknowledge source limitations and perspective constraints.
 
--*Continuous Verification:* Monitor for source updates and information changes.
+- *Continuous Verification:* Monitor for source updates and information changes.
 
 ## Security Considerations-[`$UCCS-CORE:INF-PERPLEXITY:SEC:SCNSV4-ID$`]
 
