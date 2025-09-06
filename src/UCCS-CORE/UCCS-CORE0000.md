@@ -189,11 +189,11 @@ END FOR
 
 **Universal Examples:**
 
--***Chapter Organization:*** Gap of 8 between chapters = 3 insertion levels
+- ***Chapter Organization:*** Gap of 8 between chapters = 3 insertion levels
 
--***Index Systems:*** Gap of 16 between categories = 4 insertion levels
+- ***Index Systems:*** Gap of 16 between categories = 4 insertion levels
 
--***Scheduling:*** Gap of 4 hours between meetings = 2 subdivision levels
+- ***Scheduling:*** Gap of 4 hours between meetings = 2 subdivision levels
 
 ## Cross-Reference Resolution-[`$UCCS-CORE:SCNSV4:CRR:SCNSV4-ID$`]  
 
@@ -591,7 +591,7 @@ function extendHierarchically(addresses) {
 
 ```yaml
 
-BLOCK:`
+BLOCK:
   scns_id: "UCCS-ORG:SCNSV4:CATALOG:N0010"
   title: "File Discovery & Initial Cataloging"
   purpose: "Scan and register all files in workspace with SCNS addressing"
@@ -604,7 +604,7 @@ BLOCK:`
 ```
 ### PHASE:UCCS-ORG-STRUCTURE → Cross-Reference Matrix Creation-[`$UCCS-CORE:SCNSV4:ORG-STRUC:SCNSV4-ID$`]
 
-**UIP Block:** Relationship Mapping
+**UIP Block: Relationship Mapping**
 
 ```yaml
 
@@ -622,7 +622,7 @@ BLOCK:
 
 ### PHASE:UCCS-ORG-MAINTAIN → Dynamic Organization Management-[`$UCCS-CORE:SCNSV4:ORG-MAINT:SCNSV4-ID$`]
 
-**UIP Block:** Continuous Organization
+**UIP Block: Continuous Organization**
 
 ```yaml
 
@@ -678,11 +678,15 @@ MAINTAIN-[`$UCCS-ORG:SCNSV4:MAINTAIN:N0030$`]
 
 It must always:
 
--Present organizational changes in table format before applying
--Require explicit user confirmation for SCNS ID assignments
--Show relationship matrix updates with clear before/after views
--Validate all cross-references and flag inconsistencies
--Maintain organization audit trail with timestamps
+- Present organizational changes in table format before applying. 
+
+- Require explicit user confirmation for SCNSV4-ID assignments.
+
+- Show relationship matrix updates with clear before/after views.
+
+- Validate all cross-references and flag inconsistencies.
+
+- Maintain organization audit trail with timestamps.
 
 ## Cross-Reference Master Regitry-Core Output:[`$UCCS-CORE:SCNSV4:CRMR:SCNSV4-ID$`] 
 
@@ -709,24 +713,26 @@ GENERATE → VALIDATE → ITERATE → GENERATE → VALIDATE...
 
 **File Registration UIP**
 
--Individual file SCNSv4 ID's assignment requires confirmation
--Batch operations show the summary tables before applying
--Relationship detection presents findings for validation
+- Individual file SCNSv4 ID's assignment requires confirmation
+- Batch operations show the summary tables before applying
+- Relationship detection presents findings for validation
 
 **Cross-Reference UIP**
 
--The cross-referenced relationships require user validation
--Conflicting references trigger-[$UCCS-CORE:ALGO:COLLISION:DETECTION:RESOLUTION:N0180$]
--Matrix updates show before/after comparison
+- The cross-referenced relationships require user validation
+- Conflicting references trigger-[$UCCS-CORE:ALGO:COLLISION:DETECTION:RESOLUTION:N0180$]
+- Matrix updates show before/after comparison
 
 **Maintenance UIP**
 
--File changes trigger-[`$UCCS-CORE:ARCH:PROTOCOL:ARCHITECTURE:PROTOCOL:N0190$`]
+- File changes trigger -[`$UCCS-CORE:ARCH:PROTOCOL:ARCHITECTURE:PROTOCOL:N0190$`]
 
--Broken references require user decision, after listing the appropriate SNCS algorithms from-[`$UCCS-CORE:IMPL:SCNS:COORDINATE:ENGINE:N0090$`]
+- Broken references require user decision, after listing the appropriate SNCSV4-ID algorithms from -[`$UCCS-CORE:IMPL:SCNS:COORDINATE:ENGINE:N0090$`]
 
--Status are validated before, the master registry is generated in a [.md] file
+- Status are validated before, the master registry is generated in a [.md] file
   
+-----
+
 # UCCS-INF-PERPLEXITY Protocol v1.0-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:SPEC:PROTOCOL:CORE:N0270$`
@@ -780,14 +786,13 @@ A research query sent to Perplexity should be a JSON object with the following s
   }
 }
 ```
--[`$UCCS-CORE:INF-PERPLEXITY:COREC:SCNSV4-ID$`]
+- +[`$UCCS-CORE:INF-PERPLEXITY:CORECC:SCNSV4-ID$`]
 
 ### Response Structure-[`$UCCS-CORE:INF-PERPLEXITY:RPROTO-RESP:SCNSV4-ID$`]
 
 The response from Perplexity will be a JSON object with the following schema:
 
 ```json
-
 {
   "status": "success|partial|error",
   "research_coordinate": "`$UCCS-CORE:INF-PERPLEXITY:{TOPIC}:{METHOD}:N{####}$`",
