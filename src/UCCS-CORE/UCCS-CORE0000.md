@@ -19,7 +19,11 @@ The Universal Interaction Protocol (UIP) is the mechanism for ensuring User Sove
 
 - *GENERATE:* The AI agent creates the content for a work unit.
 
-   - [instructions:]
+   - [
+
+   instructions:
+
+   ]
 
 - *SUMMARIZE:* The AI provides a concise, 1-3 line summary of what was joust accomplished.
 - *PREVIEW:* The complete result is shown to the user for review.
