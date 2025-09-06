@@ -42,7 +42,7 @@ Any system, language, or paradigm can adopt UCCS, as so UCCS can adopt any syste
 
 - **User Sovereignty:** 
 
-No significant change occurs without explicit user validation through the UIP{[`$UCCS-CORE:FRAMEWORK:UIP-BASE:SCNSV4-ID$`]}
+No significant change occurs without explicit user validation through the UIP-[`$UCCS-CORE:FRAMEWORK:UIP-BASE:SCNSV4-ID$`]
 
 - **Relational Integrity:**
 
@@ -82,8 +82,6 @@ Natural logistic & spatial patterns: ***Trees, Pipelines, Graphs, Layers***.
 
 The agent uses **[`$UCCS-CORE:FRAMEWORK$`] + Any necessary protocols & sub-systems]** to optimize code safely.
 
-**V4 Standard:** ***[DOMAIN]:[AREA]:[COMPONENT]:[ELEMENT]:[TAG]:[SEQUENCE][:VERSION][:STATE]***
-
 -----
 
 # SCNS Coordinate Engine-[`$UCCS-CORE:SCNSV4:ENGINE:SCNSV4-ID$`]
@@ -94,14 +92,16 @@ The agent uses **[`$UCCS-CORE:FRAMEWORK$`] + Any necessary protocols & sub-syste
 
 SCNS-V4 is a domain-agnostic coordinate system designed to support the UCCS. It uses a structured six-part hierarchy and optional tags for versioning and state to give any piece of information a precise, queryable address.
 
+**V4 Standard:** ***[DOMAIN]:[AREA]:[COMPONENT]:[ELEMENT]:[TAG]:[SEQUENCE][:VERSION][:STATE]***
+
 The SCNSV4-ID is the spatial addressing system within the UCCS framework. To support Universal Addressability & Accessibility, it's standard format is boken down:
 
-- DOMAIN: The highest-level project or system domain (e.g., FINAPP, COGNITION).
+- DOMAIN: The highest-level project or system domain.
 - AREA: A major functional area or context within the domain.
 - COMPONENT: A specific module, service, or subject.
 - ELEMENT: The discrete, self-contained block of information.
 - TAG: A classification based on the block's functional.
-- SEQUENCE: A hierarchical numeric identifier, often incremented by 10 for spacing.
+- SEQUENCE: A inner-Domain hierarchical numeric identifier, always starting with N0010.
 
 The addition of optional dimensional tags at the end of the coordinate to track an information block's lifecycle (...:[SEQUENCE][:VERSION][:STATE]). 
 
@@ -149,18 +149,21 @@ New_Coordinate = ⌊(A + B) / 2⌋
 
 ELSE
 
-New_Coordinate = Extend_Hierarchy(A)
+New_Coordinate = Extend_Hierarchy(A)]
 
-END IF]
+END IF
 
 #### Example Applications:
+
 -***Text Documents:*** Insert paragraph between sections 10 and 20 → section 15
+
 -***Database Records:*** Insert entry between ID 100 and 200 → ID 150
+
 -***Configuration Files:*** Insert setting between priority 30 and 40 → priority 35
 
 ### Hierarchical Extension Rules-[`$UCCS-CORE:SCNSV4:DIA-HER:SCNSV4-ID$`]
 
-needs work - WIP 
+needs work - WIP - currently empty
 
 ### Gap Analysis and Optimal Spacing-[`$UCCS-CORE:SCNSV4:DIA-GAOS:SCNSV4-ID$`]
 
@@ -180,9 +183,9 @@ FOR each adjacent pair (A, B):
 
 Capacity = ⌊log₂(Gap)⌋ + 1
 
-Priority = Capacity_Score
+Priority = Capacity_Score]
 
-END FOR]
+END FOR
 
 **Universal Examples:**
 
