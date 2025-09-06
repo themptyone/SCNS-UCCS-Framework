@@ -1212,6 +1212,14 @@ UCCS-INF-CLAUDE Experience - Users interact with UCCS-INF-CLAUDE, experiencing:
 
 4.  Prepare first interaction block
 
+**User Experience (UCCS-INF-CLAUDE):**
+
+- Receive acknowledgment and configuration request
+
+- Provide: Project SCNSV4-ID
+
+- Review generated structural outline
+
 **Required Outputs:**
 
 - Project configuration summary
