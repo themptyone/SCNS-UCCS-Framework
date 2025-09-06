@@ -4,8 +4,7 @@
 
 This document provides a comprehensive overview of the Universal Code Coordinate System (UCCS), merging architectural design, implementation details, and advanced execution examples into a single, unified framework.
 
-## Universal Interaction Protocol (UIP)
-## -[`$UCCS-CORE:FRAMEWORK:UIP-BASE:SCNSV4-ID$`]
+## Universal Interaction Protocol (UIP)*-[`$UCCS-CORE:FRAMEWORK:UIP-BASE:SCNSV4-ID$`]*
 
 **SCNS ID:** `$UCCS-CORE:SPEC:FRAMEWORK:UIP-FLOW:FLOW:N0020$`
 
