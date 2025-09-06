@@ -4,8 +4,7 @@
 
 This document provides a comprehensive overview of the Universal Code Coordinate System (UCCS), merging architectural design, implementation details, and advanced execution examples into a single, unified framework.
 
-## Universal Interaction Protocol (UIP)-`$UCCS-CORE:FRAMEWORK:UIP-BASE:SCNSV4-ID$`
-
+## Universal Interaction Protocol (UIP)-[´$UCCS-CORE:FRAMEWORK:UIP-BASE:SCNSV4-ID$´]
 
 **SCNS ID:** `$UCCS-CORE:SPEC:FRAMEWORK:UIP-FLOW:FLOW:N0020$`
 
@@ -34,8 +33,6 @@ The Universal Interaction Protocol (UIP) is the mechanism for ensuring User Sove
 The UCCS is built upon a set of core architecture patterns that ensure organization, traceability, and extensibility.
 
 The framework is built to navigate constant change & creating stable processes that lead to the best outcomes; UCCS is defined by a single, unifying concept; **Universal Addressability & Accessability** is that a unit of information, can be assigned a [`$UCCS-CORE:SCNSV4$`] within a universal information space. 
-
-**Conceptually outlined below:**
 
 - **Universal Accessibility & Universal Addressability:**
 
@@ -73,15 +70,19 @@ Additional core principles for implementation include State Transparency, Protoc
 
 **SCNS ID:** `$UCCS-CORE:IMPL:SYSTEM:CORE:IMPLEMENTATION:N0080$`
 
-The UCCS architecture is realized through a set of core JavaScript classes that manage coordinates, protocols, and system execution. SCNS treats code as spatially organized rather than line-bound. Logical relationships map to coordinates, ensuring stability across refactors and enabling automation. Natural spatial patterns: 
+The UCCS Framework is realized through a set of core JavaScript classes that manage SCNSV4-IDs, protocols, and sub-system execution. 
 
-***Trees, Pipelines, Graphs, Layers***.
+SCNSV4-ID treats code as spatially organized rather than line-bound. 
 
-AI uses **[`$UCCS-CORE:SCNSV4:ORG-ARCH:SCNSV4-ID$`]** to optimize code safely. The SCNS-V4 is a domain-agnostic spatial addressing system.
+Logical & spatial relationships between Information blocks & there associated SCNSV4-ID's ensuring automation of context 
+
+Natural spatial patterns: ***Trees, Pipelines, Graphs, Layers***.
+
+AI uses **[`$UCCS-CORE:SCNSV4:ORG-ARCH:SCNSV4-ID$`]+[value-optimization]** to optimize code safely. The SCNS-V4 is a domain-agnostic spatial addressing system.
 
 **V4 Standard:** ***[DOMAIN]:[AREA]:[COMPONENT]:[ELEMENT]:[TAG]:[SEQUENCE][:VERSION][:STATE]***
 
-# SCNS Coordinate Engine-[`$UCCS-CORE:SCNSV4:ENGINE:SCNSV4-ID$`]
+# SCNS Coordinate Engine-[`$UCCS-CORE:SCNSV4:ENGINE:SCNSV4-ID$`]h
 
 **SCNS ID:** `$UCCS-CORE:IMPL:SCNS:SPEC:ENGINE:N0090$`
 
