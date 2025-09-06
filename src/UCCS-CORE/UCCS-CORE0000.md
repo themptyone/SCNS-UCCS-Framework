@@ -11,6 +11,7 @@ This document provides a comprehensive overview of the Universal Code Coordinate
 ### Summary
 
 The UIP is the mandatory, non-negotiable interaction pattern for all significant actions within the UCCS ecosystem. It ensures user control through a consistent five-step process: Generate, Summarize, Preview, Confirm, and Iterate.
+**The UIP applies to ALL protocols, sub-protocols, and AI interactions**
 
 ### Elaboration
 
@@ -24,15 +25,15 @@ The Universal Interaction Protocol (UIP) is the foundational mechanism for ensur
 
 ***This protocol is enforced through "UIP Gates", which are mandatory checkpoints for user validation before any critical action can be completed.***
 
-### Universal Addressability-[`$UCCS-CORE:FRAMEWORK:UA:SCNSV4-ID$`]
+## Universal Addressability & Adressability-[`$UCCS-CORE:FRAMEWORK:UAA:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-CORE:CONCEPT:ADDRESSABILITY:UNIVERSAL:PRINCIPLE:N0040$`
 
-The UCCS is built upon several core architectural patterns that ensure organization, traceability, and extensibility.
+The UCCS is built upon core architectural patterns that ensure organization, traceability, and extensibility.
 
-The foundation is built on navigating constant change & creating stable processes; UCCS is defined by a single, unifying concept; **Universal Addressability & Accessability** is that a unit of information, can be assigned a [`$UCCS-CORE:SCNSV4$`] within a universal information space.
+The framework is built on navigating constant change & creating stable processes; UCCS is defined by a single, unifying concept; **Universal Addressability & Accessability** is that a unit of information, can be assigned a [`$UCCS-CORE:SCNSV4$`] within a universal information space. 
 
-UCCS is governed by the follothwing principles:
+-*Conceptually outlined below:*
 
 -**Universal Accessibility & Universal Addressability:**
 
@@ -44,10 +45,9 @@ Any system, language, or paradigm can adopt UCCS, as so UCCS can adopt any syste
 
 No significant change occurs without explicit user validation through the UIP{[`$UCCS-CORE:FRAMEWORK:UIP-BASE:SCNSV4-ID$`]}
 
-***Relational Integrity:*** 
+-**Relational Integrity:**
 
 All relationships between information blocks are logical relationships, dependencies, and constraints between data entities as they exist and interact within the [`$UCCS-CORE:FRAMEWORK$`], ensuring that the semantic meaning and structural validity of relationships remain intact regardless of spatial transformations, queries, or system operations.
-
 
 Additional core principles for implementation include State Transparency, Protocol Compliance, Automated Validation, Standardized Integration, and Audit Logs.
 
@@ -69,7 +69,7 @@ Additional core principles for implementation include State Transparency, Protoc
 
 **SCNS ID:** `$UCCS-CORE:CONCEPT:UIP:FOUNDATION:PRINCIPLE:N0070$`
 
-**The UIP applies to ALL protocols, sub-protocols, and AI interactions:**
+
 
 GENERATE → SUMMARIZE → PREVIEW → CONFIRM → ITERATE
 
