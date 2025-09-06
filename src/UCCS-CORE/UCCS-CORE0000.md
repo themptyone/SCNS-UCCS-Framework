@@ -18,8 +18,7 @@ The UIP is the mandatory, non-negotiable interaction pattern for all significant
 The Universal Interaction Protocol (UIP) is the mechanism for ensuring User Sovereignty across UCCS protocols and AI interactions. Every significant action that creates and/or modifies a block of information must follow a strict, five-step control;
 
 - *GENERATE:* The AI agent creates the content for a discrete work unit.
-
-+ [instructions:]
+[instructions:]
 
 - *SUMMARIZE:* The AI provides a concise, 1-3 line summary of what was joust accomplished.
 - *PREVIEW:* The complete result is shown to the user for review.
