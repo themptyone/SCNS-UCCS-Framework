@@ -8,12 +8,9 @@ This document provides a comprehensive overview of the Universal Code Coordinate
 
 **SCNS ID:** `$UCCS-CORE:SPEC:FRAMEWORK:UIP-FLOW:FLOW:N0020$`
 
-### Summary
-
 The UIP is the mandatory, non-negotiable interaction pattern for all significant actions within the UCCS ecosystem. It ensures user control through a consistent five-step process: Generate, Summarize, Preview, Confirm, and Iterate.
-**The UIP applies to ALL protocols, sub-protocols, and AI interactions**
 
-### Elaboration
+**The UIP applies to ALL protocols, sub-protocols, and AI interactions**
 
 The Universal Interaction Protocol (UIP) is the mechanism for ensuring User Sovereignty across UCCS protocols and AI interactions. Every significant action that creates and/or modifies a block of information must follow a strict, five-step control;
 
@@ -67,7 +64,7 @@ Additional core principles for implementation include State Transparency, Protoc
 
 - *Governance Layer - (Organization)*: A cross-cutting concern managed by `UCCS-ORG` to ensure registry integrity, validation, and conflict resolution across all layers.
 
-- *Universal Addressability & Accessibility*: The cornerstone of UCCS. Every component, data block, process, or asset is assigned a unique and parsable [`$UCCS-CORE:SCNSV4$`]. This enables precise referencing, dependency tracking, and spatial navigation.
+- *Spatial Layer - (SCNSV4-ID)*: The cornerstone of UCCS. Every component, data block, process, or asset is assigned a unique and parsable [`$UCCS-CORE:SCNSV4$`]. This enables precise referencing, dependency tracking, and spatial navigation.
 
 *This creates **productive friction** - more granular control without slowing the system down.*
 
@@ -79,9 +76,9 @@ The UCCS architecture is realized through a set of core JavaScript classes that 
 
 ***Trees, Pipelines, Graphs, Layers***.
 
-AI uses *[`$UCCS-CORE:SCNSV4:ENGINE:SCNSV4-ID$`]+* to optimize code safely. The SCNS-V4 is a domain-agnostic spatial addressing system.
+AI uses **[`$UCCS-CORE:SCNSV4:ORG-ARCH:SCNSV4-ID$`]** to optimize code safely. The SCNS-V4 is a domain-agnostic spatial addressing system.
 
-***V4 Standard:*** [DOMAIN]:[AREA]:[COMPONENT]:[ELEMENT]:[TAG]:[SEQUENCE][:VERSION][:STATE]
+**V4 Standard:** ***[DOMAIN]:[AREA]:[COMPONENT]:[ELEMENT]:[TAG]:[SEQUENCE][:VERSION][:STATE]***
 
 # SCNS Coordinate Engine-[`$UCCS-CORE:SCNSV4:ENGINE:SCNSV4-ID$`]
 
