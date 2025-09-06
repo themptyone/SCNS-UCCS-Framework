@@ -24,7 +24,7 @@ The Universal Interaction Protocol (UIP) is the mechanism for ensuring User Sove
 
 - *ITERATE:* Based on the user's response, and well thought approach, it continues (Y), stops (N), or applies requested changes and repeats the loop (Modify).
 
-***This protocol is enforced through "UIP Gates", which are mandatory checkpoints for user validation before any critical action can be completed. It never assumes anything.***
+***This protocol is enforced through "UIP Gates", which are mandatory checkpoints for user validation before any critical action can be completed. Never assume anything.***
 
 ## Universal Addressability & Adressability-[`$UCCS-CORE:FRAMEWORK:UAA:SCNSV4-ID$`]
 
