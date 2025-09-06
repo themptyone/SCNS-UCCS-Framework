@@ -40,7 +40,7 @@ The framework is built to navigate constant change & creating stable processes t
 
 -**Universal Accessibility & Universal Addressability:**
 
-Any discrete unit of information can be assigned a [`$UCCS-CORE:SCNSV4$`]coordinate.
+Any discrete unit of information can be assigned a [`$UCCS-CORE:SCNSV4$`] coordinate.
 
 Any system, language, or paradigm can adopt UCCS, as so UCCS can adopt any system, language, or paradigm.
 
@@ -54,11 +54,11 @@ All relationships between information blocks are logical relationships, dependen
 
 Additional core principles for implementation include State Transparency, Protocol Compliance, Automated Validation, Standardized Integration, and Audit Logs.
 
-### Core Architectural Patterns
+### Core Architecture Patterns-[`$UCCS-CORE:FRAMEWORK:UAA:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-CORE:ARCH:PATTERNS:CORE:PATTERNS:N0060$`
 
--*Hierarchical Layering*: The system is organized into distinct layers with clear responsibilities.
+**Hierarchical Layering**: The system is organized into distinct layers, each with appropriate utility.
 
 -*Protocol Layer (Core)*: Contains foundational infrastructure services.
 
