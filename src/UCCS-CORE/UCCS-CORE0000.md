@@ -56,9 +56,9 @@ Additional core principles for implementation include State Transparency, Protoc
 
 **Hierarchical Layering**: The system is organized into distinct layers, each with appropriate utility.
 
-- *Protocol Layer - (Core)*: Contains foundational infrastructure services.
+- *Framework Layer - (Core)*: Contains foundational infrastructure services.
 
-- *Application Layer - (Workbench)*: Consists of domain-specific tools and lifecycle protocols.
+- *System Dynamics Layer - (Protocols)*: Consists of specific tools and lifecycle protocols & sub-systems.
 
 - *Governance Layer - (Organization)*: A cross-cutting concern managed by `UCCS-ORG` to ensure registry integrity, validation, and conflict resolution across all layers.
 
