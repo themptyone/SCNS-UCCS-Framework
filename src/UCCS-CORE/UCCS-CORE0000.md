@@ -17,14 +17,14 @@ The UIP is the mandatory, non-negotiable interaction pattern for all significant
 
 The Universal Interaction Protocol (UIP) is the mechanism for ensuring User Sovereignty across UCCS protocols and AI interactions. Every significant action that creates and/or modifies a block of information must follow a strict, five-step control;
 
--*GENERATE:* The AI agent creates the content for a discrete work unit.
+- *GENERATE:* The AI agent creates the content for a discrete work unit.
 
 +[instructions:]
 
--*SUMMARIZE:* The AI provides a concise, 1-3 line summary of what was joust accomplished.
--*PREVIEW:* The complete result is shown to the user for review.
--*CONFIRM:* The AI must pause and explicitly ask for user validation with the mandatory prompt. The AI never assumes anything. - "Proceed? (Y/N/Modify)".
--*ITERATE:* Based on the user's response, the AI continues (Y), stops (N), or applies requested changes and repeats the loop (Modify).
+- *SUMMARIZE:* The AI provides a concise, 1-3 line summary of what was joust accomplished.
+- *PREVIEW:* The complete result is shown to the user for review.
+- *CONFIRM:* The AI must pause and explicitly ask for user validation with the mandatory prompt. The AI never assumes anything. - "Proceed? (Y/N/Modify)".
+- *ITERATE:* Based on the user's response, the AI continues (Y), stops (N), or applies requested changes and repeats the loop (Modify).
 
 ***This protocol is enforced through "UIP Gates", which are mandatory checkpoints for user validation before any critical action can be completed. The AI never assumes anything.***
 
