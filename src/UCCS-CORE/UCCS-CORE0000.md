@@ -60,36 +60,17 @@ Additional core principles for implementation include State Transparency, Protoc
 
 **Hierarchical Layering**: The system is organized into distinct layers, each with appropriate utility.
 
--*Protocol Layer (Core)*: Contains foundational infrastructure services.
+-*Protocol Layer - (Core)*: Contains foundational infrastructure services.
 
--*Application Layer (Workbench)*: Consists of domain-specific tools and lifecycle protocols.
+-*Application Layer - (Workbench)*: Consists of domain-specific tools and lifecycle protocols.
 
--*Governance Layer*: A cross-cutting concern managed by `UCCS-ORG` to ensure registry integrity, validation, and conflict resolution across all layers.
+-*Governance Layer - (Organization)*: A cross-cutting concern managed by `UCCS-ORG` to ensure registry integrity, validation, and conflict resolution across all layers.
 
--*Universal Addressability*: The cornerstone of UCCS. Every component, data block, process, or asset is assigned a unique and parsable **SCNSV4-ID** in the format `$$DOMAIN:AREA:COMPONENT:ELEMENT:TAG:SEQUENCE$`. This enables precise referencing, dependency tracking, and spatial navigation.
+-*Universal Addressability & Accessibility*: The cornerstone of UCCS. Every component, data block, process, or asset is assigned a unique and parsable [`$UCCS-CORE:SCNSV4$`]. This enables precise referencing, dependency tracking, and spatial navigation.
 
-## Universal Interaction Protocol (UIP) - Foundation Principle
+***This creates **productive friction** - more granular control without slowing the system down.***
 
-**SCNS ID:** `$UCCS-CORE:CONCEPT:UIP:FOUNDATION:PRINCIPLE:N0070$`
-
-
-
-GENERATE → SUMMARIZE → PREVIEW → CONFIRM → ITERATE
-
-
-### UIP Block-by-Block Control
-
-Every significant action follows this pattern:
-
-1.*Generate* content/structure/analysis
-2.*Summarize* what was accomplished (1-3 lines)
-3.*Preview* the result for user review
-4.*Confirm* with user: "Proceed? (Y / N / Modify)"
-5.*Iterate* based on response - continue, stop, or modify
-
-This creates "productive friction" - more granular control without slowing the system down.
-
-## Part:Core System Implementation 
+## Part:Core System Implementation-[`$UCCS-CORE:CORESI$`]
 
 **SCNS ID:** `$UCCS-CORE:IMPL:SYSTEM:CORE:IMPLEMENTATION:N0080$`
 
@@ -152,22 +133,23 @@ RANGE     – marks span (Replace N0100–N0200)
 -**CALLS**: For function/method invocation links.
 -**RANGE**: For batch edits or replacements.
 
-> Note: `CALLED_BY` is derivable via reverse index of `CALLS`. Keeps RTAG set lean and parse-friendly.
+***`CALLED_BY` is derivable via reverse index of `CALLS`. Keeps RTAG set lean and parse-friendly.***
 
 # SCNS Algorithms-[`$UCCS-CORE:SCNSV4:ALGO:SCNSV4-ID$`]
+
 ## Dynamic Insertion Algorithm-[`$UCCS-CORE:SCNSV4:ALOG-DIA:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-CORE:ALGO:DIA:N0130$`
 
-
 ### Core Insertion Logic-[`$UCCS-CORE:SCNSV4:DIA-CIL:SCNSV4-ID$`]
 
 **Objective:** Insert new logical units between existing coordinates while maintaining hierarchical relationships and avoiding collisions.
+
 ***Mathematical Formula:***
 
 Given: Coordinate A and Coordinate B where A < B
 
-Gap = B - A
+[Gap = B - A
 
 IF Gap > 1 THEN
 
@@ -177,9 +159,9 @@ ELSE
 
 New_Coordinate = Extend_Hierarchy(A)
 
-END IF
+END IF]
 
-**Example Applications:**
+#### Example Applications:
 -***Text Documents:*** Insert paragraph between sections 10 and 20 → section 15
 -***Database Records:*** Insert entry between ID 100 and 200 → ID 150
 -***Configuration Files:*** Insert setting between priority 30 and 40 → priority 35
@@ -192,24 +174,23 @@ needs work - WIP
 
 **Capacity Calculation Formula:**
 
--[Insertion_Capacity = ⌊log₂(Gap)⌋ + 1]
+-Sort pairs by Priority (descending)
 
--Where-[Gap = Next_Coordinate - Current_Coordinate]
+[Insertion_Capacity = ⌊log₂(Gap)⌋ + 1]
+
+Where-[Gap = Next_Coordinate - Current_Coordinate]
 
 **Spacing Distribution Logic:**
 
 FOR each adjacent pair (A, B):
 
-Gap = B - A
+[Gap = B - A
 
 Capacity = ⌊log₂(Gap)⌋ + 1
 
 Priority = Capacity_Score
 
-END FOR
-
-Sort pairs by Priority (descending)
-
+END FOR]
 
 **Universal Examples:**
 
