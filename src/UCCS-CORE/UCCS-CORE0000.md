@@ -14,17 +14,17 @@ The UIP is the mandatory, non-negotiable interaction pattern for all significant
 
 The Universal Interaction Protocol (UIP) is the mechanism for ensuring User Sovereignty across UCCS protocols and AI interactions. Every significant action that creates and/or modifies a block of information must follow a strict, five-step control;
 
-- *GENERATE:* The AI agent creates the content for a work unit.
+- *GENERATE:* The agent creates the content for a work unit.
 
-- *SUMMARIZE:* The AI provides a concise well thought summary of what was accomplished in the *GENERATE:* step.
+- *SUMMARIZE:* It provides a concise well thought summary of what was accomplished in the *GENERATE:* step.
 
 - *PREVIEW:* The complete result is shown to the user for review.
 
-- *CONFIRM:* The AI must pause and explicitly ask for user validation with the mandatory prompt. The AI never assumes anything. - "Proceed? (Y/N/Modify)".
+- *CONFIRM:* It must pause and explicitly ask for user validation with the mandatory prompt. it never assumes anything. - "Proceed? (Y/N/Modify)".
 
-- *ITERATE:* Based on the user's response, and well thought approach, the AI continues (Y), stops (N), or applies requested changes and repeats the loop (Modify).
+- *ITERATE:* Based on the user's response, and well thought approach, it continues (Y), stops (N), or applies requested changes and repeats the loop (Modify).
 
-***This protocol is enforced through "UIP Gates", which are mandatory checkpoints for user validation before any critical action can be completed. The AI never assumes anything.***
+***This protocol is enforced through "UIP Gates", which are mandatory checkpoints for user validation before any critical action can be completed. It never assumes anything.***
 
 ## Universal Addressability & Adressability-[`$UCCS-CORE:FRAMEWORK:UAA:SCNSV4-ID$`]
 
@@ -677,7 +677,7 @@ MAINTAIN-[`$UCCS-ORG:SCNSV4:MAINTAIN:N0030$`]
 
 ### AI System Behavior-[`$UCCS-CORE:SCNSV4:ORG-AIB:SCNSV4-ID$`]
 
-The AI must always:
+It must always:
 
 -Present organizational changes in table format before applying
 -Require explicit user confirmation for SCNS ID assignments
@@ -1042,7 +1042,7 @@ and reliable.
 
 From Claude's Perspective: 
 
-UCCS-INF Framework - As the AI agent, Claude operates within UCCS-INF (Universal Code Checking System -
+UCCS-INF Framework - As the agent, Claude operates within UCCS-INF (Universal Code Checking System -
 Interactive Navigation Framework), which provides:
 
 1.  Structured Thinking Pipeline
@@ -2097,7 +2097,7 @@ context_meter:
 1. AI Agent Layer
 SCNS ID: $UCCS:CORE:CONTEXT:IMPL:AGENT:LAYER:N0840$
 
-The AI model or its orchestration layer is responsible for the actual calculation and composition of the context.
+It model or its orchestration layer is responsible for the actual calculation and composition of the context.
 Token Counting: The agent MUST have a reliable mechanism to tokenize and count the segments of its context window (user prompt, history, documents, system instructions).
 Component Tagging: The agent must be able to differentiate between these components to provide an accurate breakdown.
 YAML Generation: The agent must format these counts and insights into the standardized context_meter YAML structure.
@@ -2125,7 +2125,7 @@ Cost Display: Prominently display the estimated_cost to reinforce the economic a
 Mechanism: UPL Declaration
 SCNS ID: $UCCS-CORE:SPEC:FRAMEWORK:ADAPTIVE-UIP:MODIFICATION:N0880$
 
-The user will provide a rating from 1 to 10 for their knowledge of the specific task at hand. The AI will then categorize this into three operational tiers.
+The user will provide a rating from 1 to 10 for their knowledge of the specific task at hand. It will then categorize this into three operational tiers.
 
 Novice (UPL 1-3): Guided Scaffolding Mode 🎓
 
@@ -2139,7 +2139,7 @@ Expanded Previews: The PREVIEW will show the generated content alongside alterna
 
 Granular UIP Gates: Actions will be broken down into smaller, more frequent confirmation blocks to ensure the user understands each incremental step.
 
-Proactive Suggestions: The AI will offer more suggestions for modification and explicitly list potential next steps.
+Proactive Suggestions: It will offer more suggestions for modification and explicitly list potential next steps.
 
 Intermediate (UPL 4-7): Standard Mode 🧑‍💻
 
@@ -2161,8 +2161,8 @@ Concise Summaries: Summaries will be brief, often just a single line confirming 
 
 Minimalist Previews: Previews will show only the direct result, omitting lengthy explanations or alternatives unless requested.
 
-Batched Confirmations: The AI may group several related actions into a single UIP gate. For example: "Generated class, added methods, and wrote unit tests. Proceed with commit? (Y/N/Modify)".
+Batched Confirmations: It may group several related actions into a single UIP gate. For example: "Generated class, added methods, and wrote unit tests. Proceed with commit? (Y/N/Modify)".
 
 Technical Language: Assumes the user understands technical jargon and complex concepts without elaboration.
 
-Remember: User control is paramount. No significant changes occur without explicit UIP validation. The AI serves you, not the other way around.
+Remember: User control is paramount. No significant changes occur without explicit UIP validation. It serves you, not the other way around.
