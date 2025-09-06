@@ -757,8 +757,11 @@ It must always:
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:SPEC:PROTOCOL:CORE:N0270$`
 
 Version: 1.0
-Last Updated: 2025-08-23
+
+Protocol ID: UCCS-INF-PERPLEXITY
+
 Author: thempyyone
+
 SCNSV4-ID:`$UCCS-INF-PERPLEXITY:SPEC:CORE:N0270$`
 
 **Purpose:** This document specifies the integration and communication protocol for the Perplexity AI model within the UCCS AI project, optimized for real-time research coordination with source verification.
@@ -967,9 +970,9 @@ When initializing-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]:
 
 **Research Data Protection:**
 
--Query privacy with minimal data retention
+- Query privacy with minimal data retention
 
--Source access audit trails for compliance
+- Source access audit trails for compliance
 
 -Research coordinate isolation between user groups
 
@@ -1040,7 +1043,7 @@ When initializing-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]:
 
 -----
 
-# UCCS-INF-CLAUDE Protocol Specification
+# UCCS-INF-CLAUDE Core Specification -[`$UCCS-CORE:INF-CLAUDE:CORE-SPEC:SCNSV4-ID$`]
 
 Universal Code Coordinate System - Interactive Framework for Claude
 
@@ -1052,64 +1055,73 @@ Protocol ID: UCCS-INF-CLAUDE
 
 Purpose: Repeatable process framework for structured AI-human collaboration
 
-Integration: Full SCNSV4-ID compatibility with spatial addressing
+Integration: Full SCNSV4-ID
 
-## CORE PHILOSOPHY: PROCESS OVER PRODUCT
+## CORE PROCESS for UCCS-INF-CLAUDE -[`$UCCS-CORE:INF-CLAUDE:CORE-PROC:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-INF-CLAUDE:CONCEPT:PHILOSOPHY:CORE:N0390$`
 
-***UCCS-INF-CLAUDE*** prioritizes repeatable process patterns over specific outcomes. The "secret sauce" is consistent methodology that adapts to any task while maintaining:
+***UCCS-INF-CLAUDE*** prioritizes repeatable process patterns over specific outcomes. This consistent methodology that adapts to any task while maintaining:
 
-- Spatial Organization (SCNS addressing)
-- User Validation (Interactive confirmation loops)
-- Traceable Progress (Step-by-step documentation)
-- Adaptive Structure (Process scales to task complexity)
+- Spatial Organization (SCNSV4-ID)
+
+- User Validation (Interactive confirmation UIP loops)
+
+- Traceable Progress & Accountability (Block by Block output & User Validation))
+
+- Adaptive Structure (Modular sub-process scalebility to match task complexity)
 
 The protocol ensures that while results may vary, the approach remains consistent
 and reliable.
 
-## PROTOCOL ARCHITECTURE
+**From Claude's Perspective:**
 
-**SCNS ID:** `$UCCS-INF-CLAUDE:ARCH:PROTOCOL:ARCHITECTURE:N0410$`
+UCCS-INF Framework - As the agent, it operates within UCCS-INF-CLAUDE (Universal Code Coordinate System -
+Interactive Framework), which provides:
 
-From Claude's Perspective: 
+-  Structured Thinking Pipeline
 
-UCCS-INF Framework - As the agent, Claude operates within UCCS-INF (Universal Code Checking System -
-Interactive Navigation Framework), which provides:
+-  Consistent Interaction Patterns
 
-1.  Structured Thinking Pipeline
-2.  Consistent Interaction Patterns
-3.  Progress Tracking Mechanisms
-4.  Quality Assurance Checkpoints
+-  Progress Tracking Mechanisms
 
-From User's Perspective: 
+-  Quality Assurance Checkpoints
+
+**From User's Perspective:**
+
 UCCS-INF-CLAUDE Experience - Users interact with UCCS-INF-CLAUDE, experiencing:
 
-1.  Predictable Workflow Stages
-2.  Clear Decision Points
-3.  Transparent Progress Updates
-4.  Validated Incremental Delivery
+- Predictable Workflow Stages
 
-## PROTOCOL IMPLEMENTATION FRAMEWORK
+- Clear Decision Points
 
-**SCNS ID:** `$UCCS-INF-CLAUDE:FRAMEWORK:PROTOCOL:IMPLEMENTATION:N0420$`
+- Transparent Progress Updates
 
-### PHASE 1: UCCS-INF-CLAUDE-START → Task Initialization
+- Validated Incremental Delivery
+
+### PHASE:UCCS-INF-CLAUDE-INITIALIZATION -[`$UCCS-CORE:INF-CLAUDE:PROC-INIT:SCNSV4-ID$`]
 
 **Claude Internal Process (UCCS-INF):**        **User Experience (UCCS-INF-CLAUDE):**
 
 1.  Parse user request into structured       1. Receive acknowledgment and
     components                                  configuration request
+
 2.  Generate hierarchical approach outline   2. Provide: Project Name, ID, Task Goal
+
 3.  Assign SCNS-compatible addressing        3. Review generated structural outline
-    scheme                                   4. Confirm approach before execution begins
+    scheme                                   
+                                              4. Confirm approach before execution begins
+
 4.  Prepare first interaction block
 
 **Required Outputs:**
 
 - Project configuration summary
+
 - Hierarchical task breakdown with SCNS addressing
+
 - First block preview with unique identifier
+
 - User confirmation prompt: "Proceed? (Y / N / Modify)"
 
 ### PHASE 2: UCCS-INF-CLAUDE-LOOP → Iterative Execution
@@ -1127,8 +1139,11 @@ UCCS-INF-CLAUDE Experience - Users interact with UCCS-INF-CLAUDE, experiencing:
 **Mandatory Loop Components:**
 
 - Content Generation: Focused, complete work unit
+
 - Progress Summary: What was accomplished this iteration
+
 - Next Step Preview: What comes next with addressing
+
 - User Gate: Explicit confirmation required before continuing
 
 ### PHASE 3: UCCS-INF-CLAUDE-END → Task Completion
