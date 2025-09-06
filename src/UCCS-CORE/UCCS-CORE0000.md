@@ -80,7 +80,7 @@ Logical & spatial relationships between Information blocks & there associated SC
 
 Natural logistic & spatial patterns: ***Trees, Pipelines, Graphs, Layers***.
 
-The agent uses **[`$UCCS-CORE:FRAMEWORK$`] + Any necessary protocols & sub-systems]** to optimize code safely.
+The agent uses **[`$UCCS-CORE:FRAMEWORK$`] + [Any necessary protocols & sub-systems]** to optimize code safely.
 
 -----
 
@@ -116,16 +116,22 @@ For practical project implementation, a simplified format like ***PROJECT:MODULE
 ### Core RTAGs-[`$UCCS-CORE:SCNSV4:CRS-RTAG:SCNSV4-ID$`]
 
 REF       – neutral reference (See X)
+
 DEPENDS   – requires X before Y
+
 CALLS     – invokes or uses X
+
 RANGE     – marks span (Replace N0100–N0200)
 
--**REF**: For neutral navigation.
--**DEPENDS**: For dependency ordering.
--**CALLS**: For function/method invocation links.
--**RANGE**: For batch edits or replacements.
+- **REF**: For neutral navigation.
 
-***`CALLED_BY` is derivable via reverse index of `CALLS`. Keeps RTAG set lean and parse-friendly.***
+- **DEPENDS**: For dependency ordering.
+
+- **CALLS**: For function/method invocation links.
+
+- **RANGE**: For batch edits or replacements.
+
+*`CALLED_BY` is derivable via reverse index of `CALLS`. Keeps RTAG set lean and parse-friendly.*
 
 # SCNS Algorithms-[`$UCCS-CORE:SCNSV4:ALGO:SCNSV4-ID$`]
 
@@ -211,14 +217,13 @@ Dependencies(i) = Σ M[i][j] for all j
 
 Dependents(j) = Σ M[i][j] for all i
 
-
 **Universal Applications:**
 
--***Document References:*** Citations, footnotes, cross-references
+- ***Document References:*** Citations, footnotes, cross-references
   
--***System Dependencies:*** Service calls, data flows, API connections
+- ***System Dependencies:*** Service calls, data flows, API connections
 
--***Knowledge Networks:*** Concept relationships, topic hierarchies
+- ***Knowledge Networks:*** Concept relationships, topic hierarchies
 
 ### Impact Analysis-[`$UCCS-CORE:SCNSV4:CRR-IA:SCNSV4-ID$`]
 
@@ -698,29 +703,34 @@ It must always:
 
 ### Block-by-Block Organization Process
 
-GENERATE → VALIDATE → ITERATE → GENERATE → VALIDATE...
-
 **Every organizational action follows UIP:**
 
-1.  *GENERATE*: Create organizational structure/update
-2.  *SUMMARIZE*: Explain what was organized and why
-3.  *PREVIEW*: Show table/matrix changes before applying
+1.  *GENERATE*: Create organizational structure/update.
+
+2.  *SUMMARIZE*: Explain what was organized and why.
+
+3.  *PREVIEW*: Show SCNSV4-ID master registry changes before applying.
+
 4.  *CONFIRM*: "Proceed? (Y / N / Modify)"
+
 5.  *ITERATE*: Apply changes or modify based on user input
 
 ### Granular Control Points
 
-
 **File Registration UIP**
 
-- Individual file SCNSv4 ID's assignment requires confirmation
-- Batch operations show the summary tables before applying
-- Relationship detection presents findings for validation
+- Individual file SCNSv4 ID's assignment requires confirmation.
+
+- Batch operations show the summary tables before applying.
+
+- Relationship detection presents findings for validation.
 
 **Cross-Reference UIP**
 
 - The cross-referenced relationships require user validation
+
 - Conflicting references trigger-[$UCCS-CORE:ALGO:COLLISION:DETECTION:RESOLUTION:N0180$]
+
 - Matrix updates show before/after comparison
 
 **Maintenance UIP**
@@ -738,8 +748,8 @@ GENERATE → VALIDATE → ITERATE → GENERATE → VALIDATE...
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:SPEC:PROTOCOL:CORE:N0270$`
 
 Version: 1.0
-Last Updated:** 2025-08-23
-Author:** UCCS Protocol Development Team
+Last Updated: 2025-08-23
+Author: thempyyone
 SCNSV4-ID:`$UCCS-INF-PERPLEXITY:SPEC:CORE:N0270$`
 
 **Purpose:** This document specifies the integration and communication protocol for the Perplexity AI model within the UCCS AI project, optimized for real-time research coordination with source verification.
@@ -748,19 +758,19 @@ SCNSV4-ID:`$UCCS-INF-PERPLEXITY:SPEC:CORE:N0270$`
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:CONCEPT:CORE:CONCEPTS:N0280$`
 
--**Research Query:** A structured research request with specific investigation scope and source requirements.
+- **Research Query:** A structured research request with specific investigation scope and source requirements.
 
--**Source Verification:** Automatic credibility assessment and citation management for all retrieved information.
+- **Source Verification:** Automatic credibility assessment and citation management for all retrieved information.
 
--**Evidence Compilation:** Structured knowledge synthesis with transparent provenance tracking.
+- **Evidence Compilation:** Structured knowledge synthesis with transparent provenance tracking.
 
--**Research Coordinate:** Unique UCCS addressing for traceability`$INF-PERPLEXITY:SCNSV4-ID:MREG:N#$`-[`$UCCS-ORG:SCNSV4:CATALOG:N0010$`]
+- **Research Coordinate:** Unique UCCS addressing for traceability`$INF-PERPLEXITY:SCNSV4-ID:MREG:N#$`-[`$UCCS-ORG:SCNSV4:CATALOG:N0010$`]
 
 ## Research Protocol-[`$UCCS-CORE:INF-PERPLEXITY:RSPROTO:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:PROTOCOL:RESEARCH:PROTOCOL:N0290$`
 
-All research follows a three-phase investigation model with mandatory source verification.
+***All research follows a three-phase investigation model with mandatory source verification.***
 
 ### Request Structure-[`$UCCS-CORE:INF-PERPLEXITY:RPROTO-REQ:SCNSV4-ID$`]
 
@@ -838,35 +848,35 @@ The response from Perplexity will be a JSON object with the following schema:
 
 ### Phase:INIT - Research Initialization-[`$UCCS-CORE:INF-PERPLEXITY:RS-INIT:SCNSV4-ID$`]
 
--Parse research query into UCCS-CORE strucutred investigation plan
+- Parse research query into [`$UCCS-CORE:FRAMEWORK$`] strucutred investigation plan
 
--Configure search parameters and source filtering criteria
+- Configure search parameters and source filtering criteria.
 
--Generate research coordinate and methodology outline
+- Generate research coordinate and methodology outline.
 
--Granular Control Points-[`$UCCS-CORE:SCNSV4:ORG-CG:SCNSV4-ID$`]+ 
+- Granular Control Points-[`$UCCS-CORE:SCNSV4:ORG-CG:SCNSV4-ID$`]+ 
 
--User confirmation: "Proceed with research? (Y/N/Modify)"
+- User confirmation: "Proceed with research? (Y/N/Modify)".
 
 ### Phase:RESEARCH - Investigation Execution-[`$UCCS-CORE:INF-PERPLEXITY:RS-RSR:SCNSV4-ID$`]
 
-- Execute real-time web searches using appropriate Sonar model
+- Execute real-time web searches using appropriate Sonar model [`$UCCS-CORE:INF-PERPLEXITY:SCF-CL:SCNSV4-ID$`].
 
-- Apply source filtering and automatic credibility assessment
+- Apply source filtering and automatic credibility assessment [`$UCCS-CORE:INF-PERPLEXITY:SCF:SCNSV4-ID$`].
 
-- Compile evidence with numbered citation tracking
+- Compile evidence with numbered citation tracking.
 
-- Generate structured findings with verification status
+- Generate structured findings with verification status.
 
 ### Phase:SYNTHESIS - Knowledge Integration-[`$UCCS-CORE:INF-PERPLEXITY:RS-SYN:SCNSV4-ID$`]
 
-- Synthesize multi-source evidence into coherent findings
+- Synthesize multi-source evidence into coherent findings.
 
-- Apply fact-checking and consistency verification
+- Apply fact-checking and consistency verification.
 
-- Generate comprehensive research report with citation index
+- Generate comprehensive research report with citation index as [.md] files.
 
-- Provide research coordinate for future reference
+- Provide research coordinate for future reference.
 
 ## 4. Source Credibility Framework-[`$UCCS-CORE:INF-PERPLEXITY:SCF:SCNSV4-ID$`] 
 
@@ -874,15 +884,15 @@ The response from Perplexity will be a JSON object with the following schema:
 
 ### Credibility Levels:-[`$UCCS-CORE:INF-PERPLEXITY:SCF-CL:SCNSV4-ID$`]
 
--**VERIFIED (90-100%):** Academic papers, government sources, established institutions
+- **VERIFIED (90-100%):** Academic papers, government sources, established institutions
 
--**RELIABLE (70-89%):** Established media, industry reports, verified experts
+- **RELIABLE (70-89%):** Established media, industry reports, verified experts
 
--**MODERATE (50-69%):** General news sources, blogs with verification
+- **MODERATE (50-69%):** General news sources, blogs with verification
 
--**CAUTION (30-49%):** Unverified sources, social media, opinion pieces
+- **CAUTION (30-49%):** Unverified sources, social media, opinion pieces
 
--**UNRELIABLE (<30%):** Flagged for potential misinformation
+- **UNRELIABLE (<30%):** Flagged for potential misinformation
 
 ### Verification Process:-[`$UCCS-CORE:INF-PERPLEXITY:SCF-VP:SCNSV4-ID$`]
 
@@ -890,7 +900,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 - Cross-reference validation with multiple independent sources
 
--  Temporal accuracy verification for information recency
+- Temporal accuracy verification for information recency
 
 - Bias detection and perspective limitation identification
 
@@ -900,48 +910,51 @@ The response from Perplexity will be a JSON object with the following schema:
 
 **Sonar (Standard Research)**
 
--Quick fact-checking and basic information gathering
+- Quick fact-checking and basic information gathering
 
--3-5 sources per finding with basic credibility assessment
+- Minimum 3 sources as posdible sources per finding with basic credibility assessment
 
--Optimal for: Simple queries, rapid verification, daily research
+- Optimal for: Simple queries, rapid verification, daily research
 
 **Sonar Pro (Deep Research)**
 
--Complex investigations with extensive sourcing
+- Complex investigations with extensive sourcing
 
--8-15 sources per finding with cross-verification
+- Minimum 8 sources per finding with cross-verification
 
--Optimal for: Academic research, business intelligence, analysis
+- Optimal for: Academic research, business intelligence, analysis
 
 **Deep Research (Expert Investigation)**
 
--Autonomous research projects with comprehensive reporting
+- Autonomous research projects with comprehensive reporting
 
--50+ sources with automated synthesis and fact-checking
+- 50+ sources with automated synthesis and fact-checking
 
--Optimal for: White papers, market analysis, investigative work
+- Optimal for: White papers, market analysis, investigative work
 
-## Best Practices for Integration-[`$UCCS-CORE:INF-PERPLEXITY:BPIP:SCNSV4-ID$`]
+## Best Practices -[`$UCCS-CORE:INF-PERPLEXITY:BPIP:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:PRACTICE:BEST:PRACTICES:N0330$`
 
+When initializing-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]:
 
--*Prioritize Source Quality:* Always verify credibility scores before accepting findings as factual.
+- *Prioritize Source Quality:* Always verify credibility scores before accepting findings as factual.
 
--*Multi-Source Confirmation:* Require multiple independent sources for critical claims.
+- *Multi-Source Confirmation:* Require multiple independent sources for critical claims.
 
--*Citation Transparency:* Include complete citation metadata in all research outputs.
+- *Citation Transparency:* Include complete citation metadata in all research outputs.
 
--*Research Coordinates:* Use UCCS addressing for traceability and reference management.
+- *Research Coordinates:* Use UCCS addressing for traceability and reference management.
 
 -*Bias Awareness:* Acknowledge source limitations and perspective constraints.
 
 -*Continuous Verification:* Monitor for source updates and information changes.
 
-##Security Considerations-[`$UCCS-CORE:INF-PERPLEXITY:SEC:SCNSV4-ID$`]
+## Security Considerations-[`$UCCS-CORE:INF-PERPLEXITY:SEC:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:SECURITY:CONSIDERATIONS:SECURITY:N0340$`
+
+When initializing-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]:
 
 **Research Data Protection:**
 
@@ -968,6 +981,8 @@ The response from Perplexity will be a JSON object with the following schema:
 
 **SCNS ID:** `$USSC-INF-PERPLEXITY:HANDLING:ERROR:HANDLING:N0360$`
 
+When initializing-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]:
+
 **Common Error Types:**
 
 -*insufficient_sources:* Not enough credible sources found for query
@@ -992,6 +1007,8 @@ The response from Perplexity will be a JSON object with the following schema:
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:METRIC:SUCCESS:METRICS:N0370$`
 
+When initializing-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]:
+
 **Quantitative Measures:**
 
 - *Research Accuracy:* Verification rate of provided information
@@ -1012,6 +1029,8 @@ The response from Perplexity will be a JSON object with the following schema:
 
 - *User Satisfaction:* Research utility and trustworthiness ratings  
 
+-----
+
 # UCCS-INF-CLAUDE Protocol Specification
 
 Universal Code Coordinate System - Interactive Framework for Claude
@@ -1024,7 +1043,7 @@ Protocol ID: UCCS-INF-CLAUDE
 
 Purpose: Repeatable process framework for structured AI-human collaboration
 
-Integration: Full SCNS compatibility with spatial addressing
+Integration: Full SCNSV4-ID compatibility with spatial addressing
 
 ## CORE PHILOSOPHY: PROCESS OVER PRODUCT
 
