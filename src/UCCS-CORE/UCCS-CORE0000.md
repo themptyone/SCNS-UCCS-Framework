@@ -50,7 +50,7 @@ All relationships between information blocks are logical relationships, dependen
 
 Additional core principles for implementation include State Transparency, Protocol Compliance, Automated Validation, Standardized Integration, and Audit Logs.
 
-### Core Architecture Patterns-[`$UCCS-CORE:FRAMEWORK:UAA:SCNSV4-ID$`]
+### Core Architecture Layers-[`$UCCS-CORE:FRAMEWORK:CAL:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-CORE:ARCH:PATTERNS:CORE:PATTERNS:N0060$`
 
@@ -66,7 +66,7 @@ Additional core principles for implementation include State Transparency, Protoc
 
 *This creates **productive friction** - more granular control without slowing the system down.*
 
-## Part:Core System Implementation-[`$UCCS-CORE:CORESI$`]
+## Core System Implementation-[`$UCCS-CORE:CORESI$`]
 
 **SCNS ID:** `$UCCS-CORE:IMPL:SYSTEM:CORE:IMPLEMENTATION:N0080$`
 
@@ -74,23 +74,27 @@ The UCCS Framework is realized through a set of core JavaScript classes that man
 
 SCNSV4-ID treats code as spatially organized rather than line-bound. 
 
-Logical & spatial relationships between Information blocks & there associated SCNSV4-ID's ensuring automation of context 
+The SCNS-V4 is a domain-agnostic spatial addressing system.
 
-Natural spatial patterns: ***Trees, Pipelines, Graphs, Layers***.
+Logical & spatial relationships between Information blocks & there associated SCNSV4-ID's ensuring automation of context.
 
-AI uses **[`$UCCS-CORE:SCNSV4:ORG-ARCH:SCNSV4-ID$`]+[value-optimization]** to optimize code safely. The SCNS-V4 is a domain-agnostic spatial addressing system.
+Natural logistic & spatial patterns: ***Trees, Pipelines, Graphs, Layers***.
+
+The agent uses **[`$UCCS-CORE:FRAMEWORK$`] + Any necessary protocols & sub-systems]** to optimize code safely.
 
 **V4 Standard:** ***[DOMAIN]:[AREA]:[COMPONENT]:[ELEMENT]:[TAG]:[SEQUENCE][:VERSION][:STATE]***
 
-# SCNS Coordinate Engine-[`$UCCS-CORE:SCNSV4:ENGINE:SCNSV4-ID$`]h
+-----
+
+# SCNS Coordinate Engine-[`$UCCS-CORE:SCNSV4:ENGINE:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-CORE:IMPL:SCNS:SPEC:ENGINE:N0090$`
 
-## SCNS-V4 Coordinate Format-[`$UCCS-CORE:SCNSV4:FORMAT:SCNSV4-ID$`]
+## SCNSV4-ID Coordinate Format-[`$UCCS-CORE:SCNSV4:FORMAT:SCNSV4-ID$`]
 
 SCNS-V4 is a domain-agnostic coordinate system designed to support the UCCS. It uses a structured six-part hierarchy and optional tags for versioning and state to give any piece of information a precise, queryable address.
 
-The SCNS-V4 is the spatial addressing system within the UCCS framework. To support Universal Addressability & Accessibility, it's standard format is boken down:
+The SCNSV4-ID is the spatial addressing system within the UCCS framework. To support Universal Addressability & Accessibility, it's standard format is boken down:
 
 - DOMAIN: The highest-level project or system domain (e.g., FINAPP, COGNITION).
 - AREA: A major functional area or context within the domain.
@@ -101,17 +105,9 @@ The SCNS-V4 is the spatial addressing system within the UCCS framework. To suppo
 
 The addition of optional dimensional tags at the end of the coordinate to track an information block's lifecycle (...:[SEQUENCE][:VERSION][:STATE]). 
 
-These include a *:VERSION* tag for tracking revisions and a *:STATE* tag to denote its lifecycle status (e.g., :DRAFT, :ACTIVE, :PASS). For practical project implementation, a simplified format like
+These include a *:VERSION* tag for tracking revisions and a *:STATE* tag to denote its lifecycle status (e.g., :DRAFT, :ACTIVE, :PASS). 
 
-***PROJECT:MODULE:FUNCTION:VERSION:STATE***
-
-This [AREA] is the foundation of {universal addressability}. It parses, validates, and manages SCNS coordinates.
-
--**Function**: Takes a raw coordinate string (e.g., `$UCCS-CORE:IMPL:SYSTEM:CORE:IMPLEMENTATION:N0080$`).
-
--**Parsing**: Splits the string into its six components: `domain`, `area`, `component`, `element`, `tag`, and `sequence`.
-
--**Validation**: Ensures the coordinate adheres to the SCNS-V4-FORMAT specification, including checking for six parts and a sequence number that starts with 'N' followed by digits.
+For practical project implementation, a simplified format like ***PROJECT:MODULE:FUNCTION:VERSION:STATE***
 
 ## Cross-Reference System (RTAGs)-[`$UCCS-CORE:SCNSV4:CRS:SCNSV4-ID$`]
 
