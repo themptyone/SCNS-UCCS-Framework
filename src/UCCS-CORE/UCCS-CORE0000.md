@@ -4,7 +4,7 @@
 
 This document provides a comprehensive overview of the Universal Code Coordinate System (UCCS), merging architectural design, implementation details, and advanced execution examples into a single, unified framework.
 
-## Universal Interaction Protocol (UIP) Flow
+## Universal Interaction Protocol (UIP) Flow-[`$UCCS-CORE:FRAMEWORK:UIP-BASE:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-CORE:SPEC:FRAMEWORK:UIP-FLOW:FLOW:N0020$`
 
@@ -16,53 +16,59 @@ The UIP is the mandatory, non-negotiable interaction pattern for all significant
 
 The Universal Interaction Protocol (UIP) is the foundational mechanism for ensuring User Sovereignty across all UCCS protocols and AI interactions. Every significant action that creates or modifies a block of information must follow a strict, five-step control flow:
 
-* *GENERATE:*The AI agent creates the content for a discrete work unit.
-* *SUMMARIZE:*The AI provides a concise, 1-3 line summary of what was just accomplished.
+* *GENERATE:* The AI agent creates the content for a discrete work unit.
+* *SUMMARIZE:* The AI provides a concise, 1-3 line summary of what was just accomplished.
 * *PREVIEW:* The complete result is shown to the user for review.
-* *CONFIRM:*The AI must pause and explicitly ask for user validation with the mandatory prompt: "Proceed? (Y/N/Modify)".
-* *ITERATE:*Based on the user's response, the AI continues (Y), stops (N), or applies requested changes and repeats the loop
+* *CONFIRM:* The AI must pause and explicitly ask for user validation with the mandatory prompt: "Proceed? (Y/N/Modify)".
+* *ITERATE:* Based on the user's response, the AI continues (Y), stops (N), or applies requested changes and repeats the loop
 * (Modify).
 
 ### *This protocol is enforced through "UIP Gates", which are mandatory checkpoints for user validation before any critical action can be completed.*
 
-## Part 1: Architectural Framework & Design Principles
 
-**SCNS ID:** `$UCCS-CORE:ARCH:FRAMEWORK:DESIGN:PRINCIPLES:N0030$`
 
-The UCCS is built upon several core architectural patterns that ensure systematic organization, traceability, and extensibility.
-
-### 1.1. The Unifying Principle: Universal Addressability
+### Universal Addressability-[`$UCCS-CORE:FRAMEWORK:UA:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-CORE:CONCEPT:ADDRESSABILITY:UNIVERSAL:PRINCIPLE:N0040$`
 
-The foundational ethos is built on navigating constant change by creating stable processes and frameworks. UCCS evolves this principle into a single, unifying concept: **Universal Addressability** is the foundational principle that any discrete unit of information, regardless of its domain, can be assigned a stable, hierarchical, and contextually-aware coordinate within a universal information space.
+The UCCS is built upon several core architectural patterns that ensure systematic organization, traceability, and extensibility.
 
-### 1.2. The Universal Principles of Information Coordination
+The foundationis built on navigating constant change & creating stable processes and framework, the UCCS evolves this principle into a single, unifying concept: **Universal Addressability** is the foundational principle that any discrete unit of information, regardless of its domain, can be assigned a stable, hierarchical, and contextually-aware coordinate within a universal information space.
 
-**SCNS ID:** `$UCCS-CORE:CONCEPT:COORDINATION:UNIVERSAL:PRINCIPLES:N0050$`
+UCCS is governed by e follothwing principles:
 
-UCCS is governed by the following principles:
+-**Universal Accessibility & Universal Addressability:**
 
-* *Conservation of Context:* No information exists without spatial context; every element has coordinates.
-* *Persistence Through Change:* Core coordinates survive refactoring, evolution, and shifts.
-* *Relational Integrity:* All relationships between information blocks are explicit and trackable.
-* *Purpose Primacy:* Functional intent determines classification, not implementation detail.
-* *Hierarchical Harmony:* Coordinate structures reflect logical architecture.
-* *Universal Accessibility:* Any system, language, or paradigm can adopt UCCS, as so UCCS can adopt any system, language, or paradigm.
-* *User Sovereignty:* No significant change occurs without explicit user validation through the UIP.
-* *Universal Addressability:* Any discrete unit of information can be assigned a stable coordinate.
+Any discrete unit of information can be assigned a [`$UCCS-CORE:SCNSV4$`]coordinate.
+
+Any system, language, or paradigm can adopt UCCS, as so UCCS can adopt any system, language, or paradigm.
+
+-**User Sovereignty:** 
+
+No significant change occurs without explicit user validation through the UIP{[`$UCCS-CORE:FRAMEWORK:UIP-BASE:SCNSV4-ID$`]}
+
+***Relational Integrity:*** 
+
+All relationships between information blocks are logical relationships, dependencies, and constraints between data entities as they exist and interact within the [`$UCCS-CORE:FRAMEWORK$`], ensuring that the semantic meaning and structural validity of relationships remain intact regardless of spatial transformations, queries, or system operations.
+
+***Hierarchical Harmony:***
+
 
 Additional core principles for implementation include State Transparency, Protocol Compliance, Automated Validation, Standardized Integration, and Audit Logs.
 
-### 1.3 Core Architectural Patterns
+### Core Architectural Patterns
 
 **SCNS ID:** `$UCCS-CORE:ARCH:PATTERNS:CORE:PATTERNS:N0060$`
 
-* *Hierarchical Layering*: The system is organized into distinct layers with clear responsibilities.
-* *Protocol Layer (Core)*: Contains foundational infrastructure services.
-* *Application Layer (Workbench)*: Consists of domain-specific tools and lifecycle protocols.
-* *Governance Layer*: A cross-cutting concern managed by `UCCS-ORG` to ensure registry integrity, validation, and conflict resolution across all layers.
-* *Universal Addressability*: The cornerstone of UCCS. Every component, data block, process, or asset is assigned a unique and parsable **SCNS ID** in the format `$DOMAIN:AREA:COMPONENT:ELEMENT:TAG:SEQUENCE$`. This enables precise referencing, dependency tracking, and spatial navigation.
+-*Hierarchical Layering*: The system is organized into distinct layers with clear responsibilities.
+
+-*Protocol Layer (Core)*: Contains foundational infrastructure services.
+
+-*Application Layer (Workbench)*: Consists of domain-specific tools and lifecycle protocols.
+
+-*Governance Layer*: A cross-cutting concern managed by `UCCS-ORG` to ensure registry integrity, validation, and conflict resolution across all layers.
+
+-*Universal Addressability*: The cornerstone of UCCS. Every component, data block, process, or asset is assigned a unique and parsable **SCNSV4-ID** in the format `$$DOMAIN:AREA:COMPONENT:ELEMENT:TAG:SEQUENCE$`. This enables precise referencing, dependency tracking, and spatial navigation.
 
 ## Universal Interaction Protocol (UIP) - Foundation Principle
 
@@ -76,29 +82,32 @@ GENERATE → SUMMARIZE → PREVIEW → CONFIRM → ITERATE
 ### UIP Block-by-Block Control
 
 Every significant action follows this pattern:
-1.  *Generate* content/structure/analysis
-2.  *Summarize* what was accomplished (1-3 lines)
-3.  *Preview* the result for user review
-4.  *Confirm* with user: "Proceed? (Y / N / Modify)"
-5.  *Iterate* based on response - continue, stop, or modify
+
+1.*Generate* content/structure/analysis
+2.*Summarize* what was accomplished (1-3 lines)
+3.*Preview* the result for user review
+4.*Confirm* with user: "Proceed? (Y / N / Modify)"
+5.*Iterate* based on response - continue, stop, or modify
 
 This creates "productive friction" - more granular control without slowing the system down.
 
-## Part 2: Core System Implementation
+## Part:Core System Implementation 
 
 **SCNS ID:** `$UCCS-CORE:IMPL:SYSTEM:CORE:IMPLEMENTATION:N0080$`
 
-The UCCS architecture is realized through a set of core JavaScript classes that manage coordinates, protocols, and system execution. SCNS treats code as spatially organized rather than line-bound. Logical relationships map to coordinates, ensuring stability across refactors and enabling automation. Natural spatial patterns: **Trees, Pipelines, Graphs, Layers**.
+The UCCS architecture is realized through a set of core JavaScript classes that manage coordinates, protocols, and system execution. SCNS treats code as spatially organized rather than line-bound. Logical relationships map to coordinates, ensuring stability across refactors and enabling automation. Natural spatial patterns: 
 
-AI uses *value-driven automation* to optimize code safely. The SCNS-V4 is a domain-agnostic spatial addressing system.
+**Trees, Pipelines, Graphs, Layers**.
+
+AI uses *[`$UCCS-CORE:SCNSV4:ENGINE:SCNSV4-ID$`]+* to optimize code safely. The SCNS-V4 is a domain-agnostic spatial addressing system.
 
 ***V4 Standard:*** [DOMAIN]:[AREA]:[COMPONENT]:[ELEMENT]:[TAG]:[SEQUENCE][:VERSION][:STATE]
 
-### 2.1 SCNS Coordinate Engine (`scnsV4 ID`)
+# SCNS Coordinate Engine-[`$UCCS-CORE:SCNSV4:ENGINE:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-CORE:IMPL:SCNS:COORDINATE:ENGINE:N0090$`
+**SCNS ID:** `$UCCS-CORE:IMPL:SCNS:SPEC:ENGINE:N0090$`
 
-### SCNS-V4 Coordinate Format
+## SCNS-V4 Coordinate Format-[`$UCCS-CORE:SCNSV4:FORMAT:SCNSV4-ID$`]
 
 **Summary**
 
@@ -108,139 +117,115 @@ SCNS-V4 is a universal, domain-agnostic coordinate system designed to support th
 
 The SCNS-V4 is the spatial addressing system within the UCCS framework. To support Universal Addressability, its format is abstracted to be domain-agnostic. The standard format consists of six hierarchical components:
 
-* DOMAIN: The highest-level project or system domain (e.g., FINAPP, COGNITION).
-* AREA: A major functional area or context within the domain.
-* COMPONENT: A specific module, service, or subject.
-* ELEMENT: The discrete, self-contained block of information.
-* TAG: A classification based on the block's functional.
-* SEQUENCE: A hierarchical numeric identifier, often incremented by 10 for spacing.
+-DOMAIN: The highest-level project or system domain (e.g., FINAPP, COGNITION).
+-AREA: A major functional area or context within the domain.
+-COMPONENT: A specific module, service, or subject.
+-ELEMENT: The discrete, self-contained block of information.
+-TAG: A classification based on the block's functional.
+-SEQUENCE: A hierarchical numeric identifier, often incremented by 10 for spacing.
 
 The addition of optional dimensional tags at the end of the coordinate to track an information block's lifecycle (...:[SEQUENCE][:VERSION][:STATE]). 
 
 These include a *:VERSION* tag for tracking revisions and a *:STATE* tag to denote its lifecycle status (e.g., :DRAFT, :ACTIVE, :PASS). For practical project implementation, a simplified format like
 
-***PROJECT:MODULE:FUNCTION:VERSION:STATE**
+***PROJECT:MODULE:FUNCTION:VERSION:STATE***
 
-This class is the foundation of universal addressability. It parses, validates, and manages SCNS coordinates.
+This [AREA] is the foundation of {universal addressability}. It parses, validates, and manages SCNS coordinates.
 
-* **Function**: Takes a raw coordinate string (e.g., `$UCCS-CORE:PROTO:ORG:SPEC:N0210$`).
-* **Parsing**: Splits the string into its six components: `domain`, `area`, `component`, `element`, `tag`, and `sequence`.
-* **Validation**: Ensures the coordinate adheres to the SCNS-V4-FORMAT specification, including checking for six parts and a sequence number that starts with 'N' followed by digits.
+-**Function**: Takes a raw coordinate string (e.g., `$UCCS-CORE:IMPL:SYSTEM:CORE:IMPLEMENTATION:N0080$`).
 
-## Cross-Reference System (RTAGs)
+-**Parsing**: Splits the string into its six components: `domain`, `area`, `component`, `element`, `tag`, and `sequence`.
+
+-**Validation**: Ensures the coordinate adheres to the SCNS-V4-FORMAT specification, including checking for six parts and a sequence number that starts with 'N' followed by digits.
+
+## Cross-Reference System (RTAGs)-[`$UCCS-CORE:SCNSV4:CRS:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-CORE:CONCEPT:RTAGS:CROSS-REFERENCE:SYSTEM:N0110$`
 
-### Core RTAGs
+### Core RTAGs-[`$UCCS-CORE:SCNSV4:CRS-RTAG:SCNSV4-ID$`]
 
 REF       – neutral reference (See X)
 DEPENDS   – requires X before Y
 CALLS     – invokes or uses X
 RANGE     – marks span (Replace N0100–N0200)
 
--   **REF**: For neutral navigation.
--   **DEPENDS**: For dependency ordering.
--   **CALLS**: For function/method invocation links.
--   **RANGE**: For batch edits or replacements.
+-**REF**: For neutral navigation.
+-**DEPENDS**: For dependency ordering.
+-**CALLS**: For function/method invocation links.
+-**RANGE**: For batch edits or replacements.
 
 > Note: `CALLED_BY` is derivable via reverse index of `CALLS`. Keeps RTAG set lean and parse-friendly.
 
-# SCNS Algorithms
+# SCNS Algorithms-[`$UCCS-CORE:SCNSV4:ALGO:SCNSV4-ID$`]
+## Dynamic Insertion Algorithm-[`$UCCS-CORE:SCNSV4:ALOG-DIA:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-CORE:ALGO:SCNS:ALGORITHMS:CORE:N0120$`
+**SCNS ID:** `$UCCS-CORE:ALGO:DIA:N0130$`
 
-## Dynamic Insertion Algorithm
 
-**SCNS ID:** `$UCCS-CORE:ALGO:DYNAMIC:INSERTION:ALGORITHM:N0130$`
-
-### Core Insertion Logic
+### Core Insertion Logic-[`$UCCS-CORE:SCNSV4:DIA-CIL:SCNSV4-ID$`]
 
 **Objective:** Insert new logical units between existing coordinates while maintaining hierarchical relationships and avoiding collisions.
-**Mathematical Formula:**
+***Mathematical Formula:***
+
 Given: Coordinate A and Coordinate B where A < B
+
 Gap = B - A
 
 IF Gap > 1 THEN
+
 New_Coordinate = ⌊(A + B) / 2⌋
+
 ELSE
+
 New_Coordinate = Extend_Hierarchy(A)
+
 END IF
 
 **Example Applications:**
--   **Text Documents:** Insert paragraph between sections 10 and 20 → section 15
--   **Database Records:** Insert entry between ID 100 and 200 → ID 150
--   **Configuration Files:** Insert setting between priority 30 and 40 → priority 35
+-***Text Documents:*** Insert paragraph between sections 10 and 20 → section 15
+-***Database Records:*** Insert entry between ID 100 and 200 → ID 150
+-***Configuration Files:*** Insert setting between priority 30 and 40 → priority 35
 
-### Hierarchical Extension Rules
+### Hierarchical Extension Rules-[`$UCCS-CORE:SCNSV4:DIA-HER:SCNSV4-ID$`]
 
-**Mathematical Pattern:** Base coordinate × 10^n where n = extension level
+needs work - WIP 
 
-**Level 1 Extension:**
-
-Original:  10, 20
-
-Extended:  100 (10 × 10), 105, 150, 200 (20 × 10)
-
-**Level 2 Extension:**
-
-Original:  100, 150
-
-Extended:  1000 (100 × 10), 1250, 1500 (150 × 10)
-
-**General Formula:**
-
-Extended_Coordinate = Base_Coordinate × 10^Extension_Level
-
-Digit_Count = Original_Digit_Count + Extension_Level
-
-**Universal Applications:**
-
-  - **Version Control:** v1.0 → v1.0.0 → v1.0.0.1
-    
-  - **Library Classification:** 100.5 → 100.50 → 100.505
-    
-  - **Priority Systems:** Priority 5 → Priority 50 → Priority 500
-
-### Gap Analysis and Optimal Spacing
+### Gap Analysis and Optimal Spacing-[`$UCCS-CORE:SCNSV4:DIA-GAOS:SCNSV4-ID$`]
 
 **Capacity Calculation Formula:**
 
-Insertion_Capacity = ⌊log₂(Gap)⌋ + 1
+-[Insertion_Capacity = ⌊log₂(Gap)⌋ + 1]
 
-Where Gap = Next_Coordinate - Current_Coordinate
+-Where-[Gap = Next_Coordinate - Current_Coordinate]
 
 **Spacing Distribution Logic:**
 
 FOR each adjacent pair (A, B):
+
 Gap = B - A
+
 Capacity = ⌊log₂(Gap)⌋ + 1
+
 Priority = Capacity_Score
+
 END FOR
+
 Sort pairs by Priority (descending)
+
 
 **Universal Examples:**
 
-- **Chapter Organization:** Gap of 8 between chapters = 3 insertion levels
-- **Index Systems:** Gap of 16 between categories = 4 insertion levels
-- **Scheduling:** Gap of 4 hours between meetings = 2 subdivision levels
+-***Chapter Organization:*** Gap of 8 between chapters = 3 insertion levels
 
-## Cross-Reference Resolution
+-***Index Systems:*** Gap of 16 between categories = 4 insertion levels
+
+-***Scheduling:*** Gap of 4 hours between meetings = 2 subdivision levels
+
+## Cross-Reference Resolution-[`$UCCS-CORE:SCNSV4:CRR:SCNSV4-ID$`]  
 
 **SCNS ID:** `$UCCS-CORE:ALGO:CROSS:REFERENCE:RESOLUTION:N0140$`
 
-### Dependency Graph Construction
-
-**Graph Theory Application:**
-- Create directed graph G = (V, E) where:
-- V = Set of all coordinate addresses
-- E = Set of reference relationships
-
-**Mathematical Representation:**
-
-Graph G = {Vertices, Edges}
-Vertex V = {Coordinate_ID, Metadata, Classification}
-Edge E = {Source_Vertex, Target_Vertex, Relationship_Type}
-
+### Dependency Graph Construction-[`$UCCS-CORE:SCNSV4:CRR-DGC:SCNSV4-ID$`]
 
 **Relationship Matrix:**
 
@@ -255,11 +240,13 @@ Dependents(j) = Σ M[i][j] for all i
 
 **Universal Applications:**
 
-  - **Document References:** Citations, footnotes, cross-references
-  - **System Dependencies:** Service calls, data flows, API connections
-  - **Knowledge Networks:** Concept relationships, topic hierarchies
+-***Document References:*** Citations, footnotes, cross-references
+  
+-***System Dependencies:*** Service calls, data flows, API connections
 
-### Impact Analysis
+-***Knowledge Networks:*** Concept relationships, topic hierarchies
+
+### Impact Analysis-[`$UCCS-CORE:SCNSV4:CRR-IA:SCNSV4-ID$`]
 
 **Algorithm:** Determine cascade effects of modifying specific addresses.
 
@@ -298,11 +285,12 @@ function calculateRiskLevel(node) {
     return 'LOW';
 }
 ```
-## Integration Pattern Detection
+
+## Integration Pattern Detection-[`$UCCS-CORE:SCNSV4:IPD:SCNSV4-ID$`]  
 
 **SCNS ID:** `$UCCS-CORE:ALGO:INTEGRATION:PATTERN:DETECTION:N0150$`
 
-### Workflow Pattern Recognition
+### Workflow Pattern Recognition-[`$UCCS-CORE:SCNSV4:IPD-WPR:SCNSV4-ID$`]
 
 **Algorithm:** Identify common development patterns for AI optimization.
 
@@ -342,7 +330,7 @@ function detectCRUDPattern(history) {
 }
 ```
 
-### Architecture Compliance Check
+### Architecture Compliance Check[`$UCCS-CORE:SCNSV4:IPD-IA:SCNSV4-ID$`]
 
 **Algorithm:** Validate code organization against established patterns.
 
@@ -392,11 +380,11 @@ const LAYERED_ARCHITECTURE_RULE = {
 };
 ```
 
-## Error Handling and Validation
+## Error Handling and Validation-[`$UCCS-CORE:SCNSV4:EHVCR:SCNSV4-ID$`]  
 
 **SCNS ID:** `$UCCS-CORE:ALGO:ERROR:HANDLING:VALIDATION:N0160$`
 
-### Malformed Address Detection
+### Malformed Address Detection-[`$UCCS-CORE:SCNSV4:EHVCR-MAD:SCNSV4-ID$`] 
 
 **Algorithm:** Validate SCNS address format and detect common errors.
 
@@ -438,7 +426,7 @@ function validateAddress(address) {
     };
 }
 ```
-### Consistency Checking
+### Consistency Checking-[`$UCCS-CORE:SCNSV4:EHVCR-CC:SCNSV4-ID$`]
 
 **Algorithm:** Ensure address consistency across project files.
 
@@ -480,11 +468,11 @@ function checkConsistency(projectFiles) {
     return issues;
 }
 ```
-## Performance Optimization
+## Performance Optimization-[`$UCCS-CORE:SCNSV4:POP:SCNSV4-ID$`]  
 
-**SCNS ID:** `$UCCS-CORE:ALGO:PERFORMANCE:OPTIMIZATION:OPTIMIZATION:N0170$`
+**SCNS ID:**`$UCCS-CORE:ALGO:PERFORMANCE:OPTIMIZATION:OPTIMIZATION:N0170$`
 
-### Address Resolution Caching
+### Address Resolution Caching[`$UCCS-CORE:SCNSV4:POP-ARC:SCNSV4-ID$`] 
 
 **Algorithm:** Optimize lookup performance for large codebases.
 
@@ -566,13 +554,12 @@ class SCNSCache {
     }
 }
 ```
----
 
-## Collision Detection and Resolution
+## Collision Detection and Resolution-[`$UCCS-CORE:SCNSV4:CDR:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-CORE:ALGO:COLLISION:DETECTION:RESOLUTION:N0180$`
 
-### Address Conflict Resolution
+### Address Conflict Resolution[`$UCCS-CORE:SCNSV4:CDR-ACR:SCNSV4-ID$`]
 
 **Algorithm:** Handle cases where multiple developers create conflicting addresses.
 
@@ -619,20 +606,19 @@ function extendHierarchically(addresses) {
 
     return resolved;
 ```
----
 
-## Protocol Architecture
+
+## Protocol Architecture-[`$UCCS-CORE:SCNSV4:ORG-ARCH:SCNSV4-ID$`]  
 
 **SCNS ID:** `$UCCS-CORE:ARCH:PROTOCOL:ARCHITECTURE:PROTOCOL:N0190$`
 
-### PHASE 1: UCCS-ORG-INITIALIZE → File Discovery & Cataloging
-
+### PHASE:UCCS-ORG-INITIALIZE → File Discovery & Cataloging-[`$UCCS-CORE:SCNSV4:ORG-INIT:SCNSV4-ID$`]
 **UIP Block: File Discovery**
 
 ```yaml
 
-BLOCK:
-  scns_id: "UCCS-ORG:org:CATALOG:N0200"
+BLOCK:`
+  scns_id: "UCCS-ORG:SCNSV4:CATALOG:N0010"
   title: "File Discovery & Initial Cataloging"
   purpose: "Scan and register all files in workspace with SCNS addressing"
   process:
@@ -642,14 +628,14 @@ BLOCK:
     - VALIDATE: Present catalog for user confirmation
   confirmation: "Proceed with file registration? (Y / N / Modify)"
 ```
-### PHASE 2: UCCS-ORG-STRUCTURE → Cross-Reference Matrix Creation
+### PHASE:UCCS-ORG-STRUCTURE → Cross-Reference Matrix Creation-[`$UCCS-CORE:SCNSV4:ORG-STRUC:SCNSV4-ID$`]
 
 **UIP Block:** Relationship Mapping
 
 ```yaml
 
 BLOCK:
-  scns_id: "UCCS-ORG:org:MATRIX:N0210"
+  scns_id: "UCCS-ORG:SCNSV4:MATRIX:N0020"
   title: "Cross-Reference Matrix Generation"
   purpose: "Map relationships between files using RTAG analysis"
   process:
@@ -660,14 +646,14 @@ BLOCK:
   confirmation: "Accept relationship mapping? (Y / N / Modify)"
 ```
 
-### PHASE 3: UCCS-ORG-MAINTAIN → Dynamic Organization Management
+### PHASE:UCCS-ORG-MAINTAIN → Dynamic Organization Management-[`$UCCS-CORE:SCNSV4:ORG-MAINT:SCNSV4-ID$`]
 
 **UIP Block:** Continuous Organization
 
 ```yaml
 
 BLOCK:
-  scns_id: "UCCS-ORG:org:MAINTAIN:N0220"
+  scns_id: "UCCS-ORG:SCNSV4:MAINTAIN:N0030"
   title: "Dynamic File Organization Maintenance"
   purpose: "Keep organization current as files change"
   process:
@@ -677,12 +663,58 @@ BLOCK:
     - REPORT: Provide organization health status
   confirmation: "Apply organization updates? (Y / N / Modify)"
 ```
+## Protocol Implementation Templates-[`$UCCS-CORE:SCNSV4:ORG-PIT:SCNSV4-ID$`]
 
-## Core Output: File-SCNS Cross-Reference Table
+**SCNS ID:** `$UCCS-CORE:IMPL:PROTOCOL:TEMPLATES:IMPLEMENTATION:N0250$` 
+
+### User Prompt Templates[`$UCCS-CORE:SCNSV4:ORG-UPP:SCNSV4-ID$`]
+
+**Initialize File Organization**
+
+INITIALIZE-[`$UCCS-ORG:SCNSV4:CATALOG:N0010$`] for workspace: [SCNSV4:ID]]
+
+-Discover all files. 
+-Assign preliminary SCNSV4-IDs.
+-[`$UCCS-ORG:SCNSV4:MATRIX:N0020$`]  
+-[`$UCCS-ORG:SCNSV4:MAINTAIN:N0030$`]
+-If necessary-[`$UCCS-ORG:SCNSV4:MATRIX:N0020$`]
+-Present the master registry table for confirmation. 
+
+Follow UIP:  
+
+***GENERATE → SUMMARIZE → PREVIEW → CONFIRM → ITERATE***
+
+**Update Cross-References**
+
+STRUCTURE-[`$UCCS-ORG:SCNSV4:MATRIX:N0020$`]  
+
+-Analysis of current file registry. 
+-Map all RTAG relationships and update the cross-reference matrix. 
+-Show relationship changes and request validation via UIP.
+
+**Maintenance Check**
+
+MAINTAIN-[`$UCCS-ORG:SCNSV4:MAINTAIN:N0030$`]
+
+-Sync file registry with current workspace state. 
+-Identify any broken references, missing files, or SCNS ID conflicts. 
+-Present maintenance report and recommended actions for UIP confirmation.
+
+### AI System Behavior-[`$UCCS-CORE:SCNSV4:ORG-AIB:SCNSV4-ID$`]
+
+The AI must always:
+
+-Present organizational changes in table format before applying
+-Require explicit user confirmation for SCNS ID assignments
+-Show relationship matrix updates with clear before/after views
+-Validate all cross-references and flag inconsistencies
+-Maintain organization audit trail with timestamps
+
+## Cross-Reference Master Regitry-Core Output:[`$UCCS-CORE:SCNSV4:CRMR:SCNSV4-ID$`] 
 
 **SCNS ID:** `$UCCS-CORE:OUTPUT:FILE:SCNS:CROSS-REFERENCE:N0230$`
 
-## UIP Integration Framework
+## UIP Integration Framework-[`$UCCS-CORE:SCNSV4:ORG-UIP:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-CORE:FRAMEWORK:UIP:INTEGRATION:FRAMEWORK:N0240$`
 
@@ -700,90 +732,64 @@ GENERATE → VALIDATE → ITERATE → GENERATE → VALIDATE...
 
 ### Granular Control Points
 
+
 **File Registration UIP**
 
-- Individual file SCNS ID assignment requires confirmation
-- Batch operations show summary table before applying
-- Relationship detection presents findings for validation
+-Individual file SCNSv4 ID's assignment requires confirmation
+-Batch operations show the summary tables before applying
+-Relationship detection presents findings for validation
 
 **Cross-Reference UIP**
 
-- Each detected relationship requires user confirmation
-- Conflicting references trigger resolution workflow
-- Matrix updates show before/after comparison
+-The cross-referenced relationships require user validation
+-Conflicting references trigger-[$UCCS-CORE:ALGO:COLLISION:DETECTION:RESOLUTION:N0180$]
+-Matrix updates show before/after comparison
 
 **Maintenance UIP**
 
-- File changes trigger organization review process
-- Broken references require user decision (fix/ignore/defer)
-- Status changes validated before updating master registry
+-File changes trigger-[`$UCCS-CORE:ARCH:PROTOCOL:ARCHITECTURE:PROTOCOL:N0190$`]
 
-## Protocol Implementation Templates
+-Broken references require user decision, after listing the appropriate SNCS algorithms from-[`$UCCS-CORE:IMPL:SCNS:COORDINATE:ENGINE:N0090$`]
 
-**SCNS ID:** `$UCCS-CORE:IMPL:PROTOCOL:TEMPLATES:IMPLEMENTATION:N0250$`
-
-### User Prompt Templates
-
-**Initialize File Organization**
-
-- Execute UCCS-ORG-INITIALIZE for workspace: [path/description]
-Please discover all files, assign preliminary SCNS IDs, and present the master registry table for confirmation. Follow UIP: Generate → Preview → Confirm → Iterate
-
-**Update Cross-References**
-
-- Execute UCCS-ORG-STRUCTURE analysis on current file registry. Map all RTAG relationships and update the cross-reference matrix. Show relationship changes and request validation via UIP.
-
-**Maintenance Check**
-
-- Execute UCCS-ORG-MAINTAIN to sync file registry with current workspace state. Identify any broken references, missing files, or SCNS ID conflicts. Present maintenance report and recommended actions for UIP confirmation.
-
-### AI System Behavior
-
-The AI must always:
-- Present organizational changes in table format before applying
-- Require explicit user confirmation for SCNS ID assignments
-- Show relationship matrix updates with clear before/after views
-- Validate all cross-references and flag inconsistencies
-- Maintain organization audit trail with timestamps
+-Status are validated before, the master registry is generated in a [.md] file
   
-## Integration with Existing Protocols
-
-**SCNS ID:** `$UCCS-CORE:INTEGRATION:PROTOCOLS:EXISTING:INTEGRATION:N0260$`
-
-# UCCS-INF-PERPLEXITY Protocol v1.0
+# UCCS-INF-PERPLEXITY Protocol v1.0-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:SPEC:PROTOCOL:CORE:N0270$`
 
 Version: 1.0
 Last Updated:** 2025-08-23
 Author:** UCCS Protocol Development Team
-Coordinate:`$UCCS-INF-PERPLEXITY:SPEC:CORE:N0270$`
+SCNSV4-ID:`$UCCS-INF-PERPLEXITY:SPEC:CORE:N0270$`
 
-**Purpose:** This document specifies the integration and communication protocol for the Perplexity AI model within the USSC AI project, optimized for real-time research coordination with WA
+**Purpose:** This document specifies the integration and communication protocol for the Perplexity AI model within the UCCS AI project, optimized for real-time research coordination with source verification.
 
-## 1. Core Concepts 🔍
+## Core Concepts-[`$UCCS-CORE:INF-PERPLEXITY:CORECC:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:CONCEPT:CORE:CONCEPTS:N0280$`
 
-  - **Research Query:** A structured research request with specific investigation scope and source requirements.
-  - **Source Verification:** Automatic credibility assessment and citation management for all retrieved information.
-  - **Evidence Compilation:** Structured knowledge synthesis with transparent provenance tracking.
-  - **Research Coordinate:** Unique USSC addressing for traceability: `USSC-RESEARCH:{TOPIC}:{METHOD}:N{####}`
+-**Research Query:** A structured research request with specific investigation scope and source requirements.
 
-## 2. Research Protocol 📚
+-**Source Verification:** Automatic credibility assessment and citation management for all retrieved information.
+
+-**Evidence Compilation:** Structured knowledge synthesis with transparent provenance tracking.
+
+-**Research Coordinate:** Unique UCCS addressing for traceability`$INF-PERPLEXITY:SCNSV4-ID:MREG:N#$`-[`$UCCS-ORG:SCNSV4:CATALOG:N0010$`]
+
+## Research Protocol-[`$UCCS-CORE:INF-PERPLEXITY:RSPROTO:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:PROTOCOL:RESEARCH:PROTOCOL:N0290$`
 
 All research follows a three-phase investigation model with mandatory source verification.
 
-### 2.1. Request Structure
+### Request Structure-[`$UCCS-CORE:INF-PERPLEXITY:RPROTO-REQ:SCNSV4-ID$`]
 
 A research query sent to Perplexity should be a JSON object with the following schema:
 
 ```json
 {
-  "protocol_version": "UCCS-INF-PERPLEXITY-1.0",
-  "research_coordinate": "USSC-RESEARCH:{TOPIC}:{METHOD}:N{####}",
+  "protocol_version": "[`$UCCS-CORE:INF-PERPLEXITY:PROTOCOL:SCNSV4-ID$`]",
+  "research_coordinate": "`$UCCS-CORE:INF-PERPLEXITY:{TOPIC}:{METHOD}:N{####}$`",
   "timestamp_utc": "2025-08-23T20:49:00Z",
   "query": {
     "research_question": "Primary investigation topic",
@@ -800,13 +806,9 @@ A research query sent to Perplexity should be a JSON object with the following s
   }
 }
 ```
-- **research_coordinate:** Unique UCCS identifier for investigation traceability.
+-[`$UCCS-CORE:INF-PERPLEXITY:COREC:SCNSV4-ID$`]
 
-- **query.research_question:** The core research topic. Precision is key.
-
-- **search_parameters:** Fine-tuning controls for source selection and verification.
-
-### 2.2. Response Structure
+### Response Structure-[`$UCCS-CORE:INF-PERPLEXITY:RPROTO-RESP:SCNSV4-ID$`]
 
 The response from Perplexity will be a JSON object with the following schema:
 
@@ -814,7 +816,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 {
   "status": "success|partial|error",
-  "research_coordinate": "UCCS-RESEARCH:{TOPIC}:{METHOD}:N{####}",
+  "research_coordinate": "`$UCCS-CORE:INF-PERPLEXITY:{TOPIC}:{METHOD}:N{####}$`",
   "methodology": "Research approach and model selection",
   "findings": {
     "summary": "Executive summary of key findings",
@@ -851,21 +853,23 @@ The response from Perplexity will be a JSON object with the following schema:
 
 - **citation_index:** Comprehensive credibility assessment and source metrics.
 
-## 3. Research Phases 🎯
+## Research Phases-[`$UCCS-CORE:INF-PERPLEXITY:RSCORE:SCNSV4-ID$`] 
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:PHASE:RESEARCH:PHASES:N0300$`
 
-### Phase 1: INIT - Research Initialization
+### Phase:INIT - Research Initialization-[`$UCCS-CORE:INF-PERPLEXITY:RS-INIT:SCNSV4-ID$`]
 
-- Parse research query into structured investigation plan
+-Parse research query into UCCS-CORE strucutred investigation plan
 
-- Configure search parameters and source filtering criteria
+-Configure search parameters and source filtering criteria
 
-- Generate research coordinate and methodology outline
+-Generate research coordinate and methodology outline
 
-- User confirmation: "Proceed with research? (Y/N/Modify)"
+-Granular Control Points-[`$UCCS-CORE:SCNSV4:ORG-CG:SCNSV4-ID$`]+ 
 
-### Phase 2: RESEARCH - Investigation Execution
+-User confirmation: "Proceed with research? (Y/N/Modify)"
+
+### Phase:RESEARCH - Investigation Execution-[`$UCCS-CORE:INF-PERPLEXITY:RS-RSR:SCNSV4-ID$`]
 
 - Execute real-time web searches using appropriate Sonar model
 
@@ -875,7 +879,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 - Generate structured findings with verification status
 
-### Phase 3: SYNTHESIS - Knowledge Integration
+### Phase:SYNTHESIS - Knowledge Integration-[`$UCCS-CORE:INF-PERPLEXITY:RS-SYN:SCNSV4-ID$`]
 
 - Synthesize multi-source evidence into coherent findings
 
@@ -885,23 +889,23 @@ The response from Perplexity will be a JSON object with the following schema:
 
 - Provide research coordinate for future reference
 
-## 4. Source Credibility Framework ✅
+## 4. Source Credibility Framework-[`$UCCS-CORE:INF-PERPLEXITY:SCF:SCNSV4-ID$`] 
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:FRAMEWORK:SOURCE:CREDIBILITY:N0310$`
 
-### Credibility Levels:
+### Credibility Levels:-[`$UCCS-CORE:INF-PERPLEXITY:SCF-CL:SCNSV4-ID$`]
 
-- **VERIFIED (90-100%):** Academic papers, government sources, established institutions
+-**VERIFIED (90-100%):** Academic papers, government sources, established institutions
 
-- **RELIABLE (70-89%):** Established media, industry reports, verified experts
+-**RELIABLE (70-89%):** Established media, industry reports, verified experts
 
-- **MODERATE (50-69%):** General news sources, blogs with verification
+-**MODERATE (50-69%):** General news sources, blogs with verification
 
-- **CAUTION (30-49%):** Unverified sources, social media, opinion pieces
+-**CAUTION (30-49%):** Unverified sources, social media, opinion pieces
 
-- **UNRELIABLE (<30%):** Flagged for potential misinformation
+-**UNRELIABLE (<30%):** Flagged for potential misinformation
 
-### Verification Process:
+### Verification Process:-[`$UCCS-CORE:INF-PERPLEXITY:SCF-VP:SCNSV4-ID$`]
 
 - Domain authority assessment based on publisher reputation
 
@@ -911,121 +915,101 @@ The response from Perplexity will be a JSON object with the following schema:
 
 - Bias detection and perspective limitation identification
 
-## 5. Research Models 🔬
+## Research Models-[`$UCCS-CORE:INF-PERPLEXITY:SCF-CL:SCNSV4-ID$`]
    
 **SCNS ID:** `$Uccs-INF-PERPLEXITY:MODEL:RESEARCH:MODELS:N0320$`
 
 **Sonar (Standard Research)**
 
-- Quick fact-checking and basic information gathering
+-Quick fact-checking and basic information gathering
 
-- 3-5 sources per finding with basic credibility assessment
+-3-5 sources per finding with basic credibility assessment
 
-- Optimal for: Simple queries, rapid verification, daily research
+-Optimal for: Simple queries, rapid verification, daily research
 
 **Sonar Pro (Deep Research)**
 
-- Complex investigations with extensive sourcing
+-Complex investigations with extensive sourcing
 
-- 8-15 sources per finding with cross-verification
+-8-15 sources per finding with cross-verification
 
-- Optimal for: Academic research, business intelligence, analysis
+-Optimal for: Academic research, business intelligence, analysis
 
 **Deep Research (Expert Investigation)**
 
-- Autonomous research projects with comprehensive reporting
+-Autonomous research projects with comprehensive reporting
 
-- 50+ sources with automated synthesis and fact-checking
+-50+ sources with automated synthesis and fact-checking
 
-- Optimal for: White papers, market analysis, investigative work
+-Optimal for: White papers, market analysis, investigative work
 
-## 6. Best Practices for Integration 🚀
+## Best Practices for Integration-[`$UCCS-CORE:INF-PERPLEXITY:BPIP:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:PRACTICE:BEST:PRACTICES:N0330$`
 
-- *Prioritize Source Quality:* Always verify credibility scores before accepting findings as factual.
 
-- *Multi-Source Confirmation:* Require multiple independent sources for critical claims.
+-*Prioritize Source Quality:* Always verify credibility scores before accepting findings as factual.
 
-- *Citation Transparency:* Include complete citation metadata in all research outputs.
+-*Multi-Source Confirmation:* Require multiple independent sources for critical claims.
 
-- *Research Coordinates:* Use UCCS addressing for traceability and reference management.
+-*Citation Transparency:* Include complete citation metadata in all research outputs.
 
-- *Bias Awareness:* Acknowledge source limitations and perspective constraints.
+-*Research Coordinates:* Use UCCS addressing for traceability and reference management.
 
-- *Continuous Verification:* Monitor for source updates and information changes.
+-*Bias Awareness:* Acknowledge source limitations and perspective constraints.
 
-## 7. Security Considerations 🔒
+-*Continuous Verification:* Monitor for source updates and information changes.
+
+##Security Considerations-[`$UCCS-CORE:INF-PERPLEXITY:SEC:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:SECURITY:CONSIDERATIONS:SECURITY:N0340$`
 
 **Research Data Protection:**
 
-- Query privacy with minimal data retention
+-Query privacy with minimal data retention
 
-- Source access audit trails for compliance
+-Source access audit trails for compliance
 
-- Research coordinate isolation between user groups
+-Research coordinate isolation between user groups
 
-- Encrypted transmission of sensitive research topics
+-Encrypted transmission of sensitive research topics
 
 **Misinformation Prevention:**
 
-- Multi-layer source credibility assessment
+-Multi-layer source credibility assessment
 
-- Contradiction detection across information sources
+-Contradiction detection across information sources
 
-- Bias disclosure and source limitation transparency
+-Bias disclosure and source limitation transparency
 
-- Update monitoring for retracted or changed information
+-Update monitoring for retracted or changed information
 
-## 8. Integration Examples 💡
 
-**SCNS ID:** `$UCCS-INF-PERPLEXITY:EXAMPLE:INTEGRATION:EXAMPLES:N0350$`
-
-**Basic Research Query:**
-
-*USSC-RESEARCH:CLIMATE:SONAR-PRO:N0001*
-
--"What are the primary causes of climate change according to scientific consensus?"
-
-**Academic Research Query:**
-
-*UCCS-RESEARCH:CRYPTO:DEEP:N0002*
-
--"Comprehensive analysis of post-quantum cryptography implementation challenges"
-
-**Business Intelligence Query:**
-
-*UCCS-RESEARCH:MARKET:SONAR-PRO:N0003*
-
--"Current trends in enterprise AI adoption and ROI metrics"
-
-## 9. Error Handling 🚨
+## 8. Error Handling 🚨
 
 **SCNS ID:** `$USSC-INF-PERPLEXITY:HANDLING:ERROR:HANDLING:N0360$`
 
 **Common Error Types:**
 
-- *insufficient_sources:* Not enough credible sources found for query
+-*insufficient_sources:* Not enough credible sources found for query
 
-- *low_credibility:* Average source credibility below threshold
+-*low_credibility:* Average source credibility below threshold
 
-- *contradictory_evidence:* Conflicting information across sources
+-*contradictory_evidence:* Conflicting information across sources
 
-- *rate_limit_exceeded:* Too many research requests in time window
+-*rate_limit_exceeded:* Too many research requests in time window
 
 **Recovery Strategies:**
 
-- Broaden search parameters for insufficient sources
+-Broaden search parameters for insufficient sources
 
-- Lower credibility threshold with explicit warnings
+-Lower credibility threshold with explicit warnings
 
-- Present contradictory findings with source attribution
+-Present contradictory findings with source attribution
 
-- Implement request queuing for rate limit management
+-Implement request queuing for rate limit management
 
-## 10. Success Metrics 📊
+## 10. Success Metrics
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:METRIC:SUCCESS:METRICS:N0370$`
 
@@ -2207,16 +2191,3 @@ Batched Confirmations: The AI may group several related actions into a single UI
 Technical Language: Assumes the user understands technical jargon and complex concepts without elaboration.
 
 Remember: User control is paramount. No significant changes occur without explicit UIP validation. The AI serves you, not the other way around.
-
-
-
-
-
-
-
-
-
-
-
-
-
