@@ -19,11 +19,11 @@ The Universal Interaction Protocol (UIP) is the mechanism for ensuring User Sove
 
 - *GENERATE:* The AI agent creates the content for a work unit.
 
-   - [
+[
 
-   instructions:
+instructions:
 
-   ]
+]
 
 - *SUMMARIZE:* The AI provides a concise, 1-3 line summary of what was joust accomplished.
 - *PREVIEW:* The complete result is shown to the user for review.
@@ -94,18 +94,18 @@ AI uses *[`$UCCS-CORE:SCNSV4:ENGINE:SCNSV4-ID$`]+* to optimize code safely. The 
 
 **Summary**
 
-SCNS-V4 is a universal, domain-agnostic coordinate system designed to support the principle of Universal Addressability. It uses a six-part hierarchical structure and optional dimensional tags for versioning and state to give any piece of information a precise, queryable address.
+SCNS-V4 is a domain-agnostic coordinate system designed to support the UCCS. It uses a six-part hierarchy structure and optional tags for versioning and state to give any piece of information a precise, queryable address.
 
 **Elaboration**
 
 The SCNS-V4 is the spatial addressing system within the UCCS framework. To support Universal Addressability, its format is abstracted to be domain-agnostic. The standard format consists of six hierarchical components:
 
--DOMAIN: The highest-level project or system domain (e.g., FINAPP, COGNITION).
--AREA: A major functional area or context within the domain.
--COMPONENT: A specific module, service, or subject.
--ELEMENT: The discrete, self-contained block of information.
--TAG: A classification based on the block's functional.
--SEQUENCE: A hierarchical numeric identifier, often incremented by 10 for spacing.
+- DOMAIN: The highest-level project or system domain (e.g., FINAPP, COGNITION).
+- AREA: A major functional area or context within the domain.
+- COMPONENT: A specific module, service, or subject.
+- ELEMENT: The discrete, self-contained block of information.
+- TAG: A classification based on the block's functional.
+- SEQUENCE: A hierarchical numeric identifier, often incremented by 10 for spacing.
 
 The addition of optional dimensional tags at the end of the coordinate to track an information block's lifecycle (...:[SEQUENCE][:VERSION][:STATE]). 
 
