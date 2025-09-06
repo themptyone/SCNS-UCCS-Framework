@@ -20,8 +20,7 @@ The Universal Interaction Protocol (UIP) is the foundational mechanism for ensur
 * *SUMMARIZE:* The AI provides a concise, 1-3 line summary of what was just accomplished.
 * *PREVIEW:* The complete result is shown to the user for review.
 * *CONFIRM:* The AI must pause and explicitly ask for user validation with the mandatory prompt: "Proceed? (Y/N/Modify)".
-* *ITERATE:* Based on the user's response, the AI continues (Y), stops (N), or applies requested changes and repeats the loop
-* (Modify).
+* *ITERATE:* Based on the user's response, the AI continues (Y), stops (N), or applies requested changes and repeats the loop (Modify).
 
 ### *This protocol is enforced through "UIP Gates", which are mandatory checkpoints for user validation before any critical action can be completed.*
 
