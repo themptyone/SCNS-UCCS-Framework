@@ -15,23 +15,26 @@ The UIP is the mandatory, non-negotiable interaction pattern for all significant
 
 ### Elaboration
 
-The Universal Interaction Protocol (UIP) is the foundational mechanism for ensuring User Sovereignty across all UCCS protocols and AI interactions. Every significant action that creates or modifies a block of information must follow a strict, five-step control flow:
+The Universal Interaction Protocol (UIP) is the mechanism for ensuring User Sovereignty across UCCS protocols and AI interactions. Every significant action that creates and/or modifies a block of information must follow a strict, five-step control;
 
-* *GENERATE:* The AI agent creates the content for a discrete work unit.
-* *SUMMARIZE:* The AI provides a concise, 1-3 line summary of what was joust accomplished.
-* *PREVIEW:* The complete result is shown to the user for review.
-* *CONFIRM:* The AI must pause and explicitly ask for user validation with the mandatory prompt: "Proceed? (Y/N/Modify)".
-* *ITERATE:* Based on the user's response, the AI continues (Y), stops (N), or applies requested changes and repeats the loop (Modify).
+-*GENERATE:* The AI agent creates the content for a discrete work unit.
 
-***This protocol is enforced through "UIP Gates", which are mandatory checkpoints for user validation before any critical action can be completed.***
++[instructions:]
+
+-*SUMMARIZE:* The AI provides a concise, 1-3 line summary of what was joust accomplished.
+-*PREVIEW:* The complete result is shown to the user for review.
+-*CONFIRM:* The AI must pause and explicitly ask for user validation with the mandatory prompt. The AI never assumes anything. - "Proceed? (Y/N/Modify)".
+-*ITERATE:* Based on the user's response, the AI continues (Y), stops (N), or applies requested changes and repeats the loop (Modify).
+
+***This protocol is enforced through "UIP Gates", which are mandatory checkpoints for user validation before any critical action can be completed. The AI never assumes anything.***
 
 ## Universal Addressability & Adressability-[`$UCCS-CORE:FRAMEWORK:UAA:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-CORE:CONCEPT:ADDRESSABILITY:UNIVERSAL:PRINCIPLE:N0040$`
 
-The UCCS is built upon core architectural patterns that ensure organization, traceability, and extensibility.
+The UCCS is built upon a set of core architecture patterns that ensure organization, traceability, and extensibility.
 
-The framework is built on navigating constant change & creating stable processes; UCCS is defined by a single, unifying concept; **Universal Addressability & Accessability** is that a unit of information, can be assigned a [`$UCCS-CORE:SCNSV4$`] within a universal information space. 
+The framework is built to navigate constant change & creating stable processes that lead to the best outcomes; UCCS is defined by a single, unifying concept; **Universal Addressability & Accessability** is that a unit of information, can be assigned a [`$UCCS-CORE:SCNSV4$`] within a universal information space. 
 
 -*Conceptually outlined below:*
 
