@@ -572,7 +572,7 @@ These four algorithms work together to create a powerful spatial navigation syst
 - **DIP** determines where new information goes
 
 - **CGT** maps the relationships between information
-- 
+  
 - **TTR** optimizes how AI systems process the information
  
 
@@ -619,29 +619,33 @@ Solution: Extend to N0100, N0101, N0105 (hierarchical extension)
 
 ### Hierarchical Extension Rules -[`$UCCS-CORE:SCNSV4:DIA-HER:SCNSV4-ID$`]
 
-needs work - WIP - currently empty
+WIP - currently empty
 
 ### Gap Analysis and Optimal Spacing -[`$UCCS-CORE:SCNSV4:DIA-GAOS:SCNSV4-ID$`]
 
 **Capacity Calculation Formula:**
 
--Sort pairs by Priority (descending)
+```
+Sort pairs by Priority (descending)
 
-[Insertion_Capacity = ⌊log₂(Gap)⌋ + 1]
+Insertion_Capacity = ⌊log₂(Gap)⌋ + 1
 
-Where-[Gap = Next_Coordinate - Current_Coordinate]
+Gap = Next_Coordinate - Current_Coordinate
+```
 
 **Spacing Distribution Logic:**
 
+```
 FOR each adjacent pair (A, B):
 
-[Gap = B - A
+Gap = B - A
 
 Capacity = ⌊log₂(Gap)⌋ + 1
 
-Priority = Capacity_Score]
+Priority = Capacity_Score
 
 END FOR
+```
 
 **Universal Examples:**
 
@@ -1070,7 +1074,7 @@ function extendHierarchically(addresses) {
 
 
 
-# ORGANIZATION Coore -[`$UCCS-CORE:UCCS-ORG:ORG-CORE:SCNSV4-ID$`]  
+# ORGANIZATION Core -[`$UCCS-CORE:UCCS-ORG:ORG-CORE:SCNSV4-ID$`]  
 
 **SCNS ID:** `$UCCS-CORE:ARCH:PROTOCOL:ARCHITECTURE:PROTOCOL:N0190$`
 
@@ -1109,7 +1113,7 @@ BLOCK:
   confirmation: "Accept relationship mapping? (Y / N / Modify)"
 ```
 
-### PHASE:UCCS-ORG-MAINTAIN → Dynamic Organization Management-[`$UCCS-CORE:UCCS-ORG:ORG-MAINT:SCNSV4-ID$`]
+### PHASE:UCCS-ORG-MAINTAIN -[`$UCCS-CORE:UCCS-ORG:ORG-MAINT:SCNSV4-ID$`]
 
 **UIP Block: Continuous Organization**
 
@@ -1125,12 +1129,13 @@ BLOCK:
     - RECONCILE: Resolve conflicts and broken references
     - REPORT: Provide organization health status
   confirmation: "Apply organization updates? (Y / N / Modify)"
-```
-## ORGANIZATION PROTOCOLs -[`$UCCS-CORE:UCCS-ORG:ORG-PIT:SCNSV4-ID$`]
+````
+
+## ORGANIZATION PROTOCOLs -[`$UCCS-CORE:UCCS-ORG:ORG-PROTO:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-CORE:IMPL:PROTOCOL:TEMPLATES:IMPLEMENTATION:N0250$` 
 
-### User Prompt Templates[`$UCCS-CORE:UCCS-ORG:ORG-UPP:SCNSV4-ID$`]
+### User Prompt Templates[`$UCCS-CORE:UCCS-ORG:ORG-UPT:SCNSV4-ID$`]
 
 **Initialize File Organization**
 
@@ -1150,7 +1155,6 @@ INITIALIZE-[`$UCCS-ORG:SCNSV4:CATALOG:N0010$`] for workspace: [SCNSV4:ID]]
 
 Follow UIP-[´$UCCS-CORE:FRAMEWORK:UIP-BASE:SCNSV4-ID$´]
 
-
 **Update Cross-References**
 
 STRUCTURE-[`$UCCS-ORG:SCNSV4:MATRIX:N0020$`]  
@@ -1161,6 +1165,8 @@ STRUCTURE-[`$UCCS-ORG:SCNSV4:MATRIX:N0020$`]
 
 - Show relationship changes and request validation via UIP.
 
+Follow UIP-[´$UCCS-CORE:FRAMEWORK:UIP-BASE:SCNSV4-ID$´]
+
 **Maintenance Check**
 
 MAINTAIN-[`$UCCS-ORG:SCNSV4:MAINTAIN:N0030$`]
@@ -1170,6 +1176,8 @@ MAINTAIN-[`$UCCS-ORG:SCNSV4:MAINTAIN:N0030$`]
 - Identify any broken references, missing files, or SCNS ID conflicts. 
 
 - Present maintenance report and recommended actions for UIP confirmation.
+
+Follow UIP-[´$UCCS-CORE:FRAMEWORK:UIP-BASE:SCNSV4-ID$´]
 
 ### AI System Behavior-[`$UCCS-CORE:SCNSV4:ORG-AIB:SCNSV4-ID$`]
 
@@ -1231,7 +1239,7 @@ It must always:
   
 -----
 
-# UCCS-INF-PERPLEXITY Protocol v1.0-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]
+# UCCS-INF-PERPLEXITY Protocol -[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:SPEC:PROTOCOL:CORE:N0270$`
 
@@ -1239,13 +1247,13 @@ Version: 1.0
 
 Protocol ID: UCCS-INF-PERPLEXITY
 
-Author: thempyyone
+Author: themptyyone
 
 SCNSV4-ID:`$UCCS-INF-PERPLEXITY:SPEC:CORE:N0270$`
 
 **Purpose:** This document specifies the integration and communication protocol for the Perplexity AI model within the UCCS AI project, optimized for real-time research coordination with source verification.
 
-## Core Concepts-[`$UCCS-CORE:INF-PERPLEXITY:CORECC:SCNSV4-ID$`]
+## Core Concepts -[`$UCCS-CORE:INF-PERPLEXITY:CORECC:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:CONCEPT:CORE:CONCEPTS:N0280$`
 
@@ -1257,13 +1265,13 @@ SCNSV4-ID:`$UCCS-INF-PERPLEXITY:SPEC:CORE:N0270$`
 
 - **Research Coordinate:** Unique UCCS addressing for traceability`$INF-PERPLEXITY:SCNSV4-ID:MREG:N#$`-[`$UCCS-ORG:SCNSV4:CATALOG:N0010$`]
 
-## Research Protocol-[`$UCCS-CORE:INF-PERPLEXITY:RSPROTO:SCNSV4-ID$`]
+## Research Protocol -[`$UCCS-CORE:INF-PERPLEXITY:RSPROTO:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:PROTOCOL:RESEARCH:PROTOCOL:N0290$`
 
 ***All research follows multi phased investigation model with mandatory source verification.***
 
-### Request Structure-[`$UCCS-CORE:INF-PERPLEXITY:RPROTO-REQ:SCNSV4-ID$`]
+### Request Structure -[`$UCCS-CORE:INF-PERPLEXITY:RPROTO-REQ:SCNSV4-ID$`]
 
 A research query sent to Perplexity should be a JSON object with the following schema:
 
@@ -1333,23 +1341,32 @@ The response from Perplexity will be a JSON object with the following schema:
 
 - **citation_index:** Comprehensive credibility assessment and source metrics.
 
-## Research Phases-[`$UCCS-CORE:INF-PERPLEXITY:RSCORE:SCNSV4-ID$`] 
+## Research Phases -[`$UCCS-CORE:INF-PERPLEXITY:RSCORE:SCNSV4-ID$`] 
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:PHASE:RESEARCH:PHASES:N0300$`
 
-### Phase:INIT - Research Initialization-[`$UCCS-CORE:INF-PERPLEXITY:RS-INIT:SCNSV4-ID$`]
+### Phase:INIT Research Initialization -[`$UCCS-CORE:INF-PERPLEXITY:RS-INIT:SCNSV4-ID$`]
 
-- Parse research query into [`$UCCS-CORE:FRAMEWORK$`] strucutred investigation plan
+- Parse research query into [`$UCCS-CORE:FRAMEWORK$`] structured investigation plan.
 
 - Configure search parameters and source filtering criteria.
+  
+  - [`$UCCS-CORE:INF-PERPLEXITY:SEC:SCNSV4-ID$`]
+  
+  - [`$UCCS-CORE:INF-PERPLEXITY:BPIP:SCNSV4-ID$`]
 
-- Generate research coordinate and methodology outline. #Ref
+  - [`$UCCS-CORE:INF-PERPLEXITY:SM:SCNSV4-ID$`]
 
-- Granular Control Points-[`$UCCS-CORE:SCNSV4:ORG-CG:SCNSV4-ID$`]+ 
+  - [`$UCCS-CORE:INF-PERPLEXITY:ERR:SCNSV4-ID$`]
 
+
+- Generate research coordinate and methodology outline. -[`$UCCS-CORE:SCNSV4:ENGINE:SCNSV4-ID$`]
+
+- Granular Control Points -[`$UCCS-CORE:SCNSV4:ORG-CG:SCNSV4-ID$`]+[`$UCCS-CORE:FRAMEWORK:AS-UIP:SCNSV4-ID$`]
+ 
 - User confirmation: "Proceed with research? (Y/N/Modify)".
 
-### Phase:RESEARCH - Investigation Execution-[`$UCCS-CORE:INF-PERPLEXITY:RS-RSR:SCNSV4-ID$`]
+### Phase:RESEARCH Investigation Execution -[`$UCCS-CORE:INF-PERPLEXITY:RS-RSR:SCNSV4-ID$`]
 
 - Execute real-time web searches using appropriate Sonar model [`$UCCS-CORE:INF-PERPLEXITY:SCF-CL:SCNSV4-ID$`].
 
@@ -1361,7 +1378,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 ### Phase:SYNTHESIS - Knowledge Integration-[`$UCCS-CORE:INF-PERPLEXITY:RS-SYN:SCNSV4-ID$`]
 
-- Synthesize multi-source evidence into coherent findings.
+- Synthesize multi-source evidence into coherent findings as a [.md] file.
 
 - Apply fact-checking and consistency verification.
 
@@ -1387,13 +1404,13 @@ The response from Perplexity will be a JSON object with the following schema:
 
 ### Verification Process:-[`$UCCS-CORE:INF-PERPLEXITY:SCF-VP:SCNSV4-ID$`]
 
-- Domain authority assessment based on publisher reputation
+- Domain authority assessment based on publisher reputation.
 
-- Cross-reference validation with multiple independent sources
+- Cross-reference validation with multiple independent sources.
 
-- Temporal accuracy verification for information recency
+- Temporal accuracy verification for information recency.
 
-- Bias detection and perspective limitation identification
+- Bias detection and perspective limitation identification.
 
 ## Research Models-[`$UCCS-CORE:INF-PERPLEXITY:SCF-CL:SCNSV4-ID$`]
    
@@ -1401,27 +1418,27 @@ The response from Perplexity will be a JSON object with the following schema:
 
 **Sonar (Standard Research)**
 
-- Quick fact-checking and basic information gathering
+- Quick fact-checking and basic information gathering.
 
-- Minimum 3 sources as posdible sources per finding with basic credibility assessment
+- Minimum 3 sources per finding with basic credibility assessment.
 
-- Optimal for: Simple queries, rapid verification, daily research
+- Optimal for: Simple queries, rapid verification, daily research.
 
 **Sonar Pro (Deep Research)**
 
-- Complex investigations with extensive sourcing
+- Complex investigations with extensive sourcing.
 
-- Minimum 8 sources per finding with cross-verification
+- Minimum 8 sources per finding with cross-verification.
 
-- Optimal for: Academic research, business intelligence, analysis
+- Optimal for: Academic research, business intelligence, analysis.
 
 **Deep Research (Expert Investigation)**
 
-- Autonomous research projects with comprehensive reporting
+- Autonomous research projects with comprehensive reporting.
 
-- 50+ sources with automated synthesis and fact-checking
+- 50+ sources with automated synthesis and fact-checking.
 
-- Optimal for: White papers, market analysis, investigative work
+- Optimal for: White papers, market analysis, investigative work.
 
 ## Best Practices -[`$UCCS-CORE:INF-PERPLEXITY:BPIP:SCNSV4-ID$`]
 
@@ -1441,7 +1458,7 @@ When initializing-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]:
 
 - *Continuous Verification:* Monitor for source updates and information changes.
 
-## Security Considerations-[`$UCCS-CORE:INF-PERPLEXITY:SEC:SCNSV4-ID$`]
+## Security Considerations -[`$UCCS-CORE:INF-PERPLEXITY:SEC:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:SECURITY:CONSIDERATIONS:SECURITY:N0340$`
 
@@ -1453,48 +1470,47 @@ When initializing-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]:
 
 - Source access audit trails for compliance
 
--Research coordinate isolation between user groups
+- Research coordinate isolation between user groups
 
--Encrypted transmission of sensitive research topics
+- Encrypted transmission of sensitive research topics
 
 **Misinformation Prevention:**
 
--Multi-layer source credibility assessment
+- Multi-layer source credibility assessment
 
--Contradiction detection across information sources
+- Contradiction detection across information sources
 
--Bias disclosure and source limitation transparency
+- Bias disclosure and source limitation transparency
 
--Update monitoring for retracted or changed information
+- Update monitoring for retracted or changed information
 
+## Error Handling -[`$UCCS-CORE:INF-PERPLEXITY:ERR:SCNSV4-ID$`]
 
-## 8. Error Handling 
-#
 **SCNS ID:** `$USSC-INF-PERPLEXITY:HANDLING:ERROR:HANDLING:N0360$`
 
 When initializing-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]:
 
 **Common Error Types:**
 
--*insufficient_sources:* Not enough credible sources found for query
+- *insufficient_sources:* Not enough credible sources found for query
 
--*low_credibility:* Average source credibility below threshold
+- *low_credibility:* Average source credibility below threshold
 
--*contradictory_evidence:* Conflicting information across sources
+- *contradictory_evidence:* Conflicting information across sources
 
--*rate_limit_exceeded:* Too many research requests in time window
+- *rate_limit_exceeded:* Too many research requests in time window
 
 **Recovery Strategies:**
 
--Broaden search parameters for insufficient sources
+- Broaden search parameters for insufficient sources
 
--Lower credibility threshold with explicit warnings
+- Lower credibility threshold with explicit warnings
 
--Present contradictory findings with source attribution
+- Present contradictory findings with source attribution
 
--Implement request queuing for rate limit management
+- Implement request queuing for rate limit management
 
-## 10. Success Metrics
+## Success Metrics -[`$UCCS-CORE:INF-PERPLEXITY:SM:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:METRIC:SUCCESS:METRICS:N0370$`
 
@@ -1520,7 +1536,9 @@ When initializing-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]:
 
 - *User Satisfaction:* Research utility and trustworthiness ratings  
 
+
 -----
+
 
 # UCCS-INF-CLAUDE Core Specification -[`$UCCS-CORE:INF-CLAUDE:CORE-SPEC:SCNSV4-ID$`]
 
@@ -1540,7 +1558,9 @@ Integration: Full SCNSV4-ID
 
 **SCNS ID:** `$UCCS-INF-CLAUDE:CONCEPT:PHILOSOPHY:CORE:N0390$`
 
-***UCCS-INF-CLAUDE*** prioritizes repeatable process patterns over specific outcomes. This consistent methodology that adapts to any task while maintaining:
+***UCCS-INF-CLAUDE*** prioritizes repeatable process patterns over specific outcomes. 
+
+This consistent methodology that adapts to any task while maintaining:
 
 - Spatial Organization (SCNSV4-ID)
 
@@ -1555,8 +1575,7 @@ and reliable.
 
 **From Claude's Perspective:**
 
-UCCS-INF Framework - As the agent, it operates within UCCS-INF-CLAUDE (Universal Code Coordinate System -
-Interactive Framework), which provides:
+As the agent, it operates within UCCS-INF-CLAUDE (Universal Code Coordinate System Interactive Framework), which provides:
 
 -  Structured Thinking Pipeline
 
@@ -1567,8 +1586,6 @@ Interactive Framework), which provides:
 -  Quality Assurance Checkpoints
 
 **From User's Perspective:**
-
-UCCS-INF-CLAUDE Experience - Users interact with UCCS-INF-CLAUDE, experiencing:
 
 - Predictable Workflow Stages
 
@@ -1739,14 +1756,16 @@ UCCS-INF-CLAUDE Experience - Users interact with UCCS-INF-CLAUDE, experiencing:
 ***UCCS-INF-CLAUDE*** transforming Human-AI collaboration from ad-hoc interactions into
 systematic, predictable, and controllable workflows. 
 
-The protocol's strength lies not in guaranteeing specific outcomes, but in providing a reliable process
-framework that adapts to any task while maintaining quality, traceability, and
+The protocol's strength lies not in guaranteeing specific outcomes, but in providing a reliable process that adapts to any task while maintaining quality, traceability, and
 user control. 
 
-Repeatability of process - enabling users to confidently engage Claude on any project, knowing the interaction will follow
-familiar, productive patterns while delivering contextually appropriate results.
+Repeatability of process - enabling users to confidently engage Claude on any project, knowing the interaction will follow familiar, productive patterns while delivering contextually appropriate results.
 
 ## Protocol Status: Ready for deployment and iterative refinement
+
+
+----- 
+
 
 # UCCS-INF-GROK Specification -[`$UCCS-CORE:INF-GROK:SPEC:SCNSV4-ID$`]
 
@@ -1833,8 +1852,6 @@ BLOCK:
 - Generate hierarchical outline with coordinates.
 
 **User Experience:**
-
-UIP
 
 - Receive SCNS-mapped task breakdown.
 
