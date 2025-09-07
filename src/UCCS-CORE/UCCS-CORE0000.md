@@ -1,12 +1,12 @@
 # UCCS Core Framework
 
-**SCNS ID:** `$UCCS-CORE:FRAMEWORK$`
+**SCNS ID:** `$SCNS-UCCS0000:FRAMEWORK:CORE:OVERVIEW:N0010$`
 
 This document provides a comprehensive overview of the Universal Code Coordinate System (UCCS), merging architectural design, implementation details, and advanced execution examples into a single, unified framework.
 
 ## Universal Interaction Protocol (UIP) -[`$UCCS-CORE:FRAMEWORK:UIP-BASE:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-CORE:SPEC:FRAMEWORK:UIP-FLOW:FLOW:N0020$`
+**SCNS ID:** `$SCNS-UCCS0000:FRAMEWORK:UIP:SPEC:N0020$`
 
 The UIP is the mandatory, non-negotiable interaction pattern for all significant actions within the UCCS ecosystem. It ensures user control through a consistent five-step process: Generate, Summarize, Preview, Confirm, and Iterate.
 
@@ -28,7 +28,7 @@ The Universal Interaction Protocol (UIP) is the mechanism for ensuring User Sove
 
 ## Universal Addressability & Adressability -[`$UCCS-CORE:FRAMEWORK:UAA:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-CORE:CONCEPT:ADDRESSABILITY:UNIVERSAL:PRINCIPLE:N0040$`
+**SCNS ID:** `$SCNS-UCCS0000:FRAMEWORK:ADDRESSABILITY:CONCEPT:N0030$`
 
 The UCCS is built upon a set of core architecture patterns that ensure organization, traceability, and extensibility.
 
@@ -76,7 +76,7 @@ Additional core principles for implementation - State Transparency
 
 ## Core Layers -[`$UCCS-CORE:FRAMEWORK:COREL:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-CORE:ARCH:PATTERNS:CORE:PATTERNS:N0060$`
+**SCNS ID:** `$SCNS-UCCS0000:FRAMEWORK:LAYERS:ARCH:N0040$`
 
 **Hierarchical Layering**: The system is organized into distinct layers, each with appropriate utility.
 
@@ -96,7 +96,7 @@ Additional core principles for implementation - State Transparency
 
 ## ADAPTIVE SCALING for UIP-BASE -[`$UCCS-CORE:FRAMEWORK:AS-UIP:SCNSV4-ID$`]
 
-**SCNS ID:** 
+**SCNS ID:** `$SCNS-UCCS0000:FRAMEWORK:UIP:ADAPTIVE-SCALING:SPEC:N0050$`
 
 **Simple Tasks (1-3 Blocks)**
 
@@ -134,7 +134,7 @@ INIT → RESEARCH → ANALYZE → DESIGN → IMPLEMENT → TEST → VALIDATE →
 
 ## UPL Declaration
 
-SCNS ID: $UCCS-CORE:SPEC:FRAMEWORK:ADAPTIVE-UIP:MODIFICATION:N0880$
+** SCNS ID:** `$SCNS-UCCS0000:FRAMEWORK:UIP:UPL-DECLARATION:SPEC:N0051$`
 
 The user will provide a rating from 1 to 10 for their knowledge of the specific task at hand. It will then categorize this into three operational tiers.
 
@@ -182,6 +182,8 @@ The user will provide a rating from 1 to 10 for their knowledge of the specific 
 
 ## PROCESS REPEATABILITY MECHANISMS -[`$UCCS-CORE:FRAMEWORK:PRM:SCNSV4-ID$`]
 
+**SCNS ID:** `$SCNS-UCCS0000:FRAMEWORK:REPEATABILITY:MECHANISM:N0060$`
+
 ### Template Patterns
 
     **Standard Interaction Templates:**
@@ -228,6 +230,8 @@ The user will provide a rating from 1 to 10 for their knowledge of the specific 
 
 ## SUCCESS METRICS & PERFORMANCE INDICATORS -[`$UCCS-CORE:FRAMEWORK:SMPI:SCNSV4-ID$`]
 
+**SCNS ID:** `$SCNS-UCCS0000:FRAMEWORK:METRICS:PERFORMANCE:N0070$`
+
 **Quantitative Measures:**
 
 - Completion Rate: Tasks finished vs. started.
@@ -255,7 +259,7 @@ The user will provide a rating from 1 to 10 for their knowledge of the specific 
 
 # Core System Implementation -[`$UCCS-CORE:CORESI$`]
 
-**SCNS ID:** `$UCCS-CORE:IMPL:SYSTEM:CORE:IMPLEMENTATION:N0080$`
+**SCNS ID:** `$SCNS-UCCS0000:SYSTEM:CORE:IMPL:N0080$`
 
 The UCCS Framework is realized through a set of core JavaScript classes that manage SCNSV4-IDs, Organization, protocols and sub-system execution. 
 
@@ -274,7 +278,7 @@ The agent uses **[`$UCCS-CORE:FRAMEWORK$`] + [Any necessary protocols & sub-syst
 
 # SCNS Coordinate Engine -[`$UCCS-CORE:SCNSV4:ENGINE:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-CORE:IMPL:SCNS:SPEC:ENGINE:N0090$`
+**SCNS ID:** `$SCNS-UCCS0000:ENGINE:SCNS:CORE:N0090$`
 
 ## SCNSV4-ID Coordinate Format -[`$UCCS-CORE:SCNSV4:FORMAT:SCNSV4-ID$`]
 
@@ -324,7 +328,7 @@ For practical project implementation, a simplified format like ***PROJECT:MODULE
 
 ## Cross-Reference System (RTAGs) -[`$UCCS-CORE:SCNSV4:CRS:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-CORE:CONCEPT:RTAGS:CROSS-REFERENCE:SYSTEM:N0110$`
+**SCNS ID:** `$SCNS-UCCS0000:ENGINE:SCNS:FORMAT:SPEC:N0100$`
 
 ### Core RTAGs -[`$UCCS-CORE:SCNSV4:CRS-RTAG:SCNSV4-ID$`]
 
@@ -438,7 +442,7 @@ For practical project implementation, a simplified format like ***PROJECT:MODULE
 
 ## Cross-Graph Traversal -[`$UCCS-CORE:SCNSV4:CGT:SCNSV4-ID$`]  
 
-**SCNS ID:** `$SCNSV4-DEF:ALGO:CGT:TRAVERSAL:N0063$`
+**SCNS ID:** `$SCNS-UCCS0000:ENGINE:RTAG:CRS:CONCEPT:N0110$`
 
 **What CGT Does**
 
@@ -482,6 +486,8 @@ DEPENDS-only traversal from AUTH:LOGIN:N0010:
 
 ### CGT Algortithms -[`$UCCS-CORE:SCNSV4:CGT-ALGO:SCNSV4-ID$`]
 
+**SNCS ID:** `$SCNS-UCCS0000:ENGINE:CGT:ALGO:N0120$`
+
 ```javascript
 function CGT_Traverse(startCoordinate, traversalType, maxDepth = 10) {
   const visited = new Set();
@@ -519,7 +525,7 @@ function CGT_Traverse(startCoordinate, traversalType, maxDepth = 10) {
 
 ## Token Tree Resolution -[`$UCCS-CORE:SCNSV4:TTR:SCNSV4-ID$`]
 
-**SCNS ID:** `$SCNSV4-DEF:ALGO:TTR:RESOLUTION:N0064$`
+**SCNS ID:** `$SCNS-UCCS0000:ENGINE:TTR:ALGO:N0130$`
 
 ### What Token Tree Resolution Does
 
@@ -635,9 +641,11 @@ These four algorithms work together to create a powerful spatial navigation syst
 
 # SCNS Algorithms -[`$UCCS-CORE:SCNSV4:ALGO:SCNSV4-ID$`]
 
+**SCNS ID:** `$SCNS-UCCS0000:ALGO:SCNS:OVERVIEW:N0140$`
+
 ## Dynamic Insertion Algorithm -[`$UCCS-CORE:SCNSV4:ALOG-DIA:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-CORE:ALGO:DIA:N0130$`
+**SCNS ID:** `$SCNS-UCCS0000:ALGO:DIA:SPEC:N0150$`
 
 ### Core Insertion Logic -[`$UCCS-CORE:SCNSV4:DIA-CIL:SCNSV4-ID$`]
 
@@ -715,7 +723,7 @@ END FOR
 
 ## Cross-Reference Resolution -[`$UCCS-CORE:SCNSV4:CRR:SCNSV4-ID$`]  
 
-**SCNS ID:** `$UCCS-CORE:ALGO:CROSS:REFERENCE:RESOLUTION:N0140$`
+**SCNS ID:** `$SCNS-UCCS0000:ALGO:CRR:SPEC:N0160$`
 
 ### Dependency Graph Construction -[`$UCCS-CORE:SCNSV4:CRR-DGC:SCNSV4-ID$`]
 
@@ -790,7 +798,7 @@ function calculateRiskLevel(node) {
 
 ## Integration Pattern Detection -[`$UCCS-CORE:SCNSV4:IPD:SCNSV4-ID$`]  
 
-**SCNS ID:** `$UCCS-CORE:ALGO:INTEGRATION:PATTERN:DETECTION:N0150$`
+**SCNS ID:** `$SCNS-UCCS0000:ALGO:IPD:SPEC:N0170$`
 
 ### Workflow Pattern Recognition -[`$UCCS-CORE:SCNSV4:IPD-WPR:SCNSV4-ID$`]
 
@@ -889,7 +897,7 @@ const LAYERED_ARCHITECTURE_RULE = {
 
 ## Error Handling and Validation -[`$UCCS-CORE:SCNSV4:EHVCR:SCNSV4-ID$`]  
 
-**SCNS ID:** `$UCCS-CORE:ALGO:ERROR:HANDLING:VALIDATION:N0160$`
+**SCNS ID:** `$SCNS-UCCS0000:ALGO:EHV:SPEC:N0180$`
 
 ### Malformed Address Detection -[`$UCCS-CORE:SCNSV4:EHVCR-MAD:SCNSV4-ID$`] 
 
@@ -982,7 +990,7 @@ function checkConsistency(projectFiles) {
 
 ## Performance Optimization -[`$UCCS-CORE:SCNSV4:POP:SCNSV4-ID$`]  
 
-**SCNS ID:**`$UCCS-CORE:ALGO:PERFORMANCE:OPTIMIZATION:OPTIMIZATION:N0170$`
+**SCNS ID:** `$SCNS-UCCS0000:ALGO:POP:SPEC:N0190$`
 
 ### Address Resolution Caching -[`$UCCS-CORE:SCNSV4:POP-ARC:SCNSV4-ID$`] 
 
@@ -1073,7 +1081,7 @@ class SCNSCache {
 
 ## Collision Detection and Resolution -[`$UCCS-CORE:SCNSV4:CDR:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-CORE:ALGO:COLLISION:DETECTION:RESOLUTION:N0180$`
+**SCNS ID:** `$SCNS-UCCS0000:ALGO:CDR:SPEC:N0200$`
 
 ### Address Conflict Resolution -[`$UCCS-CORE:SCNSV4:CDR-ACR:SCNSV4-ID$`]
 
@@ -1127,10 +1135,9 @@ function extendHierarchically(addresses) {
 -----
 
 
-
 # ORGANIZATION Core -[`$UCCS-CORE:UCCS-ORG:ORG-CORE:SCNSV4-ID$`]  
 
-**SCNS ID:** `$UCCS-CORE:ARCH:PROTOCOL:ARCHITECTURE:PROTOCOL:N0190$`
+**SCNS ID:** `$SCNS-UCCS0000:ORG:CORE:ARCH:N0210$`
 
 ### PHASE:UCCS-ORG-INITIALIZE → File Discovery & Cataloging-[`$UCCS-CORE:UCCS-ORG:ORG-INIT:SCNSV4-ID$`]
 **UIP Block: File Discovery**
@@ -1187,7 +1194,7 @@ BLOCK:
 
 ## ORGANIZATION PROTOCOLs -[`$UCCS-CORE:UCCS-ORG:ORG-PROTO:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-CORE:IMPL:PROTOCOL:TEMPLATES:IMPLEMENTATION:N0250$` 
+**SCNS ID:** `$SCNS-UCCS0000:ORG:PROTOCOL:IMPL:N0220$` 
 
 ### User Prompt Templates[`$UCCS-CORE:UCCS-ORG:ORG-UPT:SCNSV4-ID$`]
 
@@ -1295,7 +1302,7 @@ It must always:
 
 # UCCS-INF-PERPLEXITY Protocol -[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-INF-PERPLEXITY:SPEC:PROTOCOL:CORE:N0270$`
+**SCNS ID:** `$SCNS-UCCS0000:INF:PERPLEXITY:PROTOCOL:CORE:N0230$`
 
 Version: 1.0
 
@@ -1303,13 +1310,13 @@ Protocol ID: UCCS-INF-PERPLEXITY
 
 Author: themptyyone
 
-SCNSV4-ID:`$UCCS-INF-PERPLEXITY:SPEC:CORE:N0270$`
+SCNSV4-ID:``
 
 **Purpose:** This document specifies the integration and communication protocol for the Perplexity AI model within the UCCS AI project, optimized for real-time research coordination with source verification.
 
 ## Core Concepts -[`$UCCS-CORE:INF-PERPLEXITY:CORECC:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-INF-PERPLEXITY:CONCEPT:CORE:CONCEPTS:N0280$`
+**SCNS ID:** `$SCNS-UCCS0000:INF:PERPLEXITY:CONCEPT:CORE:N0240$`
 
 - **Research Query:** A structured research request with specific investigation scope and source requirements.
 
@@ -1321,7 +1328,7 @@ SCNSV4-ID:`$UCCS-INF-PERPLEXITY:SPEC:CORE:N0270$`
 
 ## Research Protocol -[`$UCCS-CORE:INF-PERPLEXITY:RSPROTO:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-INF-PERPLEXITY:PROTOCOL:RESEARCH:PROTOCOL:N0290$`
+**SCNS ID:** `$SCNS-UCCS0000:INF:PERPLEXITY:PROTOCOL:RESEARCH:N0250$`
 
 ***All research follows multi phased investigation model with mandatory source verification.***
 
@@ -1397,7 +1404,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 ## Research Phases -[`$UCCS-CORE:INF-PERPLEXITY:RSCORE:SCNSV4-ID$`] 
 
-**SCNS ID:** `$UCCS-INF-PERPLEXITY:PHASE:RESEARCH:PHASES:N0300$`
+**SCNS ID:** `$SCNS-UCCS0000:INF:PERPLEXITY:PHASE:RESEARCH:N0260$`
 
 ### Phase:INIT Research Initialization -[`$UCCS-CORE:INF-PERPLEXITY:RS-INIT:SCNSV4-ID$`]
 
@@ -1442,7 +1449,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 ## Source Credibility & Verification -[`$UCCS-CORE:INF-PERPLEXITY:SCV:SCNSV4-ID$`] 
 
-**SCNS ID:** `$UCCS-INF-PERPLEXITY:FRAMEWORK:SOURCE:CREDIBILITY:N0310$`
+**SCNS ID:** `$SCNS-UCCS0000:INF:PERPLEXITY:FRAMEWORK:CREDIBILITY:N0270$`
 
 ### Credibility Levels:-[`$UCCS-CORE:INF-PERPLEXITY:SCF-CL:SCNSV4-ID$`]
 
@@ -1468,7 +1475,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 ## Research Models-[`$UCCS-CORE:INF-PERPLEXITY:SCF-CL:SCNSV4-ID$`]
    
-**SCNS ID:** `$Uccs-INF-PERPLEXITY:MODEL:RESEARCH:MODELS:N0320$`
+**SCNS ID:** `$SCNS-UCCS0000:INF:PERPLEXITY:MODEL:RESEARCH:N0280$`
 
 **Sonar (Standard Research)**
 
@@ -1496,7 +1503,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 ## Best Practices -[`$UCCS-CORE:INF-PERPLEXITY:BPIP:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-INF-PERPLEXITY:PRACTICE:BEST:PRACTICES:N0330$`
+**SCNS ID:** `$SCNS-UCCS0000:INF:PERPLEXITY:PRACTICE:BEST:N0290$`
 
 When initializing-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]:
 
@@ -1514,7 +1521,7 @@ When initializing-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]:
 
 ## Security Considerations -[`$UCCS-CORE:INF-PERPLEXITY:SEC:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-INF-PERPLEXITY:SECURITY:CONSIDERATIONS:SECURITY:N0340$`
+**SCNS ID:** `$SCNS-UCCS0000:INF:PERPLEXITY:SECURITY:CONSIDERATIONS:N0300$`
 
 When initializing-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]:
 
@@ -1540,7 +1547,7 @@ When initializing-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]:
 
 ## Error Handling -[`$UCCS-CORE:INF-PERPLEXITY:ERR:SCNSV4-ID$`]
 
-**SCNS ID:** `$USSC-INF-PERPLEXITY:HANDLING:ERROR:HANDLING:N0360$`
+**SCNS ID:** `$SCNS-UCCS0000:INF:PERPLEXITY:HANDLING:ERROR:N0310$`
 
 When initializing-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]:
 
@@ -1566,7 +1573,7 @@ When initializing-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]:
 
 ## Success Metrics -[`$UCCS-CORE:INF-PERPLEXITY:SM:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-INF-PERPLEXITY:METRIC:SUCCESS:METRICS:N0370$`
+**SCNS ID:** ` (Perplexity)	$SCNS-UCCS0000:INF:PERPLEXITY:METRIC:SUCCESS:N0320$`
 
 When initializing-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]:
 
@@ -1598,7 +1605,7 @@ When initializing-[`$UCCS-CORE:INF-PERPLEXITY:CORE:SCNSV4-ID$`]:
 
 Universal Code Coordinate System - Interactive Framework for Claude
 
-**SCNS ID:** `$UCCS-INF-CLAUDE:SPEC:PROTOCOL:CORE:N0380$`
+**SCNS ID:** `$SCNS-UCCS0000:INF:CLAUDE:PROTOCOL:CORE:N0330$`
 
 Version: 1.0
 
@@ -1610,7 +1617,7 @@ Integration: Full SCNSV4-ID
 
 ## CORE PROCESS for UCCS-INF-CLAUDE -[`$UCCS-CORE:INF-CLAUDE:CORE-PROC:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-INF-CLAUDE:CONCEPT:PHILOSOPHY:CORE:N0390$`
+**SCNS ID:** `$SCNS-UCCS0000:INF:CLAUDE:CONCEPT:PROCESS:N0340$`
 
 ***UCCS-INF-CLAUDE*** prioritizes repeatable process patterns over specific outcomes. 
 
@@ -1739,7 +1746,7 @@ As the agent, it operates within UCCS-INF-CLAUDE (Universal Code Coordinate Syst
 
 ## IMPLEMENTATION GUIDELINES -[`$UCCS-CORE:INF-CLAUDE:GUIDELINE:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-INF-CLAUDE:GUIDELINE:IMPLEMENTATION:GUIDELINES:N0460$`
+**SCNS ID:** `$SCNS-UCCS0000:INF:CLAUDE:GUIDELINE:IMPL:N0350$`
 
 **Essential Behaviors:**
 
@@ -1777,7 +1784,7 @@ As the agent, it operates within UCCS-INF-CLAUDE (Universal Code Coordinate Syst
 
 ## PROTOCOL BENEFITS
 
-**SCNS ID:** `$UCCS-INF-CLAUDE:BENEFIT:PROTOCOL:BENEFITS:N0470$`
+**SCNS ID:** `$SCNS-UCCS0000:INF:CLAUDE:BENEFIT:PROTOCOL:N0360$`
 
 **For Users:**
 
@@ -1825,11 +1832,11 @@ Repeatability of process - enabling users to confidently engage Claude on any pr
 
 # UCCS-INF-GROK Specification -[`$UCCS-CORE:INF-GROK:SPEC:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-INF-GROK:SPEC:PROTOCOL:CORE:N0500$`
+**SCNS ID:** `$SCNS-UCCS0000:INF:GROK:PROTOCOL:CORE:N0370$`
 
 ## Protocol Overview
 
-**SCNS ID:**`$UCCS-CORE:INTEGRATION:GROK:SPEC:N0510$`
+**SCNS ID:** `$SCNS-UCCS0000:INF:GROK:SPEC:OVERVIEW:N0380$`
 
 Version: 1.0
 
@@ -1847,7 +1854,7 @@ while upholding -[`$UCCS-CORE:FRAMEWORK$`]
 
 ## Core Concepts
 
-**SCNS ID:** `$UCCS-INF-GROK:CONCEPT:CORE:CONCEPTS:N0520$`
+**SCNS ID:** `$SCNS-UCCS0000:INF:GROK:CONCEPT:CORE:N0390$`
 
 **Dynamic Tool Orchestration:**
 
@@ -1871,7 +1878,7 @@ Unique SCNS addressing: `$UCCS-INF-GROK:{TASK}:{METHOD}:N{####}$` for traceabili
 
 ## Protocol Architecture -[`$UCCS-CORE:INF-GROK:ARCH:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-INF-GROK:ARCH:PROTOCOL:ARCHITECTURE:N0530$`
+**SCNS ID:** `$SCNS-UCCS0000:INF:GROK:ARCH:PROTOCOL:N0400$`
 
 **From Grok's Perspective** (UCCS-INF Integration):
 
@@ -1988,7 +1995,7 @@ BLOCK:
 
 ## Tool Guidelines -[`$UCCS-CORE:INF-GROK:GUIDELINE:SCNSV4-ID$`]
 
-**SCNS ID:** `$UCCS-INF-GROK:GUIDELINE:TOOL:INTEGRATION:N0570$`
+**SCNS ID:** `$SCNS-UCCS0000:INF:GROK:GUIDELINE:TOOL:N0410$`
 
 ### Grok's tools align with UCCS for sovereignty:
 
@@ -2008,7 +2015,7 @@ All tool calls require UIP confirmation if they alter significant context.
 
 ## Final SCNS ID Verification & Compliance Confirmation
 
-**SCNS ID:** `$UCCS-CORE:VERIFICATION:SCNS:COMPLIANCE:FINAL:N0780$`
+**SCNS ID:** `$SCNS-UCCS0000:CORE:VERIFICATION:COMPLIANCE:FINAL:N0420$`
 
 The verification system performs comprehensive validation of all applied fixes:
 
@@ -2066,7 +2073,7 @@ The verification system performs comprehensive validation of all applied fixes:
 
 ## Success Metrics
 
-**SCNS ID:** `$UCCS-CORE:METRIC:SUCCESS:METRICS:N0610$`
+**SCNS ID:** `$SCNS-UCCS0000:CORE:METRIC:SUCCESS:N0430$`
 
 ### Quantitative Measures
 
@@ -2087,21 +2094,21 @@ The verification system performs comprehensive validation of all applied fixes:
 
 ## Output Deliverables
 
-**SCNS ID:** `$UCCS-CORE:DELIVERABLE:OUTPUT:DELIVERABLES:N0620$`
+**SCNS ID:** `$SCNS-UCCS0000:CORE:PROTOCOL:SUB-SYSTEMS:OVERVIEW:N0450$`
 
 ### For Users
 
-1.  **Master File Registry Table**: Complete file-to-SCNS mapping
-2.  **Cross-Reference Matrix**: Visual relationship mapping
-3.  **Organization Dashboard**: Health status and metrics
-4.  **Navigation Tools**: Quick access to files via SCNS coordinates
+- **Master File Registry Table**: Complete file-to-SCNS mapping
+- **Cross-Reference Matrix**: Visual relationship mapping
+- **Organization Dashboard**: Health status and metrics
+- **Navigation Tools**: Quick access to files via SCNS coordinates
 
 ### For Developers
 
-1.  *API Integration Points*: Hooks for IDE and tool integration
-2.  *Automation Scripts*: Maintenance and validation utilities
-3.  *Extension Framework*: Patterns for domain-specific organization
-4.  *Audit TraiL*: Complete history of organizational decisions
+- *API Integration Points*: Hooks for IDE and tool integration
+- *Automation Scripts*: Maintenance and validation utilities
+- *Extension Framework*: Patterns for domain-specific organization
+- *Audit TraiL*: Complete history of organizational decisions
 
 
 -----
@@ -2109,7 +2116,7 @@ The verification system performs comprehensive validation of all applied fixes:
 
 # Sub Protocols & Systems for UCCS-CORE
 
-**SCNS ID:** `$UCCS-CORE:PROTO:INF:COLLABORATION:PROTOCOL:N0730$`
+**SCNS ID:** `$SCNS-UCCS0000:CORE:PROTOCOL:SUB-SYSTEMS:OVERVIEW:N0450$`
 
 **Architectural Role**: The parent protocol for all AI-driven generation and processing tasks. It embodies the "Process Over Product" philosophy, ensuring that AI-generated content is reviewed, refined, and confirmed in a structured manner. It's state machine (`GENERATE` → `SUMMARIZE` → `PREVIEW` → `CONFIRM` → `ITERATE`) is a foundational pattern.
   
@@ -2217,7 +2224,7 @@ The verification system performs comprehensive validation of all applied fixes:
 
 ## UCCS Context Meter - Specification
 
-**SCNS ID:** $UCCS-CORE:SPEC:CONTEXT:METER:DOCUMENT:N0800$
+**SCNS ID:** `$SCNS-UCCS0000:CORE:CONTEXT-METER:SPEC:DOCUMENT:N0460$`
 
 **Core**: Enhancing user sovereignty through contextual transparency. The Context Meter is the logical extension of this principle, providing the necessary information for that validation to be truly meaningful.
 
@@ -2235,7 +2242,7 @@ This feature giving users control over one of the most critical and previously o
 
 ### Context Meter Core
 
-**SCNS ID:** $UCCS-CORE:CONTEXT:SPEC:CORE:N0830$
+**SCNS ID:** `$SCNS-UCCS0000:CORE:CONTEXT-METER:SPEC:CORE:N0470$`
 
 **Official Context Meter YAML Structure**
 
@@ -2287,7 +2294,7 @@ context_meter:
 
 #### Agent Layer
 
-**SCNS ID:**  $UCCS:CORE:CONTEXT:IMPL:AGENT:LAYER:N0840$
+**SCNS ID:**  `$SCNS-UCCS0000:CORE:CONTEXT-METER:IMPL:AGENT:N0480$`
 
 It model or its orchestration layer is responsible for the actual calculation and composition of the context.
 
@@ -2301,7 +2308,7 @@ It model or its orchestration layer is responsible for the actual calculation an
 
 #### UCCS-INF Protocol Layer
 
-**SCNS ID:** $UCCS:CORE:CONTEXT:IMPL:PROTOCOL:LAYER:N0850$
+**SCNS ID:** `$SCNS-UCCS0000:CORE:CONTEXT-METER:IMPL:PROTOCOL:N0490$`
 
 This layer ensures the meter is correctly embedded and transmitted within the UCCS framework.
 
