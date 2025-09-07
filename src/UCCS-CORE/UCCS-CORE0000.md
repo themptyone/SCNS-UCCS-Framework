@@ -205,7 +205,7 @@ INIT → RESEARCH → ANALYZE → DESIGN → IMPLEMENT → TEST → VALIDATE →
 
 The UCCS Framework is realized through a set of core JavaScript classes that manage SCNSV4-IDs, Organization, protocols and sub-system execution. 
 
-SCNSV4-ID treats code as spatially organizedm, a domain-agnostic spatial addressing system rather than line-bound. 
+SCNSV4-ID treats information as spatially organized; a domain-agnostic spatial addressing system rather than line-bound. 
 
 Logical & spatial relationships between Information blocks & there associated SCNSV4-ID's ensuring automation of context.
 
