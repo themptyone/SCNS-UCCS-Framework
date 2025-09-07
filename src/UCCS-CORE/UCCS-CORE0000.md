@@ -32,21 +32,19 @@ The Universal Interaction Protocol (UIP) is the mechanism for ensuring User Sove
 
 The UCCS is built upon a set of core architecture patterns that ensure organization, traceability, and extensibility.
 
-The framework is built to navigate constant change & creating stable processes that lead to the best outcomes; UCCS is defined by a single, unifying concept; **Universal Addressability & Accessability** is that a unit of information, can be assigned a [`$UCCS-CORE:SCNSV4$`] within a universal information space. 
+The framework is built to navigate constant change & create stable processes that lead to the best outcomes; UCCS is defined by a unifying concept; **Universal Addressability & Accessability** is that a unit of information, can be assigned a [`$UCCS-CORE:SCNSV4$`] within a universal information space. 
 
-- **Universal Accessibility & Universal Addressability:**
+**Universal Accessibility & Universal Addressability:**
 
-Any discrete unit of information can be assigned a [`$UCCS-CORE:SCNSV4$`] coordinate.
+- Any discrete unit of information can be assigned a [`$UCCS-CORE:SCNSV4$`Any system, language, or paradigm can adopt UCCS, as so UCCS can adopt any system, language, or paradigm.
 
-Any system, language, or paradigm can adopt UCCS, as so UCCS can adopt any system, language, or paradigm.
+**User Sovereignty:** 
 
-- **User Sovereignty:** 
+- No significant change occurs without explicit user validation through the UIP-[`$UCCS-CORE:FRAMEWORK:UIP-BASE:SCNSV4-ID$`]
 
-No significant change occurs without explicit user validation through the UIP-[`$UCCS-CORE:FRAMEWORK:UIP-BASE:SCNSV4-ID$`]
+**Relational Integrity:**
 
-- **Relational Integrity:**
-
-All relationships between information blocks are logical relationships, dependencies, and constraints between data entities as they exist and interact within the [`$UCCS-CORE:FRAMEWORK$`], ensuring that the semantic meaning and structural validity of relationships remain intact regardless of spatial transformations, queries, or system operations.
+- All relationships between information blocks are logical relationships, dependencies, and constraints between data entities as they exist and interact within the [`$UCCS-CORE:FRAMEWORK$`], ensuring that the semantic meaning and structural validity of relationships remain intact regardless of spatial transformations, queries, or system operations.
 
 #### Critical Actions Requiring UIP Gates:
 
@@ -62,7 +60,15 @@ All relationships between information blocks are logical relationships, dependen
   
 - Deploying or publishing changes
 
-Additional core principles for implementation include State Transparency, Protocol Compliance, Automated Validation, Standardized Integration, and Audit Logs.
+Additional core principles for implementation - State Transparency
+
+- Protocol Compliance 
+
+- Automated Validation
+
+- Standardized Integration
+  
+- Audit Logs.
 
 
 -----
@@ -121,6 +127,54 @@ INIT → RESEARCH → ANALYZE → DESIGN → IMPLEMENT → TEST → VALIDATE →
 - Full methodology with comprehensive validation
 
 - Extensive confirmation and modification opportunities
+
+
+-----
+
+
+## UPL Declaration
+
+SCNS ID: $UCCS-CORE:SPEC:FRAMEWORK:ADAPTIVE-UIP:MODIFICATION:N0880$
+
+The user will provide a rating from 1 to 10 for their knowledge of the specific task at hand. It will then categorize this into three operational tiers.
+
+### Novice (UPL 1-3): *Guided Scaffolding Mode*
+
+*Objective*: To educate and safely guide the user through a complex process. This is the "overwhelm and guide" strategy you described.
+
+**Behavior**:
+
+- *High-Detail Summaries*: The SUMMARIZE step will not only state what was done but why it was done and what the immediate implications are.
+
+- *Expanded Previews*: The PREVIEW will show the generated content alongside alternative examples or possibilities, explaining the trade-offs.
+
+- *Granular UIP Gates*: Actions will be broken down into smaller, more frequent confirmation blocks to ensure the user understands each incremental step.
+
+- *Proactive Suggestions*: It will offer more suggestions for modification and explicitly list potential next steps.
+
+### Intermediate (UPL 4-7): *Standard Mode*
+
+*Objective*: The default, balanced interaction model as currently specified in the UCCS framework.
+
+**Behavior**:
+
+- Follows the standard GENERATE → SUMMARIZE → PREVIEW → CONFIRM → ITERATE loop without modification.
+
+- Assumes a working knowledge of the domain but provides clear, concise explanations.
+
+### Expert (UPL 8-10): *Accelerator Mode* 
+
+*Objective*: To maximize efficiency and minimize friction for users who already know what they want.
+
+**Behavior**:
+
+- *Concise Summaries*: Summaries will be brief, often just a single line confirming completion.
+
+- *Minimalist Previews*: Previews will show only the direct result, omitting lengthy explanations or alternatives unless requested.
+
+- *Batched Confirmations* : It may group several related actions into a single UIP gate. For example: "Generated class, added methods, and wrote unit tests. Proceed with commit? (Y/N/Modify)".
+
+- *Technical Language* : Assumes the user understands technical jargon and complex concepts without elaboration.
 
 
 -----
@@ -1386,7 +1440,7 @@ The response from Perplexity will be a JSON object with the following schema:
 
 - Provide research coordinate for future reference.
 
-## 4. Source Credibility Framework-[`$UCCS-CORE:INF-PERPLEXITY:SCF:SCNSV4-ID$`] 
+## Source Credibility & Verification -[`$UCCS-CORE:INF-PERPLEXITY:SCV:SCNSV4-ID$`] 
 
 **SCNS ID:** `$UCCS-INF-PERPLEXITY:FRAMEWORK:SOURCE:CREDIBILITY:N0310$`
 
@@ -2258,49 +2312,4 @@ This layer ensures the meter is correctly embedded and transmitted within the UC
 
 -----
 
-
-## UPL Declaration
-
-SCNS ID: $UCCS-CORE:SPEC:FRAMEWORK:ADAPTIVE-UIP:MODIFICATION:N0880$
-
-The user will provide a rating from 1 to 10 for their knowledge of the specific task at hand. It will then categorize this into three operational tiers.
-
-### Novice (UPL 1-3): *Guided Scaffolding Mode*
-
-*Objective*: To educate and safely guide the user through a complex process. This is the "overwhelm and guide" strategy you described.
-
-**Behavior**:
-
-- *High-Detail Summaries*: The SUMMARIZE step will not only state what was done but why it was done and what the immediate implications are.
-
-- *Expanded Previews*: The PREVIEW will show the generated content alongside alternative examples or possibilities, explaining the trade-offs.
-
-- *Granular UIP Gates*: Actions will be broken down into smaller, more frequent confirmation blocks to ensure the user understands each incremental step.
-
-- *Proactive Suggestions*: It will offer more suggestions for modification and explicitly list potential next steps.
-
-### Intermediate (UPL 4-7): *Standard Mode*
-
-*Objective*: The default, balanced interaction model as currently specified in the UCCS framework.
-
-**Behavior**:
-
-- Follows the standard GENERATE → SUMMARIZE → PREVIEW → CONFIRM → ITERATE loop without modification.
-
-- Assumes a working knowledge of the domain but provides clear, concise explanations.
-
-### Expert (UPL 8-10): *Accelerator Mode* 
-
-*Objective*: To maximize efficiency and minimize friction for users who already know what they want.
-
-**Behavior**:
-
-- *Concise Summaries*: Summaries will be brief, often just a single line confirming completion.
-
-- *Minimalist Previews*: Previews will show only the direct result, omitting lengthy explanations or alternatives unless requested.
-
-- *Batched Confirmations* : It may group several related actions into a single UIP gate. For example: "Generated class, added methods, and wrote unit tests. Proceed with commit? (Y/N/Modify)".
-
-*Technical Language* : Assumes the user understands technical jargon and complex concepts without elaboration.
-
-***!!! *Remember* User control is paramount. No significant changes occur without explicit UIP validation. It serves you, not the other way around !!!***
+# ***!!! *Remember* User control is paramount. No significant changes occur without explicit UIP validation. It serves you, not the other way around !!!***
