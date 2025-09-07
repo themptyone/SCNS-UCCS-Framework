@@ -64,7 +64,11 @@ All relationships between information blocks are logical relationships, dependen
 
 Additional core principles for implementation include State Transparency, Protocol Compliance, Automated Validation, Standardized Integration, and Audit Logs.
 
-### Core Architecture Layers-[`$UCCS-CORE:FRAMEWORK:CAL:SCNSV4-ID$`]
+
+-----
+
+
+### Core Layers-[`$UCCS-CORE:FRAMEWORK:COREL:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-CORE:ARCH:PATTERNS:CORE:PATTERNS:N0060$`
 
@@ -80,8 +84,12 @@ Additional core principles for implementation include State Transparency, Protoc
 
 *This creates **productive friction** - more granular control without slowing the system down.*
 
-### ADAPTIVE SCALING RULES -[`$UCCS-CORE:FRAMEWORK:ASR:SCNSV4-ID$`]
 
+-----
+
+
+### ADAPTIVE SCALING for UIP-BASE -[`$UCCS-CORE:FRAMEWORK:AS-UIP:SCNSV4-ID$`]
+z
 **SCNS ID:** 
 
 **Simple Tasks (1-3 Blocks)**
@@ -114,6 +122,10 @@ INIT → RESEARCH → ANALYZE → DESIGN → IMPLEMENT → TEST → VALIDATE →
 
 - Extensive confirmation and modification opportunities
 
+
+-----
+
+
 ## PROCESS REPEATABILITY MECHANISMS -[`$UCCS-CORE:FRAMEWORK:PRM:SCNSV4-ID$`]
 
 ### Template Patterns
@@ -130,7 +142,7 @@ INIT → RESEARCH → ANALYZE → DESIGN → IMPLEMENT → TEST → VALIDATE →
 
     **SCNS Integration Rules:**
 
-    • Every major work unit gets unique SCNSV4-ID
+    • Every work unit gets unique SCNSV4-ID
 
     • Hierarchical numbering maintains logical relationships
 
@@ -152,9 +164,13 @@ INIT → RESEARCH → ANALYZE → DESIGN → IMPLEMENT → TEST → VALIDATE →
 
     • "Y" → Execute next planned step
 
-    • "N" → Graceful termination with summary
+    • "N" → termination with summary
 
     • "Modify" → Iterative refinement cycle
+
+
+-----
+
 
 ## SUCCESS METRICS & PERFORMANCE INDICATORS -[`$UCCS-CORE:FRAMEWORK:SMPI:SCNSV4-ID$`]
 
@@ -178,7 +194,12 @@ INIT → RESEARCH → ANALYZE → DESIGN → IMPLEMENT → TEST → VALIDATE →
 
 - Adaptability: Process handles unexpected changes.
 
-## Core System Implementation -[`$UCCS-CORE:CORESI$`]
+
+-----
+
+
+
+# Core System Implementation -[`$UCCS-CORE:CORESI$`]
 
 **SCNS ID:** `$UCCS-CORE:IMPL:SYSTEM:CORE:IMPLEMENTATION:N0080$`
 
@@ -194,7 +215,10 @@ Natural logistic & spatial patterns: ***Trees, Pipelines, Graphs, Layers***.
 
 The agent uses **[`$UCCS-CORE:FRAMEWORK$`] + [Any necessary protocols & sub-systems]** to optimize code safely.
 
+
+
 -----
+
 
 # SCNS Coordinate Engine-[`$UCCS-CORE:SCNSV4:ENGINE:SCNSV4-ID$`]
 
@@ -204,15 +228,36 @@ The agent uses **[`$UCCS-CORE:FRAMEWORK$`] + [Any necessary protocols & sub-syst
 
 SCNS-V4 is a domain-agnostic coordinate system designed to support the UCCS. It uses a structured six-part hierarchy and optional tags for versioning and state to give any piece of information a precise, queryable address.
 
-**V4 Standard:** ***[DOMAIN]:[AREA]:[COMPONENT]:[ELEMENT]:[TAG]:[SEQUENCE][:VERSION][:STATE]***
+### V4 Standard:
+
+### Format Validation Rules
+
+- **Required Components**: All six components (DOMAIN through SEQUENCE) must be present
+
+- **Delimiter**: Components separated by colons `:`
+
+- **Encapsulation**: Full coordinate wrapped in `$` symbols
+
+- **Sequence Format**: Must start with `N` followed by digits
+
+- **Character Restrictions**: Alphanumeric characters, underscores, and hyphens only
+
+- **Case Sensitivity**: Typically uppercase for consistency, but case-insensitive parsing supported
+
+***[DOMAIN]:[AREA]:[COMPONENT]:[ELEMENT]:[TAG]:[SEQUENCE][:VERSION][:STATE]***
 
 The SCNSV4-ID is the spatial addressing system within the UCCS framework. To support Universal Addressability & Accessibility, it's standard format is boken down:
 
 - DOMAIN: The highest-level project or system domain.
+  
 - AREA: A major functional area or context within the domain.
+  
 - COMPONENT: A specific module, service, or subject.
+  
 - ELEMENT: The discrete, self-contained block of information.
+  
 - TAG: A classification based on the block's functional.
+
 - SEQUENCE: A inner-Domain hierarchical numeric identifier, always starting with N0010.
 
 The addition of optional dimensional tags at the end of the coordinate to track an information block's lifecycle (...:[SEQUENCE][:VERSION][:STATE]). 
@@ -220,6 +265,10 @@ The addition of optional dimensional tags at the end of the coordinate to track 
 These include a *:VERSION* tag for tracking revisions and a *:STATE* tag to denote its lifecycle status (e.g., :DRAFT, :ACTIVE, :PASS). 
 
 For practical project implementation, a simplified format like ***PROJECT:MODULE:FUNCTION:VERSION:STATE***
+
+
+-----
+
 
 ## Cross-Reference System (RTAGs)-[`$UCCS-CORE:SCNSV4:CRS:SCNSV4-ID$`]
 
@@ -235,31 +284,290 @@ CALLS     – invokes or uses X
 
 RANGE     – marks span (Replace N0100–N0200)
 
-- **REF**: For neutral navigation.
+**REF**: For neutral navigation.
 
-- **DEPENDS**: For dependency ordering.
+- *Purpose*: Neutral reference - "See also" or "Related to"
+  
+- *Use Cases*:
+  
+  - Documentation cross-references
+    
+  - Related functionality pointers
+    
+  - General navigation aids
+    
+- *Format*: `// RTAG: REF $TARGET:COORDINATE$`
 
+- *Example*:
+  
+``` javascript
+  // RTAG: REF $WEBAPP:AUTH:SESSION:MANAGER:N0030$
+  function loginUser(credentials) {
+    // This function works with session management
+    return authenticate(credentials);
+  }
+```
+
+**DEPENDS**: For dependency ordering.
+
+- *Purpose*: "X requires Y before it can function"
+  
+- *Use Cases*:
+  
+  - Code dependencies
+    
+  - Initialization order requirements
+    
+  - Service dependencies
+    
+- *Format*: `// RTAG: DEPENDS $REQUIRED:COORDINATE$`
+  
+- *Example*:
+  
+  ``` javascript
+  // RTAG: DEPENDS $WEBAPP:AUTH:CONFIG:INIT:N0010$
+  function setupAuthentication() {
+    // Cannot run until auth config is initialized
+    return configureAuthProviders();
+  }
+  ```
 - **CALLS**: For function/method invocation links.
+
+- *Purpose*: "X invokes or uses Y"
+  
+- *Use Cases*:
+  
+  - Function call relationships
+    
+  - Service invocation
+    
+- *Format*:
+  
+- *Example*:
+  ```javascript
+  // RTAG: CALLS $WEBAPP:DATA:USER:FETCH:N0020$
+  function getUserProfile(userId) {
+    // Explicitly calls the user fetch service
+    return fetchUserData(userId);
+  }
+  ```
+
 
 - **RANGE**: For batch edits or replacements.
 
 *`CALLED_BY` is derivable via reverse index of `CALLS`. Keeps RTAG set lean and parse-friendly.*
 
-# SCNS Algorithms-[`$UCCS-CORE:SCNSV4:ALGO:SCNSV4-ID$`]
+-----
 
-## Dynamic Insertion Algorithm-[`$UCCS-CORE:SCNSV4:ALOG-DIA:SCNSV4-ID$`]
+
+## CGT - Cross-Graph Traversal  
+
+**SCNS ID:** `$SCNSV4-DEF:ALGO:CGT:TRAVERSAL:N0063$`
+
+**What CGT Does**
+CGT follows the "web" of relationships created by RTAGs, enabling powerful navigation and analysis. It's like following hyperlinks, but for code and system architecture.
+
+### CGT Navigation Types
+
+### Depth-First Traversal
+
+Follows one path all the way to its end before exploring alternatives:
+
+```
+Start: AUTH:LOGIN:N0010
+  → CALLS: AUTH:VALIDATE:N0020
+    → DEPENDS: CONFIG:SECURITY:N0005
+      → REF: UTILS:ENCRYPTION:N0100
+```
+
+#### Breadth-First Traversal  
+
+Explores all immediate relationships before going deeper:
+
+```
+Start: AUTH:LOGIN:N0010
+  → CALLS: AUTH:VALIDATE:N0020
+  → CALLS: AUTH:HASH:N0030
+  → DEPENDS: CONFIG:DATABASE:N0005
+    → (then explore each of these in detail)
+```
+
+#### Relationship-Specific Traversal
+
+Follows only certain types of relationships:
+
+```
+DEPENDS-only traversal from AUTH:LOGIN:N0010:
+  → CONFIG:DATABASE:N0005
+    → CONFIG:SECURITY:N0008
+      → SYSTEM:INIT:N0001
+```
+
+### CGT Implementation Pattern
+
+```javascript
+function CGT_Traverse(startCoordinate, traversalType, maxDepth = 10) {
+  const visited = new Set();
+  const result = [];
+  
+  function traverse(coordinate, depth) {
+    if (depth > maxDepth || visited.has(coordinate)) return;
+    
+    visited.add(coordinate);
+    const node = HAR_Resolve(coordinate);
+    result.push(node);
+    
+    // Get relationships based on traversal type
+    const relationships = getRelationships(node, traversalType);
+    
+    for (const rel of relationships) {
+      traverse(rel.target, depth + 1);
+    }
+  }
+  
+  traverse(startCoordinate, 0);
+  return result;
+}
+```
+
+### CGT Applications
+
+- **Impact Analysis**: "What breaks if I change this function?"
+  
+- **Dependency Mapping**: "What does this module need to work?"
+  
+- **Code Navigation**: "Show me all related functions"
+
+- **Documentation Generation**: "Create a map of system relationships"
+
+## Token Tree Resolution
+
+**SCNS ID:** `$SCNSV4-DEF:ALGO:TTR:RESOLUTION:N0064$`
+
+### What Token Tree Resolution Does
+
+TTR optimizes how information is organized and accessed for AI processing. It creates efficient "token trees" that help AI systems understand context while minimizing computational overhead.
+
+### The Token Efficiency Problem
+
+AI systems have limited "context windows" - they can only process a certain amount of information at once. TTR helps by:
+
+- Organizing information hierarchically
+  
+- Loading only relevant context
+  
+- Maintaining relationships efficiently
+  
+- Optimizing for AI processing patterns
+
+#### TTR Tree Structure Example
+
+```
+ROOT: $PROJECT:SYSTEM:OVERVIEW:N0001$
+├── AUTH Branch: $PROJECT:AUTH:*:N0010-N0099$
+│   ├── LOGIN: $PROJECT:AUTH:LOGIN:N0010$
+│   ├── SESSION: $PROJECT:AUTH:SESSION:N0020$
+│   └── SECURITY: $PROJECT:AUTH:SECURITY:N0030$
+├── UI Branch: $PROJECT:UI:*:N0100-N0199$
+│   ├── COMPONENTS: $PROJECT:UI:COMPONENTS:N0100$
+│   └── STYLES: $PROJECT:UI:STYLES:N0110$
+└── DATA Branch: $PROJECT:DATA:*:N0200-N0299$
+    ├── MODELS: $PROJECT:DATA:MODELS:N0200$
+    └── STORAGE: $PROJECT:DATA:STORAGE:N0210$
+```
+
+#### TTR Algorithm Implementation
+
+```javascript
+function TTR_BuildTree(rootCoordinate, maxDepth = 5, tokenBudget = 8000) {
+  const tree = {
+    root: rootCoordinate,
+    branches: [],
+    totalTokens: 0
+  };
+  
+  function buildBranch(coordinate, depth, remainingBudget) {
+    if (depth > maxDepth || remainingBudget <= 0) return null;
+    
+    const node = HAR_Resolve(coordinate);
+    const nodeTokens = estimateTokenCount(node);
+    
+    if (nodeTokens > remainingBudget) return null;
+    
+    const branch = {
+      coordinate: coordinate,
+      content: node,
+      tokens: nodeTokens,
+      children: []
+    };
+    
+    // Find related coordinates through RTAGs
+    const related = CGT_Traverse(coordinate, 'breadth-first', 1);
+    const availableBudget = remainingBudget - nodeTokens;
+    
+    for (const relatedNode of related) {
+      const childBranch = buildBranch(
+        relatedNode.coordinate, 
+        depth + 1, 
+        availableBudget / related.length
+      );
+      
+      if (childBranch) {
+        branch.children.push(childBranch);
+        availableBudget -= childBranch.tokens;
+      }
+    }
+    
+    return branch;
+  }
+  
+  tree.branches = [buildBranch(rootCoordinate, 0, tokenBudget)];
+  return tree;
+}
+```
+
+## TTR Benefits for AI Integration
+
+- **Context Optimization**: Load only relevant information for AI processing
+  
+- **Memory Efficiency**: Hierarchical loading prevents context overflow
+  
+- **Relationship Preservation**: Maintains RTAG connections in optimized format
+  
+- **Adaptive Loading**: Adjusts detail level based on available resources
+
+### Algorithm Integration and Synergy
+
+These four algorithms work together to create a powerful spatial navigation system:
+
+- **HAR** finds the exact location of information
+ 
+- **DIP** determines where new information should go
+
+- **CGT** maps the relationships between information
+- 
+- **TTR** optimizes how AI systems process the information
+ 
+
+-----
+
+
+# SCNS Algorithms -[`$UCCS-CORE:SCNSV4:ALGO:SCNSV4-ID$`]
+
+## Dynamic Insertion Algorithm -[`$UCCS-CORE:SCNSV4:ALOG-DIA:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-CORE:ALGO:DIA:N0130$`
 
-### Core Insertion Logic-[`$UCCS-CORE:SCNSV4:DIA-CIL:SCNSV4-ID$`]
+### Core Insertion Logic -[`$UCCS-CORE:SCNSV4:DIA-CIL:SCNSV4-ID$`]
 
 **Objective:** Insert new logical units between existing coordinates while maintaining hierarchical relationships and avoiding collisions.
 
 ***Mathematical Formula:***
 
+```
 Given: Coordinate A and Coordinate B where A < B
 
-[Gap = B - A
+Gap = B - A
 
 IF Gap > 1 THEN
 
@@ -267,23 +575,26 @@ New_Coordinate = ⌊(A + B) / 2⌋
 
 ELSE
 
-New_Coordinate = Extend_Hierarchy(A)]
+New_Coordinate = Extend_Hierarchy(A)
 
 END IF
+```
 
-#### Example Applications:
+**Practical Example:**
 
--***Text Documents:*** Insert paragraph between sections 10 and 20 → section 15
+```
+Existing: N0010, N0020
+Available: N0015 (middle insertion)
 
--***Database Records:*** Insert entry between ID 100 and 200 → ID 150
+Existing: N0010, N0011  
+Solution: Extend to N0100, N0101, N0105 (hierarchical extension)
+```
 
--***Configuration Files:*** Insert setting between priority 30 and 40 → priority 35
-
-### Hierarchical Extension Rules-[`$UCCS-CORE:SCNSV4:DIA-HER:SCNSV4-ID$`]
+### Hierarchical Extension Rules -[`$UCCS-CORE:SCNSV4:DIA-HER:SCNSV4-ID$`]
 
 needs work - WIP - currently empty
 
-### Gap Analysis and Optimal Spacing-[`$UCCS-CORE:SCNSV4:DIA-GAOS:SCNSV4-ID$`]
+### Gap Analysis and Optimal Spacing -[`$UCCS-CORE:SCNSV4:DIA-GAOS:SCNSV4-ID$`]
 
 **Capacity Calculation Formula:**
 
@@ -314,15 +625,14 @@ END FOR
 - ***Scheduling:*** Gap of 4 hours between meetings = 2 subdivision levels
 
 
+-----
 
 
-
-
-## Cross-Reference Resolution-[`$UCCS-CORE:SCNSV4:CRR:SCNSV4-ID$`]  
+## Cross-Reference Resolution -[`$UCCS-CORE:SCNSV4:CRR:SCNSV4-ID$`]  
 
 **SCNS ID:** `$UCCS-CORE:ALGO:CROSS:REFERENCE:RESOLUTION:N0140$`
 
-### Dependency Graph Construction-[`$UCCS-CORE:SCNSV4:CRR-DGC:SCNSV4-ID$`]
+### Dependency Graph Construction -[`$UCCS-CORE:SCNSV4:CRR-DGC:SCNSV4-ID$`]
 
 **Relationship Matrix:**
 
@@ -342,7 +652,13 @@ Dependents(j) = Σ M[i][j] for all i
 
 - ***Knowledge Networks:*** Concept relationships, topic hierarchies
 
-### Impact Analysis-[`$UCCS-CORE:SCNSV4:CRR-IA:SCNSV4-ID$`]
+
+
+-----
+
+
+
+### Impact Analysis -[`$UCCS-CORE:SCNSV4:CRR-IA:SCNSV4-ID$`]
 
 **Algorithm:** Determine cascade effects of modifying specific addresses.
 
@@ -382,11 +698,16 @@ function calculateRiskLevel(node) {
 }
 ```
 
-## Integration Pattern Detection-[`$UCCS-CORE:SCNSV4:IPD:SCNSV4-ID$`]  
+
+-----
+
+
+
+## Integration Pattern Detection -[`$UCCS-CORE:SCNSV4:IPD:SCNSV4-ID$`]  
 
 **SCNS ID:** `$UCCS-CORE:ALGO:INTEGRATION:PATTERN:DETECTION:N0150$`
 
-### Workflow Pattern Recognition-[`$UCCS-CORE:SCNSV4:IPD-WPR:SCNSV4-ID$`]
+### Workflow Pattern Recognition -[`$UCCS-CORE:SCNSV4:IPD-WPR:SCNSV4-ID$`]
 
 **Algorithm:** Identify common development patterns for AI optimization.
 
@@ -426,7 +747,7 @@ function detectCRUDPattern(history) {
 }
 ```
 
-### Architecture Compliance Check[`$UCCS-CORE:SCNSV4:IPD-IA:SCNSV4-ID$`]
+### Architecture Compliance Check -[`$UCCS-CORE:SCNSV4:IPD-IA:SCNSV4-ID$`]
 
 **Algorithm:** Validate code organization against established patterns.
 
@@ -476,11 +797,16 @@ const LAYERED_ARCHITECTURE_RULE = {
 };
 ```
 
-## Error Handling and Validation-[`$UCCS-CORE:SCNSV4:EHVCR:SCNSV4-ID$`]  
+
+------
+
+
+
+## Error Handling and Validation -[`$UCCS-CORE:SCNSV4:EHVCR:SCNSV4-ID$`]  
 
 **SCNS ID:** `$UCCS-CORE:ALGO:ERROR:HANDLING:VALIDATION:N0160$`
 
-### Malformed Address Detection-[`$UCCS-CORE:SCNSV4:EHVCR-MAD:SCNSV4-ID$`] 
+### Malformed Address Detection -[`$UCCS-CORE:SCNSV4:EHVCR-MAD:SCNSV4-ID$`] 
 
 **Algorithm:** Validate SCNS address format and detect common errors.
 
@@ -522,7 +848,7 @@ function validateAddress(address) {
     };
 }
 ```
-### Consistency Checking-[`$UCCS-CORE:SCNSV4:EHVCR-CC:SCNSV4-ID$`]
+### Consistency Checking -[`$UCCS-CORE:SCNSV4:EHVCR-CC:SCNSV4-ID$`]
 
 **Algorithm:** Ensure address consistency across project files.
 
@@ -564,11 +890,16 @@ function checkConsistency(projectFiles) {
     return issues;
 }
 ```
-## Performance Optimization-[`$UCCS-CORE:SCNSV4:POP:SCNSV4-ID$`]  
+
+
+-----
+
+
+## Performance Optimization -[`$UCCS-CORE:SCNSV4:POP:SCNSV4-ID$`]  
 
 **SCNS ID:**`$UCCS-CORE:ALGO:PERFORMANCE:OPTIMIZATION:OPTIMIZATION:N0170$`
 
-### Address Resolution Caching[`$UCCS-CORE:SCNSV4:POP-ARC:SCNSV4-ID$`] 
+### Address Resolution Caching -[`$UCCS-CORE:SCNSV4:POP-ARC:SCNSV4-ID$`] 
 
 **Algorithm:** Optimize lookup performance for large codebases.
 
@@ -651,11 +982,15 @@ class SCNSCache {
 }
 ```
 
-## Collision Detection and Resolution-[`$UCCS-CORE:SCNSV4:CDR:SCNSV4-ID$`]
+
+-----
+
+
+## Collision Detection and Resolution -[`$UCCS-CORE:SCNSV4:CDR:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-CORE:ALGO:COLLISION:DETECTION:RESOLUTION:N0180$`
 
-### Address Conflict Resolution[`$UCCS-CORE:SCNSV4:CDR-ACR:SCNSV4-ID$`]
+### Address Conflict Resolution -[`$UCCS-CORE:SCNSV4:CDR-ACR:SCNSV4-ID$`]
 
 **Algorithm:** Handle cases where multiple developers create conflicting addresses.
 
@@ -704,11 +1039,15 @@ function extendHierarchically(addresses) {
 ```
 
 
-## ORGANIZATIONS Protocol Architecture-[`$UCCS-CORE:SCNSV4:ORG-ARCH:SCNSV4-ID$`]  
+-----
+
+
+
+# ORGANIZATION Coore -[`$UCCS-CORE:UCCS-ORG:ORG-CORE:SCNSV4-ID$`]  
 
 **SCNS ID:** `$UCCS-CORE:ARCH:PROTOCOL:ARCHITECTURE:PROTOCOL:N0190$`
 
-### PHASE:UCCS-ORG-INITIALIZE → File Discovery & Cataloging-[`$UCCS-CORE:SCNSV4:ORG-INIT:SCNSV4-ID$`]
+### PHASE:UCCS-ORG-INITIALIZE → File Discovery & Cataloging-[`$UCCS-CORE:UCCS-ORG:ORG-INIT:SCNSV4-ID$`]
 **UIP Block: File Discovery**
 
 ```yaml
@@ -724,7 +1063,8 @@ BLOCK:
     - VALIDATE: Present catalog for user confirmation
   confirmation: "Proceed with file registration? (Y / N / Modify)"
 ```
-### PHASE:UCCS-ORG-STRUCTURE → Cross-Reference Matrix Creation-[`$UCCS-CORE:SCNSV4:ORG-STRUC:SCNSV4-ID$`]
+
+### PHASE:UCCS-ORG-STRUCTURE → Cross-Reference Matrix Creation-[`$UCCS-CORE:UCCS-ORG:ORG-STRUC:SCNSV4-ID$`]
 
 **UIP Block: Relationship Mapping**
 
@@ -742,7 +1082,7 @@ BLOCK:
   confirmation: "Accept relationship mapping? (Y / N / Modify)"
 ```
 
-### PHASE:UCCS-ORG-MAINTAIN → Dynamic Organization Management-[`$UCCS-CORE:SCNSV4:ORG-MAINT:SCNSV4-ID$`]
+### PHASE:UCCS-ORG-MAINTAIN → Dynamic Organization Management-[`$UCCS-CORE:UCCS-ORG:ORG-MAINT:SCNSV4-ID$`]
 
 **UIP Block: Continuous Organization**
 
@@ -759,11 +1099,11 @@ BLOCK:
     - REPORT: Provide organization health status
   confirmation: "Apply organization updates? (Y / N / Modify)"
 ```
-## ORGANIZATION PROTOCOLs -[`$UCCS-CORE:SCNSV4:ORG-PIT:SCNSV4-ID$`]
+## ORGANIZATION PROTOCOLs -[`$UCCS-CORE:UCCS-ORG:ORG-PIT:SCNSV4-ID$`]
 
 **SCNS ID:** `$UCCS-CORE:IMPL:PROTOCOL:TEMPLATES:IMPLEMENTATION:N0250$` 
 
-### User Prompt Templates[`$UCCS-CORE:SCNSV4:ORG-UPP:SCNSV4-ID$`]
+### User Prompt Templates[`$UCCS-CORE:UCCS-ORG:ORG-UPP:SCNSV4-ID$`]
 
 **Initialize File Organization**
 
@@ -781,9 +1121,8 @@ INITIALIZE-[`$UCCS-ORG:SCNSV4:CATALOG:N0010$`] for workspace: [SCNSV4:ID]]
 
 - Present the master registry table for confirmation. 
 
-Follow UIP:  
+Follow UIP-[´$UCCS-CORE:FRAMEWORK:UIP-BASE:SCNSV4-ID$´]
 
-***GENERATE → SUMMARIZE → PREVIEW → CONFIRM → ITERATE***
 
 **Update Cross-References**
 
