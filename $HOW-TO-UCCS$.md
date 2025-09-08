@@ -116,4 +116,4 @@ Congratulations! You have successfully used the UCCS framework to collaborate wi
 
 # Welcome to the future of structured AI interaction.  
 
-# MAX POWER, MAX STEAM!
+MAX POWER, MAX STEAM!
