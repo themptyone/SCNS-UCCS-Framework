@@ -10,7 +10,7 @@ This guide explains how to drive the process.
 
 Start your request by attaching src/UCCS-CORE/UCCS-CORE0000.md & COOKIE GENIE PROMPT stating your **goal** and your **knowledge level (UPL)** for the task.
 
-*In the example below we are generating a new cookie recipes for our communal kitchen use the `$COOKIEGENIE:PROMPT$` within the `$UCCS-CORE0000:FRAMEWORK$`*
+*In the example below we are generating a new cookie recipes for our communal kitchen using the `$COOKIEGENIE:PROMPT$` within the `$UCCS-CORE0000:FRAMEWORK$`*
 
 **Example User Prompt:**
 
