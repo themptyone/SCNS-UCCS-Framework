@@ -8,7 +8,7 @@ This guide explains how to drive the process.
 
 ## Step 1: Initialize the Protocol
 
-Start your request by attaching src/UCCS-CORE/UCCS-CORE0000.md & COOKIE GENIE PROMPT stating your **goal** and your **knowledge level (UPL)** for the task.
+Start your request by attaching src/UCCS-CORE/UCCS-CORE0000.md & [COOKIE GENIE PROMPT](https://github.com/themptyone/SCNS-UCCS-Framework/blob/2f0fd4d9ed5a58eae89f8833f135032fa03f7196/docs/minis/%24COOKIEGENIE%3APROMPT%24.md) stating your **goal** and your **knowledge level (UPL)** for the task.
 
 *In the example below we are generating a new cookie recipes for our communal kitchen using the `$COOKIEGENIE:PROMPT$` within the `$UCCS-CORE0000:FRAMEWORK$`*
 
