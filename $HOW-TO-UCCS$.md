@@ -114,6 +114,6 @@ UCCS is a universal framework that adapts to multiple AI agents, each governed b
 
 Congratulations! You have successfully used the UCCS framework to collaborate with an AI, maintaining **full control** and **traceability** throughout the process.  
 
-Welcome to the future of structured AI interaction.  
+# Welcome to the future of structured AI interaction.  
 
-**MAX POWER, MAX STEAM!**
+# MAX POWER, MAX STEAM!
